@@ -18,8 +18,8 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: d.prater@me.com
-  facebook: devin.prater1
+  email:
+  facebook:
   flickr:
   github: devinprater
   instagram:
