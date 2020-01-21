@@ -171,7 +171,7 @@ one accessible game for blind people to enjoy. And I also know that
 neither Apple nor Microsoft makes these games, but they do choose to
 advertise them, endorse them even, and it shows that, for Apple Arcade
 at least, video games are not something which they expect blind people
-to play. Microsoft is slowly but surely proving them wrong, with the
+to play. Microsoft is proving them wrong, with the
 release of Halo with screen reader usability in menus, and the
 possibility that the new Halo game will be accessible.
 
