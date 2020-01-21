@@ -254,7 +254,8 @@ As for me, I will continue to support open source software. I’ll keep
 using this mac and iPhone because they work the best for me and what I
 do for work and writing. But, believe me, when something better comes
 along, I’ll jump ship quickly. As blind people, I feel, we cannot
-afford to develop brand loyalty. Apple, Microsoft, or Google could
+afford to develop brand loyalty. Apple, Microsoft, or Google, I think,
+could
 drop accessibility tomorrow, and there we’d be, left in the cold. I
 highly doubt they will. They may let it lie stagnant, but they
 probably won’t remove it. I do not write this to scare you in the
