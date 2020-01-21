@@ -97,8 +97,15 @@ rules out the "good enough" approach that so many blind people accept
 as the status quo. Luckily for blind people who would love to use KDE,
 there is [work being
 done](https://blogs.fsfe.org/gladhorn/2018/10/14/screen-reader-accessibility-for-the-plasma-desktop/)
-on this issue. I encourage every adventurous blind person to make
-themselves available for this team; user testing was mentioned.
+on this issue. Gnu, the project behind much of Linux, also has an
+[accessibility statement](https://www.gnu.org/accessibility/), which
+does seem to be very out of date, as it references flash player and
+Silverlight, which are no longer in common use, and does not reference
+Apple’s iOS, Google’s Android, and other modern technologies which are
+not open source, but which include assistive technologies. I encourage every adventurous blind person to make
+themselves available for testing open source software and operating
+systems; user testing was mentioned by the KDE team as something blind
+people could do to help.
 Believe me, having an operating system which is a "joy to use" is a
 *dream* of mine.
 
@@ -272,3 +279,8 @@ saying that I’m perfect at any of this. I just think that we as a
 community can grow tremendously if we strike out from our comfortable
 Windows PC’s, Microsoft Word, audio games, TeamTalk, and old speech
 synthesizers.
+
+I’ll give some projects you could try out and give feedback on:
+
+- [Riot IM, for text and voice chatting in groups, like TeamTalk](https://marcozehe.de/2019/12/20/how-to-get-around-matrix-and-riot-with-a-screen-reader/)
+- 
