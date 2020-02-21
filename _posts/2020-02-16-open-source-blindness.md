@@ -198,7 +198,7 @@ systems, are the best compromise. NVDA, BrailleBlaster, TDSR, and many
 other tools built for the blind community run on Windows or Mac. Having
 a great foundation in accessibility makes all the difference for users.
 
-How can I help?
+How can You help?
 ===============
 
 Github, as stated earlier, is a hub of open source projects. One great
@@ -221,6 +221,14 @@ more work is being done to make even more games accessible. Open source
 collaboration is great for even more than just programming. See projects
 I'm working on, all text, on [the About page of my original
 blog](https://devinprater.github.io/about/).
+
+Another bit of news is that GTK, a way for programs to be displayed
+and written, has had a
+[Hackfest](https://blog.gtk.org/2020/02/17/gtk-hackfest-2020-roadmap-and-accessibility/),
+where accessibility was extensively discussed. It is hoped that this means
+that accessibility will become a larger issue in Linux, and that blind
+people will one day be able to use Linux as confidently as they use
+Windows and Mac now.
 
 Conclusion
 ==========
