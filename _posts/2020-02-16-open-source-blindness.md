@@ -2,7 +2,7 @@
 layout: post
 title:  open source blindness
 date:   2020-02-16 20:11:04 -0600
-categories: open source, blindness, advocacy
+categories: [open source, blindness, advocacy]
 ---
 
 What if all of your software were free, like NVDA? What if the only

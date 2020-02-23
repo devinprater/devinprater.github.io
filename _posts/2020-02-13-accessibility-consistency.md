@@ -2,7 +2,7 @@
 layout: post
 title: Apple’s accessibility consistency
 date:   2020-02-13 15:13:23 -0600
-categories: tech, blindness
+categories: [tech, blindness]
 ---
 
 This article will explore Apple’s consistent attention to accessibility,
