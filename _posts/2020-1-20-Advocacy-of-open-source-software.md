@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Advocacy of open source software
-categories: [open source , advocacy , blindness]
+categories: open-source, advocacy, blindness
 ---
 
 In this post, I’ll detail my experiences of advocating for

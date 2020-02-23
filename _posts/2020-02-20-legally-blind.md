@@ -2,7 +2,7 @@
 layout: post
 title:  legally blind
 date:   2020-02-20 03:35:06 -0600
-categories: [copyright, blindness]
+categories: copyright, blindness
 ---
 
 Have you ever downloaded a file that you didn’t have permission to
