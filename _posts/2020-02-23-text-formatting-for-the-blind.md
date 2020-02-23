@@ -65,7 +65,10 @@ of font information, like styles, for a screen reader user to be sure
 when a particular formatting style begins and ends, and that a program
 may not speak when formatting commands are pressed. Screen readers do,
 usually, read headings and lists without needing settings changes, but
-that’s about all.
+that’s about all. JAWS for Windows can be configured to [speak or play
+sounds](https://doccenter.freedomscientific.com/doccenter/doccenter/rs25c51746a0cc/2012-06-20_TextFormatting/02_TextFormatting.htm)
+for formatting, but most users do not realize that this feature is
+available, and so it is not used.
 
 Not all is lost, however. Narrator now has the ability to read
 formatting using different speech settings, like a change in pitch,
