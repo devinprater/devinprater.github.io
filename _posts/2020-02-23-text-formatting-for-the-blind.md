@@ -76,6 +76,8 @@ volume, or rate. VoiceOver on the Mac can "beep" for formatting
 changes, although that doesn’t tell us *which* formatting information
 was used. NVDA has begun working on refactoring its speech system, so
 in the future, NVDA may be able to do what Narrator does, and more.
+Imagine hearing sounds for each text attribute, instead of even having
+vocal indications.
 
 ## Braille
 
