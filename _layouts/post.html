@@ -5,8 +5,7 @@ layout: default
 <article class="post">
   <h1>{{ page.title }}</h1>
   <aside>
-    <p>Estimated reading time: </p>
-  {% include read-time.html %}
+    <p>Estimated reading time: {% include read-time.html %}</p>
   </aside>
   <div class="entry">
     {{ content }}
