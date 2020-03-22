@@ -1,10 +1,4 @@
----
-layout: post
-title: Advocacy of open source software
-categories: open-source, advocacy, blindness
----
-
-In this post, I’ll detail my experiences of advocating for
+I"UD<p>In this post, I’ll detail my experiences of advocating for
 accessibility in open source software, why it is important, and how
 others can help. I’ve not been doing it for long, but at least now,
 I’ve done a bit. I’ll also touch upon why I think open source
@@ -13,48 +7,53 @@ source and closed feedback systems cannot offer, which open source
 grants. On the other hand, there are things which closed source
 somewhat grants, but which has faltered slightly in recent days. I
 will attempt to denote what is fact and what is opinion, this goes for
-any post of a commentary of informative nature.
+any post of a commentary of informative nature.</p>
 
-# Table of Contents
-{:.no_toc}
-* TOC
-{:toc}
+<h1 id="table-of-contents-no_toc">Table of Contents {.no_toc}</h1>
+<ul id="markdown-toc">
+  <li><a href="#table-of-contents-no_toc" id="markdown-toc-table-of-contents-no_toc">Table of Contents {.no_toc}</a>    <ul>
+      <li><a href="#the-appeal-of-open-source" id="markdown-toc-the-appeal-of-open-source">The Appeal of Open Source</a></li>
+      <li><a href="#the-appeal-of-closed-source" id="markdown-toc-the-appeal-of-closed-source">The Appeal of Closed Source</a></li>
+      <li><a href="#open-source-accessibility" id="markdown-toc-open-source-accessibility">Open Source Accessibility</a></li>
+      <li><a href="#closed-source-accessibility" id="markdown-toc-closed-source-accessibility">Closed Source Accessibility</a></li>
+      <li><a href="#reporting-bugs" id="markdown-toc-reporting-bugs">Reporting Bugs</a></li>
+    </ul>
+  </li>
+</ul>
 
-The Appeal of Open Source
--------------------------
+<h2 id="the-appeal-of-open-source">The Appeal of Open Source</h2>
 
-Open source, or free software, basically means that a person can view
+<p>Open source, or free software, basically means that a person can view
 and change the source code of software that they download or own.
 While this doesn’t mean much to users, it does mean that many
 different people can work on a project to make it better. This has no
-value on its own, see the "heartbleed" [SSL
-bug](http://heartbleed.com) and its
-[Aftermath](https://www.securityweek.com/evolution-openssl-security-after-heartbleed),
-but as with SSL, things can obviously improve when given an incentive.
+value on its own, see the “heartbleed” <a href="http://heartbleed.com">SSL
+bug</a> and its
+<a href="https://www.securityweek.com/evolution-openssl-security-after-heartbleed">Aftermath</a>,
+but as with SSL, things can obviously improve when given an incentive.</p>
 
-For now, open source technology is used in many closed source
+<p>For now, open source technology is used in many closed source
 operating systems. For example, the
-[Liblouis](https://github.com/liblouis/liblouis) braille tables are
+<a href="https://github.com/liblouis/liblouis">Liblouis</a> braille tables are
 used in
-[iOS](https://www.applevis.com/blog/whats-new-ios-13-accessibility-individuals-who-are-blind-or-deaf-blind),
-[macOS](https://www.applevis.com/blog/new-features-changes-improvements-and-bugs-macos-catalina-blind-and-low-vision-users),
-and most Linux distributions through [BRLTTY](https://brltty.app).
+<a href="https://www.applevis.com/blog/whats-new-ios-13-accessibility-individuals-who-are-blind-or-deaf-blind">iOS</a>,
+<a href="https://www.applevis.com/blog/new-features-changes-improvements-and-bugs-macos-catalina-blind-and-low-vision-users">macOS</a>,
+and most Linux distributions through <a href="https://brltty.app">BRLTTY</a>.
 While the software is not perfect, it is often made for more than one
 operating system, has a helpful community of users, and, greatest for
 accessibility, developers who are more likely to consider
 accessibility. This is greatly improved with platforms for open source
 development, like Github and Gitlab, which allow users to post
-"issues" on projects, including accessibility ones.
+“issues” on projects, including accessibility ones.</p>
 
-The Appeal of Closed Source
----------------------------
+<h2 id="the-appeal-of-closed-source">The Appeal of Closed Source</h2>
 
-People like getting paid. I should know, as a working blind person who
+<p>People like getting paid. I should know, as a working blind person who
 does love getting paid for time and effort well spent. People love
 keeping things hidden while being worked on. I wouldn’t want a reader
 reading an incomplete blog post, after all, and spreading the word
-that "Devin just kind of wrote a few words and that’s all I got. from
-the blog." People love being able to claim their work as theirs,
+that “Devin just kind of wrote a few words and that’s all I got. from
+the blog.” People love being able to claim their work as theirs,
 instead of having to share the credits with other people or companies.
 I don’t have direct experience with this, because I need all the help
 I can get, but in my opinion, it is a factor in choosing to create on
@@ -62,49 +61,50 @@ your own, as a user or a company. Another great thing about closed
 source is that your competitors can’t copy what you’re doing, as you
 do it, and when you’re an important company, with allegiance to your
 shareholders, you must do anything to keep making money. But, what
-about accessibility?
+about accessibility?</p>
 
-Open Source Accessibility
--------------------------
+<h2 id="open-source-accessibility">Open Source Accessibility</h2>
 
-Accessibility of open source projects vary a lot. For example, before
-Retroarch was [made
-accessible](https://www.libretro.com/index.php/retroarch-1-8-2-coming-soon-accessibility-features-for-blind-people/),
+<p>Accessibility of open source projects vary a lot. For example, before
+Retroarch was <a href="https://www.libretro.com/index.php/retroarch-1-8-2-coming-soon-accessibility-features-for-blind-people/">made
+accessible</a>,
 its interface was not usable by blind people. Now, though, I can use
-it easily. However, current versions of the [KDE Plasma
-desktop](https://kde.org/plasma-desktop) do not work well with [the
-Orca screen reader](https://help.gnome.org/users/orca/stable/). The
+it easily. However, current versions of the <a href="https://kde.org/plasma-desktop">KDE Plasma
+desktop</a> do not work well with <a href="https://help.gnome.org/users/orca/stable/">the
+Orca screen reader</a>. The
 following quote is from the release notes for KDE’s latest desktop
-version:
+version:</p>
 
-> KDE is an international technology team that creates free and open
-> source software for desktop and portable computing. Among KDE's
-> products are a modern desktop system for Linux and UNIX platforms,
-> comprehensive office productivity and groupware suites and hundreds
-> of software titles in many categories including Internet and web
-> applications, multimedia, entertainment, educational, graphics and
-> software development. KDE software is translated into more than 60
-> languages and is built with ease of use and modern accessibility
-> principles in mind. KDE's full-featured applications run natively on
-> Linux, BSD, Solaris, Windows and Mac OS X.
+<blockquote>
+  <p>KDE is an international technology team that creates free and open
+source software for desktop and portable computing. Among KDE’s
+products are a modern desktop system for Linux and UNIX platforms,
+comprehensive office productivity and groupware suites and hundreds
+of software titles in many categories including Internet and web
+applications, multimedia, entertainment, educational, graphics and
+software development. KDE software is translated into more than 60
+languages and is built with ease of use and modern accessibility
+principles in mind. KDE’s full-featured applications run natively on
+Linux, BSD, Solaris, Windows and Mac OS X.</p>
+</blockquote>
 
--- [Source](https://kde.org/announcements/plasma-5.17.0.php)
+<p>– <a href="https://kde.org/announcements/plasma-5.17.0.php">Source</a></p>
 
-"Modern accessibility principals," you say? In my opinion, we seem to
-be talking about different definitions of "accessibility." Yes, there
+<p>“Modern accessibility principals,” you say? In my opinion, we seem to
+be talking about different definitions of “accessibility.” Yes, there
 are multiple definitions. One is accessibility in the sense of being
 able to be accessed, another is the ability to be found, and the
 ability of being easy to deal with. As stated in the About section of
 the site, I use accessibility to mean being able to be used
-*completely* by blind people. This carries with it the implication
+<em>completely</em> by blind people. This carries with it the implication
 that every single function, and all needed visual information, can be
 conveyed to a blind person in order for it to be accessible. This
-rules out the "good enough" approach that so many blind people accept
+rules out the “good enough” approach that so many blind people accept
 as the status quo. Luckily for blind people who would love to use KDE,
-there is [work being
-done](https://blogs.fsfe.org/gladhorn/2018/10/14/screen-reader-accessibility-for-the-plasma-desktop/)
+there is <a href="https://blogs.fsfe.org/gladhorn/2018/10/14/screen-reader-accessibility-for-the-plasma-desktop/">work being
+done</a>
 on this issue. Gnu, the project behind much of Linux, also has an
-[accessibility statement](https://www.gnu.org/accessibility/), which
+<a href="https://www.gnu.org/accessibility/">accessibility statement</a>, which
 does seem to be very out of date, as it references flash player and
 Silverlight, which are no longer in common use, and does not reference
 Apple’s iOS, Google’s Android, and other modern technologies which are
@@ -112,20 +112,20 @@ not open source, but which include assistive technologies. I encourage every adv
 themselves available for testing open source software and operating
 systems; user testing was mentioned by the KDE team as something blind
 people could do to help.
-Believe me, having an operating system which is a "joy to use" is a
-*dream* of mine.
+Believe me, having an operating system which is a “joy to use” is a
+<em>dream</em> of mine.</p>
 
-Gnome, and Mate, accessibility are okay, but they do not come close to
+<p>Gnome, and Mate, accessibility are okay, but they do not come close to
 the accessibility of Windows and Mac systems. For a good example, if
 you press Alt + F1 in Gnome, and probably Mate too, you may only hear
-"window." Advanced users will know to type something in Gnome, or use
+“window.” Advanced users will know to type something in Gnome, or use
 the Arrow Keys in Mate, but regular users should not have to learn to
 hunt around due to bad accessibility, and the fact that less
 technically inclined users use Linux is a testament to blind people’s
 ingenuity and ability to adapt, rather than the accessibility of the
-platform.
+platform.</p>
 
-Open source accessibility is so hit and miss because there are so many
+<p>Open source accessibility is so hit and miss because there are so many
 standards. There is the GTK framework for building graphical apps,
 which does have some accessibility support, but developers must label
 the items in their programs with text. There is the QT framework,
@@ -135,18 +135,17 @@ often is not great for accessibility. Also, much of the community has
 not heard of accessibility practices, do not know that blind people
 use computers, or think that we must use braille interfaces to
 interact with computers and digital devices. This is a failure on our
-part, as we do not "get out there" on the Internet enough. With the
-advent of an [accessible Reddit
-client](https://www.reddit.com/r/DystopiaForReddit/), this may begin
+part, as we do not “get out there” on the Internet enough. With the
+advent of an <a href="https://www.reddit.com/r/DystopiaForReddit/">accessible Reddit
+client</a>, this may begin
 to change. Further work must be done to give blind users an accessible
 Reddit interface on the web for users to use on computers, not
 iPhones. However, Github is very accessible, and there is nothing
-stopping one from submitting issues.
+stopping one from submitting issues.</p>
 
-Closed Source Accessibility
----------------------------
+<h2 id="closed-source-accessibility">Closed Source Accessibility</h2>
 
-"Okay but what about Windows? And Apple? You like Apple, right?"
+<p>“Okay but what about Windows? And Apple? You like Apple, right?”
 Basically, it’s hard to tell. Software doesn’t write itself, it is
 written, for now, by people. People can make mistakes, ignore
 guidelines, or simply not care about accessibility. However, those
@@ -155,7 +154,7 @@ accessibility standard. This means that companies can develop
 accessible software easily, and are held accountable by managers to
 uphold accessibility. But, even the best of accessible companies do
 not always do the right thing. Apple, for example, has created two
-services, Apple Arcade and Apple Research. Apple Arcade contains *no*
+services, Apple Arcade and Apple Research. Apple Arcade contains <em>no</em>
 games which a blind gamer can play without expending much more effort
 than a sighted gamer. Apple Research contains some questions with
 answer buttons which are not labeled, or cannot be activated. Does
@@ -165,9 +164,9 @@ health? Apple has also created Swift Playgrounds, an app for children
 to learn to code. This is accessible. But what about adults? Shouldn’t
 blind adults, who are usually technically inclined enough, be given a
 chance to learn to code? I’ll probably rant about this in a future
-article.
+article.</p>
 
-Microsoft has been on an accessibility journey for a few years now,
+<p>Microsoft has been on an accessibility journey for a few years now,
 but even they have a few problems. First, the voices in Windows 10 are
 poor for screen reading tasks. They pause way too long at the end of
 clauses and sentences, leading me, at least, to press Down Arrow to
@@ -186,9 +185,9 @@ advertise them, endorse them even, and it shows that, for Apple Arcade
 at least, video games are not something which they expect blind people
 to play. Microsoft is proving them wrong, with the
 release of Halo with screen reader usability in menus, and the
-possibility that the new Halo game will be accessible.
+possibility that the new Halo game will be accessible.</p>
 
-Another problem with Microsoft is that not all of their teams are
+<p>Another problem with Microsoft is that not all of their teams are
 onboard. Like Apple with Arcade and Research, Microsoft has the
 Rewards team. Their quizzes require one to move items around to
 reorder answers to get the quiz correct. This may be easy, and perhaps
@@ -206,50 +205,49 @@ huge win for them regarding accessibility. But, on that, we’ll have to
 wait and see how far Microsoft takes their commitment to
 accessibility. The more cynical side of me says that Microsoft will
 simply slap Android on a folding phone and release it, because why
-fight Apple.
+fight Apple.</p>
 
-Reporting Bugs
---------------
+<h2 id="reporting-bugs">Reporting Bugs</h2>
 
-So, what can we do to make accessibility better? Just about all open
+<p>So, what can we do to make accessibility better? Just about all open
 source software, including the stuff making up this blog, is hosted on
 Github. Just about all companies, of closed source software, claim to
 want your feedback. So, I recommend giving them any feedback you have.
 I know that giving feedback to Apple is like throwing $100 bills into
 the ocean, giving your valuable time to something which may offer no
-results, and just gives you the robotic "thanks" message. I know that
+results, and just gives you the robotic “thanks” message. I know that
 sometimes talking to Microsoft’s accessibility team may seem
 unproductive, because they lead you from Twitter to one of a number of
 feedback locations. I know that feedback to open source software
 projects may take a lot of time and explaining and promoting
 accessibility to a community which has never considered it before, but
-it all may help.
+it all may help.</p>
 
-For a great, and successful, Github issue regarding accessibility, see
-[this issue on accessibility of
-Retroarch](https://github.com/libretro/RetroArch/issues/9661). You can
+<p>For a great, and successful, Github issue regarding accessibility, see
+<a href="https://github.com/libretro/RetroArch/issues/9661">this issue on accessibility of
+Retroarch</a>. You can
 see that I approached the Retroarch team respectfully, with knowledge
 of basic accessibility and computer terminology. Note that I gave what
 should happen, what is happening, and what can be done to fix the
 problem. As the saying goes, if you do not contribute to a solution to
 a problem, you are a part of the problem. Blind people will need to
 remember to give solutions, not just whine about something not working
-and can’t play Poke A Man like everyone else.
+and can’t play Poke A Man like everyone else.</p>
 
-Also, share links to your feedback with other blind people who can
+<p>Also, share links to your feedback with other blind people who can
 vote, thumb up, or comment on it. Remember, if you do comment, please
 remember that feedback does not net instant results. I’m still waiting
-on [Webcamoid to have an accessible
-interface](https://github.com/webcamoid/webcamoid/issues/211), and
-[Adding Active Accessibility into Games for
-Retroarch](https://github.com/libretro/RetroArch/issues/9920), and
-[This Delta
-issue](https://github.com/rileytestut/DeltaCore/issues/13). But, at
-least I’ll know when something changes, and I could even [Pay for
-features to be implemented](https://www.bountysource.com).
+on <a href="https://github.com/webcamoid/webcamoid/issues/211">Webcamoid to have an accessible
+interface</a>, and
+<a href="https://github.com/libretro/RetroArch/issues/9920">Adding Active Accessibility into Games for
+Retroarch</a>, and
+<a href="https://github.com/rileytestut/DeltaCore/issues/13">This Delta
+issue</a>. But, at
+least I’ll know when something changes, and I could even <a href="https://www.bountysource.com">Pay for
+features to be implemented</a>.</p>
 
-This is opposed to the closed source model, where feedback is "passed
-on to the team," or you are thanked, by your iPhone, for your
+<p>This is opposed to the closed source model, where feedback is “passed
+on to the team,” or you are thanked, by your iPhone, for your
 feedback, but do not hear anything back from developers, and you most
 definitely can not pay for specific features to be worked on, or
 donate to projects that you feel deserve it. You must hope and have
@@ -259,11 +257,11 @@ using an iPhone, Apple would not miss many lost sales, compared to the
 billions of sighted users. However, the engineers who work on iOS
 accessibility are people too, with deadlines, lives, and feelings, and
 we should also respect that they are probably tightly restricted in
-answering feedback, fixing bugs, and creating new, exciting features.
+answering feedback, fixing bugs, and creating new, exciting features.</p>
 
-------
+<hr />
 
-As for me, I will continue to support open source software. I’ll keep
+<p>As for me, I will continue to support open source software. I’ll keep
 using this mac and iPhone because they work the best for me and what I
 do for work and writing. But, believe me, when something better comes
 along, I’ll jump ship quickly. As blind people, I feel, we cannot
@@ -280,13 +278,16 @@ press and pressure Apple or Microsoft. If we find an accessibility
 bug, do we have enough clout, or unity, to pressure these companies?
 Writing feedback, testing software, trying new things, writing guides
 and fixing documentation, or, if able, translating software into other
-languages are all things that *any* blind person can do. I’m not
+languages are all things that <em>any</em> blind person can do. I’m not
 saying that I’m perfect at any of this. I just think that we as a
 community can grow tremendously if we strike out from our comfortable
 Windows PC’s, Microsoft Word, audio games, TeamTalk, and old speech
-synthesizers.
+synthesizers.</p>
 
-I’ll give some projects you could try out and give feedback on:
+<p>I’ll give some projects you could try out and give feedback on:</p>
 
-- [Riot IM, for text and voice chatting in groups, like TeamTalk](https://marcozehe.de/2019/12/20/how-to-get-around-matrix-and-riot-with-a-screen-reader/)
-- 
+<ul>
+  <li><a href="https://marcozehe.de/2019/12/20/how-to-get-around-matrix-and-riot-with-a-screen-reader/">Riot IM, for text and voice chatting in groups, like TeamTalk</a></li>
+  <li></li>
+</ul>
+:ET

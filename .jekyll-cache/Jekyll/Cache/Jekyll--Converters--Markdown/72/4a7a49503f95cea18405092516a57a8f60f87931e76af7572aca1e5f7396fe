@@ -1,9 +1,36 @@
-I"!{<p>This article will explore Apple’s consistent attention to accessibility,
+I"{�<p>This article will explore Apple’s consistent attention to accessibility,
 and how other tech companies with commitments to accessibility, like
 Microsoft and Google, compare to Apple in their accessibility efforts.
 It also shows where these companies can improve their consistency, and
 that no company is perfect at being an Assistive Technology provider
 yet.</p>
+
+<h1 class="no_toc" id="table-of-contents">Table of Contents</h1>
+<ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#the-trend-of-accessibility" id="markdown-toc-the-trend-of-accessibility">The trend of accessibility</a></li>
+  <li><a href="#apple" id="markdown-toc-apple">Apple</a>    <ul>
+      <li><a href="#ios" id="markdown-toc-ios">iOS</a></li>
+      <li><a href="#macos" id="markdown-toc-macos">MacOS</a></li>
+      <li><a href="#the-future-of-apple-accessibility" id="markdown-toc-the-future-of-apple-accessibility">The future of Apple accessibility</a></li>
+    </ul>
+  </li>
+  <li><a href="#apples-competitors" id="markdown-toc-apples-competitors">Apple’s competitors</a>    <ul>
+      <li><a href="#google" id="markdown-toc-google">Google</a>        <ul>
+          <li><a href="#android" id="markdown-toc-android">Android</a></li>
+          <li><a href="#chrome-os" id="markdown-toc-chrome-os">Chrome OS</a></li>
+        </ul>
+      </li>
+      <li><a href="#the-future-of-google-accessibility" id="markdown-toc-the-future-of-google-accessibility">The future of Google accessibility</a></li>
+      <li><a href="#microsoft" id="markdown-toc-microsoft">Microsoft</a>        <ul>
+          <li><a href="#windows" id="markdown-toc-windows">Windows</a></li>
+        </ul>
+      </li>
+      <li><a href="#the-future-of-microsoft-accessibility" id="markdown-toc-the-future-of-microsoft-accessibility">The future of Microsoft accessibility</a></li>
+    </ul>
+  </li>
+  <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
+</ul>
 
 <h1 id="introduction">Introduction</h1>
 

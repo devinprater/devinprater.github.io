@@ -11,6 +11,11 @@ would this effect your life, and the lives of developers? In this
 article, I will explain what open source is, what it is currently used
 for, my experiences with it, and how you can make it better.
 
+# Table of Contents
+{:.no_toc}
+* TOC
+{:toc}
+
 What is Open Source?
 ====================
 

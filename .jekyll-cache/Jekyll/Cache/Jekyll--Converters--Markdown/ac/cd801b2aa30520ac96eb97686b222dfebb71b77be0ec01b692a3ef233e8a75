@@ -1,4 +1,4 @@
-I"Ü#<p>Text formatting is used in many areas, from books, newspapers,
+I"Â'<p>Text formatting is used in many areas, from books, newspapers,
 articles, websites, and documents. Paragraphs, headings, lists,
 italics, bold, and many other characteristics are used to emphasize,
 denote chapters, and mark changes in scenes or actions. Sighted users
@@ -11,6 +11,21 @@ use it or dismiss it. Like all of my other articles, this one will
 contain opinions. This area is one that I feel should be discussed,
 however, because it is an area of inclusion that I feel blind people
 have ignored, and sighted people havenâ€™t generally approached.</p>
+
+<h1 id="table-of-contents">Table of Contents</h1>
+<ul id="markdown-toc">
+  <li><a href="#table-of-contents" id="markdown-toc-table-of-contents">Table of Contents</a></li>
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#how-blind-people-format-text" id="markdown-toc-how-blind-people-format-text">How blind people format text</a>    <ul>
+      <li><a href="#visual" id="markdown-toc-visual">Visual</a></li>
+      <li><a href="#braille" id="markdown-toc-braille">Braille</a></li>
+      <li><a href="#text-markup" id="markdown-toc-text-markup">Text Markup</a></li>
+    </ul>
+  </li>
+  <li><a href="#why-blind-people-dismiss-formatting" id="markdown-toc-why-blind-people-dismiss-formatting">Why blind people dismiss formatting</a></li>
+  <li><a href="#how-formatting-can-be-useful" id="markdown-toc-how-formatting-can-be-useful">How formatting can be useful</a></li>
+  <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
+</ul>
 
 <h1 id="introduction">Introduction</h1>
 

@@ -1,4 +1,4 @@
-I"A<p>In this post, I’ll detail my experiences of advocating for
+I"SD<p>In this post, I’ll detail my experiences of advocating for
 accessibility in open source software, why it is important, and how
 others can help. I’ve not been doing it for long, but at least now,
 I’ve done a bit. I’ll also touch upon why I think open source
@@ -8,6 +8,18 @@ grants. On the other hand, there are things which closed source
 somewhat grants, but which has faltered slightly in recent days. I
 will attempt to denote what is fact and what is opinion, this goes for
 any post of a commentary of informative nature.</p>
+
+<h1 id="table-of-contents-no_toc">Table of Contents {no_toc}</h1>
+<ul id="markdown-toc">
+  <li><a href="#table-of-contents-no_toc" id="markdown-toc-table-of-contents-no_toc">Table of Contents {no_toc}</a>    <ul>
+      <li><a href="#the-appeal-of-open-source" id="markdown-toc-the-appeal-of-open-source">The Appeal of Open Source</a></li>
+      <li><a href="#the-appeal-of-closed-source" id="markdown-toc-the-appeal-of-closed-source">The Appeal of Closed Source</a></li>
+      <li><a href="#open-source-accessibility" id="markdown-toc-open-source-accessibility">Open Source Accessibility</a></li>
+      <li><a href="#closed-source-accessibility" id="markdown-toc-closed-source-accessibility">Closed Source Accessibility</a></li>
+      <li><a href="#reporting-bugs" id="markdown-toc-reporting-bugs">Reporting Bugs</a></li>
+    </ul>
+  </li>
+</ul>
 
 <h2 id="the-appeal-of-open-source">The Appeal of Open Source</h2>
 
