@@ -19,6 +19,11 @@ effects the hardware and software regarding accessibility matters.
 These matters may effect some in the general population, but people
 with disabilities are effected much more acutely.
 
+# Table of Contents
+{:.no_toc}
+* TOC
+{:toc}
+
 # Hardware
 
 Apple’s hardware has usually been very well built. Reviewers often
