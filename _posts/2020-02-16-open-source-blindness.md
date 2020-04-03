@@ -43,8 +43,10 @@ community include [NVDA](https://www.nvaccess.org/about-nvda/),
 Reader](https://wiki.gnome.org/Projects/Orca), [Braille
 Blaster](https://brailleblaster.org), [Liblouis](http://liblouis.org),
 and [Emacspeak](https://github.com/tvraman/emacspeak). Examples of
-closed source include JAWS for Windows, Narrator, VoiceOver, the latest
-version of TalkBack, iOS, Windows, and plenty of apps you may have on
+closed source include [JAWS for Windows](https://www.freedomscientific.com/products/software/jaws/), [Narrator](https://support.microsoft.com/en-us/help/17173/windows-10-hear-text-read-aloud), [VoiceOver](https://www.apple.com/accessibility/iphone/vision/), the latest
+version of
+[TalkBack](https://support.google.com/accessibility/android/answer/6283677?hl=en),
+[Duxberry Braille translator](https://duxburysystems.com), iOS, Windows, and plenty of apps you may have on
 your iPhone or Android phone.
 
 Interestingly, some projects are a mixture of both. JAWS incorporates
@@ -131,22 +133,21 @@ is clear in the area of Audacious settings where you choose sound
 effects.
 
 Even so, Linux has such an appeal to me. I have tried Fedora Linux,
-Slint, Ubuntu, Debian, Arch, and found that there is always something
+[Slint](https://slint.fr/wiki/doku.php?id=:en:start), Ubuntu, Debian, Arch, and found that there is always something
 missing. Accessibility isn't that good in the graphical interface, and
 much still takes a lot of configuring and asking the community. And I
 really hate asking for help.
 
-Recently, the Mate team, who works on the [Mate
-desktop](https://mate-desktop.org), has released a version with
-accessibility fixes. This is important, as many companies, like app
-developers, Apple, and Google, rarely share that there are accessibility
-fixes in minor updates, and don't even share all the new features in
-major releases. This gives me some hope that the open source community
-at large just needs more blind people telling them about our needs. Then
-again, this is probably just another of my excuses to bash my head
-against the hardened wall of Linux, yet again. Plus, everything in the
-open source moves slowly, and this is doubly true for open source
-assistive technology.
+Recently, the [Mate desktop](https://mate-desktop.org) team has
+released a version with accessibility fixes. This is important, as
+many companies, like app developers, Apple, and Google, rarely share
+that there are accessibility fixes in minor updates, and don't even
+share all the new features in major releases. This gives me some hope
+that the open source community at large just needs more blind people
+telling them about our needs. Then again, this is probably just
+another of my excuses to bash my head against the hardened wall of
+Linux, yet again. Plus, everything in the open source moves slowly,
+and this is doubly true for open source assistive technology.
 
 There are, however, blind people who use Linux, just as there are some
 in the blind community who use Android. In fact, there is an entire
@@ -211,7 +212,7 @@ Github, as stated earlier, is a hub of open source projects. One great
 thing about the service is that anyone can contribute. Just make an
 account, and you're ready to help.
 
-If you can program, you can [collaborate by modifiying
+If you can program, you can [collaborate by modifying
 code](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 If you try the software and find accessibility problems, you can tell
 developers about [bugs or
