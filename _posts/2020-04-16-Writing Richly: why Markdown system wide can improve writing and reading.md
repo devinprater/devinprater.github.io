@@ -2,6 +2,7 @@
 layout: post
 title:  Writing Richly: why Markdown system wide can improve writing and reading
 date:   2020-04-16 01:47:34 -0500
+categories: blindness, apple, text
 ---
 
 Whenever you read a text message, forum post, Tweet, or Facebook
@@ -21,6 +22,11 @@ interfaces.
 So, in this article, I will discuss the importance of rich text, how
 Markdown could empower people with disabilities, and how it could work
 system-wide throughout all computers, even the ones in our pockets.
+
+# Table of Contents
+{:.no_toc}
+* TOC
+{:toc}
 
 ## What’s this rich text and who needs all that?
 
