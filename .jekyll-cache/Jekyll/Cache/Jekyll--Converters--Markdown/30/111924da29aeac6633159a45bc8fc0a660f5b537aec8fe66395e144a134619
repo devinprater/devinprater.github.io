@@ -1,12 +1,11 @@
-I"�9<p>What if all of your software were free, like NVDA? What if the only
+I";<p>What if all of your software were free, like NVDA? What if the only
 thing asked of you by software makers was to donate or contribute? How
 would this effect your life, and the lives of developers? In this
 article, I will explain what open source is, what it is currently used
 for, my experiences with it, and how you can make it better.</p>
 
-<h1 id="table-of-contents">Table of Contents</h1>
+<h1 class="no_toc" id="table-of-contents">Table of Contents</h1>
 <ul id="markdown-toc">
-  <li><a href="#table-of-contents" id="markdown-toc-table-of-contents">Table of Contents</a></li>
   <li><a href="#what-is-open-source" id="markdown-toc-what-is-open-source">What is Open Source?</a></li>
   <li><a href="#what-is-open-source-used-for" id="markdown-toc-what-is-open-source-used-for">What is Open Source used for?</a></li>
   <li><a href="#my-experiences-with-open-source" id="markdown-toc-my-experiences-with-open-source">My experiences with Open Source</a>    <ul>
@@ -43,8 +42,10 @@ community include <a href="https://www.nvaccess.org/about-nvda/">NVDA</a>,
 Reader</a>, <a href="https://brailleblaster.org">Braille
 Blaster</a>, <a href="http://liblouis.org">Liblouis</a>,
 and <a href="https://github.com/tvraman/emacspeak">Emacspeak</a>. Examples of
-closed source include JAWS for Windows, Narrator, VoiceOver, the latest
-version of TalkBack, iOS, Windows, and plenty of apps you may have on
+closed source include <a href="https://www.freedomscientific.com/products/software/jaws/">JAWS for Windows</a>, <a href="https://support.microsoft.com/en-us/help/17173/windows-10-hear-text-read-aloud">Narrator</a>, <a href="https://www.apple.com/accessibility/iphone/vision/">VoiceOver</a>, the latest
+version of
+<a href="https://support.google.com/accessibility/android/answer/6283677?hl=en">TalkBack</a>,
+<a href="https://duxburysystems.com">Duxberry Braille translator</a>, iOS, Windows, and plenty of apps you may have on
 your iPhone or Android phone.</p>
 
 <p>Interestingly, some projects are a mixture of both. JAWS incorporates
@@ -129,22 +130,21 @@ is clear in the area of Audacious settings where you choose sound
 effects.</p>
 
 <p>Even so, Linux has such an appeal to me. I have tried Fedora Linux,
-Slint, Ubuntu, Debian, Arch, and found that there is always something
+<a href="https://slint.fr/wiki/doku.php?id=:en:start">Slint</a>, Ubuntu, Debian, Arch, and found that there is always something
 missing. Accessibility isn’t that good in the graphical interface, and
 much still takes a lot of configuring and asking the community. And I
 really hate asking for help.</p>
 
-<p>Recently, the Mate team, who works on the <a href="https://mate-desktop.org">Mate
-desktop</a>, has released a version with
-accessibility fixes. This is important, as many companies, like app
-developers, Apple, and Google, rarely share that there are accessibility
-fixes in minor updates, and don’t even share all the new features in
-major releases. This gives me some hope that the open source community
-at large just needs more blind people telling them about our needs. Then
-again, this is probably just another of my excuses to bash my head
-against the hardened wall of Linux, yet again. Plus, everything in the
-open source moves slowly, and this is doubly true for open source
-assistive technology.</p>
+<p>Recently, the <a href="https://mate-desktop.org">Mate desktop</a> team has
+released a version with accessibility fixes. This is important, as
+many companies, like app developers, Apple, and Google, rarely share
+that there are accessibility fixes in minor updates, and don’t even
+share all the new features in major releases. This gives me some hope
+that the open source community at large just needs more blind people
+telling them about our needs. Then again, this is probably just
+another of my excuses to bash my head against the hardened wall of
+Linux, yet again. Plus, everything in the open source moves slowly,
+and this is doubly true for open source assistive technology.</p>
 
 <p>There are, however, blind people who use Linux, just as there are some
 in the blind community who use Android. In fact, there is an entire
@@ -207,7 +207,7 @@ a great foundation in accessibility makes all the difference for users.</p>
 thing about the service is that anyone can contribute. Just make an
 account, and you’re ready to help.</p>
 
-<p>If you can program, you can <a href="https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request">collaborate by modifiying
+<p>If you can program, you can <a href="https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request">collaborate by modifying
 code</a>.
 If you try the software and find accessibility problems, you can tell
 developers about <a href="https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue">bugs or
