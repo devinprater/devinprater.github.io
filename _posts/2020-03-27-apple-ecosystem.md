@@ -2,7 +2,7 @@
 layout: post
 title: Apple’s Ecosystem and Accessibility
 date:   2020-03-27 16:40:55 -0500
-categories: apple, blind, tech
+categories: [apple, blindness, tech]
 ---
 
 Earlier this year, my Airpods Pro began making a clicking sound, when

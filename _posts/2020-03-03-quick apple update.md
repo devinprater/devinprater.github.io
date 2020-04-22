@@ -2,7 +2,7 @@
 layout: post
 title:  quick apple update
 date:   2020-03-03 03:43:32 -0600
-categories: apple, blind, tech
+categories: [apple, blindness, tech]
 ---
 
 In a [previous blog post]({% link

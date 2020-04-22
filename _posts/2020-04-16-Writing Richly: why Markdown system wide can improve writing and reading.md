@@ -2,7 +2,7 @@
 layout: post
 title- Writing Richly: why Markdown system wide can improve writing and reading
 date:   2020-04-16 01:47:34 -0500
-categories: blindness, apple, text
+categories: [blindness, apple, text]
 ---
 Whenever you read a text message, forum post, Tweet, or Facebook
 status, have you ever seen some one surround a word with stars, like

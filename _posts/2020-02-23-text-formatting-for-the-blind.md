@@ -2,7 +2,7 @@
 layout: post
 title:  text formatting for the blind
 date:   2020-02-23 13:46:56 -0600
-categories: tech, blindness
+categories: [tech, blindness, text]
 ---
 
 Text formatting is used in many areas, from books, newspapers,

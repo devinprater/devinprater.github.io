@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
@@ -16,3 +17,4 @@ layout: default
     </article>
   {% endfor %}
 </div>
+
