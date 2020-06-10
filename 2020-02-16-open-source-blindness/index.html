@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="generator" content="Hugo 0.72.0" />
+  <link rel="canonical" href="https://devinprater.github.io/2020-02-16-open-source-blindness/">
+
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="https://devinprater.github.io/css/prism.css" media="none" onload="this.media='all';">
+
+  
+  
+  <link rel="stylesheet" type="text/css" href="https://devinprater.github.io/css/styles.css">
+
+  
+
+  <style id="inverter" media="none">
+    .intro-and-nav, .main-and-footer { filter: invert(100%) }
+    * { background-color: inherit }
+    img:not([src*=".svg"]), .colors, iframe, .demo-container { filter: invert(100%) }
+  </style>
+
+  
+  
+  <title>open source blindness | Devin Prater’s Site</title>
+</head>
+
+  <body>
+    <a href="#main">skip to content</a>
+    <svg style="display: none">
+  <symbol id="bookmark" viewBox="0 0 40 50">
+   <g transform="translate(2266 3206.2)">
+    <path style="stroke:currentColor;stroke-width:3.2637;fill:none" d="m-2262.2-3203.4-.2331 42.195 16.319-16.318 16.318 16.318.2331-42.428z"/>
+   </g>
+  </symbol>
+
+  <symbol id="w3c" viewBox="0 0 127.09899 67.763">
+   <text font-size="83" style="font-size:83px;font-family:Trebuchet;letter-spacing:-12;fill-opacity:0" letter-spacing="-12" y="67.609352" x="-26.782778">W3C</text>
+   <text font-size="83" style="font-size:83px;font-weight:bold;font-family:Trebuchet;fill-opacity:0" y="67.609352" x="153.21722" font-weight="bold">SVG</text>
+   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m33.695.377 12.062 41.016 12.067-41.016h8.731l-19.968 67.386h-.831l-12.48-41.759-12.479 41.759h-.832l-19.965-67.386h8.736l12.061 41.016 8.154-27.618-3.993-13.397h8.737z"/>
+   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m91.355 46.132c0 6.104-1.624 11.234-4.862 15.394-3.248 4.158-7.45 6.237-12.607 6.237-3.882 0-7.263-1.238-10.148-3.702-2.885-2.47-5.02-5.812-6.406-10.022l6.82-2.829c1.001 2.552 2.317 4.562 3.953 6.028 1.636 1.469 3.56 2.207 5.781 2.207 2.329 0 4.3-1.306 5.909-3.911 1.609-2.606 2.411-5.738 2.411-9.401 0-4.049-.861-7.179-2.582-9.399-1.995-2.604-5.129-3.912-9.397-3.912h-3.327v-3.991l11.646-20.133h-14.062l-3.911 6.655h-2.493v-14.976h32.441v4.075l-12.31 21.217c4.324 1.385 7.596 3.911 9.815 7.571 2.22 3.659 3.329 7.953 3.329 12.892z"/>
+   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m125.21 0 1.414 8.6-5.008 9.583s-1.924-4.064-5.117-6.314c-2.693-1.899-4.447-2.309-7.186-1.746-3.527.73-7.516 4.938-9.258 10.13-2.084 6.21-2.104 9.218-2.178 11.978-.115 4.428.58 7.043.58 7.043s-3.04-5.626-3.011-13.866c.018-5.882.947-11.218 3.666-16.479 2.404-4.627 5.954-7.404 9.114-7.728 3.264-.343 5.848 1.229 7.841 2.938 2.089 1.788 4.213 5.698 4.213 5.698l4.94-9.837z"/>
+   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m125.82 48.674s-2.208 3.957-3.589 5.48c-1.379 1.524-3.849 4.209-6.896 5.555-3.049 1.343-4.646 1.598-7.661 1.306-3.01-.29-5.807-2.032-6.786-2.764-.979-.722-3.486-2.864-4.897-4.854-1.42-2-3.634-5.995-3.634-5.995s1.233 4.001 2.007 5.699c.442.977 1.81 3.965 3.749 6.572 1.805 2.425 5.315 6.604 10.652 7.545 5.336.945 9.002-1.449 9.907-2.031.907-.578 2.819-2.178 4.032-3.475 1.264-1.351 2.459-3.079 3.116-4.108.487-.758 1.276-2.286 1.276-2.286l-1.276-6.644z"/>
+  </symbol>
+
+  <symbol id="tag" viewBox="0 0 177.16535 177.16535">
+    <g transform="translate(0 -875.2)">
+     <path style="fill-rule:evenodd;stroke-width:0;fill:currentColor" d="m159.9 894.3-68.79 8.5872-75.42 77.336 61.931 60.397 75.429-76.565 6.8495-69.755zm-31.412 31.835a10.813 10.813 0 0 1 1.8443 2.247 10.813 10.813 0 0 1 -3.5174 14.872l-.0445.0275a10.813 10.813 0 0 1 -14.86 -3.5714 10.813 10.813 0 0 1 3.5563 -14.863 10.813 10.813 0 0 1 13.022 1.2884z"/>
+    </g>
+  </symbol>
+
+  <symbol id="balloon" viewBox="0 0 141.73228 177.16535">
+   <g transform="translate(0 -875.2)">
+    <g>
+     <path style="fill:currentColor" d="m68.156 882.83-.88753 1.4269c-4.9564 7.9666-6.3764 17.321-5.6731 37.378.36584 10.437 1.1246 23.51 1.6874 29.062.38895 3.8372 3.8278 32.454 4.6105 38.459 4.6694-.24176 9.2946.2879 14.377 1.481 1.2359-3.2937 5.2496-13.088 8.886-21.623 6.249-14.668 8.4128-21.264 10.253-31.252 1.2464-6.7626 1.6341-12.156 1.4204-19.764-.36325-12.93-2.1234-19.487-6.9377-25.843-2.0833-2.7507-6.9865-7.6112-7.9127-7.8436-.79716-.20019-6.6946-1.0922-6.7755-1.0248-.02213.0182-5.0006-.41858-7.5248-.22808l-2.149-.22808h-3.3738z"/>
+     <path style="fill:currentColor" d="m61.915 883.28-3.2484.4497c-1.7863.24724-3.5182.53481-3.8494.63994-2.4751.33811-4.7267.86957-6.7777 1.5696-.28598 0-1.0254.20146-2.3695.58589-5.0418 1.4418-6.6374 2.2604-8.2567 4.2364-6.281 7.6657-11.457 18.43-12.932 26.891-1.4667 8.4111.71353 22.583 5.0764 32.996 3.8064 9.0852 13.569 25.149 22.801 37.517 1.3741 1.841 2.1708 2.9286 2.4712 3.5792 3.5437-1.1699 6.8496-1.9336 10.082-2.3263-1.3569-5.7831-4.6968-21.86-6.8361-33.002-.92884-4.8368-2.4692-14.322-3.2452-19.991-.68557-5.0083-.77707-6.9534-.74159-15.791.04316-10.803.41822-16.162 1.5026-21.503 1.4593-5.9026 3.3494-11.077 6.3247-15.852z"/>
+     <path style="fill:currentColor" d="m94.499 885.78c-.10214-.0109-.13691 0-.0907.0409.16033.13489 1.329 1.0675 2.5976 2.0723 6.7003 5.307 11.273 14.568 12.658 25.638.52519 4.1949.24765 14.361-.5059 18.523-2.4775 13.684-9.7807 32.345-20.944 53.519l-3.0559 5.7971c2.8082.76579 5.7915 1.727 8.9926 2.8441 11.562-11.691 18.349-19.678 24.129-28.394 7.8992-11.913 11.132-20.234 12.24-31.518.98442-10.02-1.5579-20.876-6.7799-28.959-.2758-.4269-.57803-.86856-.89617-1.3166-3.247-6.13-9.752-12.053-21.264-16.131-2.3687-.86369-6.3657-2.0433-7.0802-2.1166z"/>
+     <path style="fill:currentColor" d="m32.52 892.22c-.20090-.13016-1.4606.81389-3.9132 2.7457-11.486 9.0476-17.632 24.186-16.078 39.61.79699 7.9138 2.4066 13.505 5.9184 20.562 5.8577 11.77 14.749 23.219 30.087 38.74.05838.059.12188.1244.18052.1838 1.3166-.5556 2.5965-1.0618 3.8429-1.5199-.66408-.32448-1.4608-1.3297-3.8116-4.4602-5.0951-6.785-8.7512-11.962-13.051-18.486-5.1379-7.7948-5.0097-7.5894-8.0586-13.054-6.2097-11.13-8.2674-17.725-8.6014-27.563-.21552-6.3494.13041-9.2733 1.775-14.987 2.1832-7.5849 3.9273-10.986 9.2693-18.07 1.7839-2.3656 2.6418-3.57 2.4409-3.7003z"/>
+     <path style="fill:currentColor" d="m69.133 992.37c-6.2405.0309-12.635.76718-19.554 2.5706 4.6956 4.7759 9.935 10.258 12.05 12.625l4.1272 4.6202h11.493l3.964-4.4516c2.0962-2.3541 7.4804-7.9845 12.201-12.768-8.378-1.4975-16.207-2.6353-24.281-2.5955z"/>
+     <rect style="stroke-width:0;fill:currentColor" ry="2.0328" height="27.746" width="22.766" y="1017.7" x="60.201"/>
+    </g>
+   </g>
+  </symbol>
+
+  <symbol id="info" viewBox="0 0 41.667 41.667">
+   <g transform="translate(-37.035 -1004.6)">
+    <path style="stroke-linejoin:round;stroke:currentColor;stroke-linecap:round;stroke-width:3.728;fill:none" d="m76.25 1030.2a18.968 18.968 0 0 1 -23.037 13.709 18.968 18.968 0 0 1 -13.738 -23.019 18.968 18.968 0 0 1 23.001 -13.768 18.968 18.968 0 0 1 13.798 22.984"/>
+    <g transform="matrix(1.1146 0 0 1.1146 -26.276 -124.92)">
+     <path style="stroke:currentColor;stroke-linecap:round;stroke-width:3.728;fill:none" d="m75.491 1039.5v-8.7472"/>
+     <path style="stroke-width:0;fill:currentColor" transform="scale(-1)" d="m-73.193-1024.5a2.3719 2.3719 0 0 1 -2.8807 1.7142 2.3719 2.3719 0 0 1 -1.718 -2.8785 2.3719 2.3719 0 0 1 2.8763 -1.7217 2.3719 2.3719 0 0 1 1.7254 2.8741"/>
+    </g>
+   </g>
+  </symbol>
+
+  <symbol id="warning" viewBox="0 0 48.430474 41.646302">
+    <g transform="translate(-1.1273 -1010.2)">
+     <path style="stroke-linejoin:round;stroke:currentColor;stroke-linecap:round;stroke-width:4.151;fill:none" d="m25.343 1012.3-22.14 37.496h44.28z"/>
+     <path style="stroke:currentColor;stroke-linecap:round;stroke-width:4.1512;fill:none" d="m25.54 1027.7v8.7472"/>
+     <path style="stroke-width:0;fill:currentColor" d="m27.839 1042.8a2.3719 2.3719 0 0 1 -2.8807 1.7143 2.3719 2.3719 0 0 1 -1.718 -2.8785 2.3719 2.3719 0 0 1 2.8763 -1.7217 2.3719 2.3719 0 0 1 1.7254 2.8741"/>
+    </g>
+  </symbol>
+
+  <symbol id="menu" viewBox="0 0 50 50">
+     <rect style="stroke-width:0;fill:currentColor" height="10" width="50" y="0" x="0"/>
+     <rect style="stroke-width:0;fill:currentColor" height="10" width="50" y="20" x="0"/>
+     <rect style="stroke-width:0;fill:currentColor" height="10" width="50" y="40" x="0"/>
+   </symbol>
+
+   <symbol id="link" viewBox="0 0 50 50">
+    <g transform="translate(0 -1002.4)">
+     <g transform="matrix(.095670 0 0 .095670 2.3233 1004.9)">
+      <g>
+       <path style="stroke-width:0;fill:currentColor" d="m452.84 192.9-128.65 128.65c-35.535 35.54-93.108 35.54-128.65 0l-42.881-42.886 42.881-42.876 42.884 42.876c11.845 11.822 31.064 11.846 42.886 0l128.64-128.64c11.816-11.831 11.816-31.066 0-42.9l-42.881-42.881c-11.822-11.814-31.064-11.814-42.887 0l-45.928 45.936c-21.292-12.531-45.491-17.905-69.449-16.291l72.501-72.526c35.535-35.521 93.136-35.521 128.64 0l42.886 42.881c35.535 35.523 35.535 93.141-.001 128.66zm-254.28 168.51-45.903 45.9c-11.845 11.846-31.064 11.817-42.881 0l-42.884-42.881c-11.845-11.821-11.845-31.041 0-42.886l128.65-128.65c11.819-11.814 31.069-11.814 42.884 0l42.886 42.886 42.876-42.886-42.876-42.881c-35.54-35.521-93.113-35.521-128.65 0l-128.65 128.64c-35.538 35.545-35.538 93.146 0 128.65l42.883 42.882c35.51 35.54 93.11 35.54 128.65 0l72.496-72.499c-23.956 1.597-48.092-3.784-69.474-16.283z"/>
+      </g>
+     </g>
+    </g>
+  </symbol>
+
+  <symbol id="doc" viewBox="0 0 35 45">
+   <g transform="translate(-147.53 -539.83)">
+    <path style="stroke:currentColor;stroke-width:2.4501;fill:none" d="m149.38 542.67v39.194h31.354v-39.194z"/>
+    <g style="stroke-width:25" transform="matrix(.098003 0 0 .098003 133.69 525.96)">
+     <path d="m220 252.36h200" style="stroke:currentColor;stroke-width:25;fill:none"/>
+     <path style="stroke:currentColor;stroke-width:25;fill:none" d="m220 409.95h200"/>
+     <path d="m220 488.74h200" style="stroke:currentColor;stroke-width:25;fill:none"/>
+     <path d="m220 331.15h200" style="stroke:currentColor;stroke-width:25;fill:none"/>
+    </g>
+   </g>
+ </symbol>
+
+ <symbol id="tick" viewBox="0 0 177.16535 177.16535">
+  <g transform="translate(0 -875.2)">
+   <rect style="stroke-width:0;fill:currentColor" transform="rotate(30)" height="155" width="40" y="702.99" x="556.82"/>
+   <rect style="stroke-width:0;fill:currentColor" transform="rotate(30)" height="40" width="90.404" y="817.99" x="506.42"/>
+  </g>
+ </symbol>
+</svg>
+
+    <div class="wrapper">
+      <header class="intro-and-nav" role="banner">
+  <div>
+    <div class="intro">
+      <a class="logo" href="/" aria-label="Devin Prater’s Site home page">
+        <img src="https://devinprater.github.io/images/logo.svg" alt="">
+      </a>
+      <p class="library-desc">
+        
+          Devin Prater’s blog and site.
+        
+      </p>
+    </div>
+    <nav id="patterns-nav" class="patterns" role="navigation">
+  <h2 class="vh">Main navigation</h2>
+  <button id="menu-button" aria-expanded="false">
+    <svg viewBox="0 0 50 50" aria-hidden="true" focusable="false">
+      <use xlink:href="#menu"></use>
+    </svg>
+    Menu
+  </button>
+  
+  <ul id="patterns-list">
+  
+    <li class="pattern">
+      
+      
+      
+      
+      <a href="/" >
+        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
+          <use xlink:href="#bookmark"></use>
+        </svg>
+        <span class="text">Home</span>
+      </a>
+    </li>
+  
+    <li class="pattern">
+      
+      
+      
+      
+      <a href="/post/" aria-current="page">
+        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
+          <use xlink:href="#bookmark"></use>
+        </svg>
+        <span class="text">Blog</span>
+      </a>
+    </li>
+  
+    <li class="pattern">
+      
+      
+      
+      
+      <a href="/tags/" >
+        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
+          <use xlink:href="#bookmark"></use>
+        </svg>
+        <span class="text">Tags</span>
+      </a>
+    </li>
+  
+    <li class="pattern">
+      
+      
+      
+      
+      <a href="/about/" >
+        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
+          <use xlink:href="#bookmark"></use>
+        </svg>
+        <span class="text">About</span>
+      </a>
+    </li>
+  
+    <li class="pattern">
+      
+      
+      
+      
+      <a href="/index.xml" >
+        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
+          <use xlink:href="#bookmark"></use>
+        </svg>
+        <span class="text">RSS</span>
+      </a>
+    </li>
+  
+  </ul>
+</nav>
+  </div>
+</header>
+      <div class="main-and-footer">
+        <div>
+          
+  <main id="main">
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      open source blindness
+    </h1>
+
+    <div class="date">
+      
+      
+      <strong aria-hidden="true">Publish date: </strong>Feb 16, 2020
+      
+        
+          <br>
+          <strong aria-hidden="true">Last updated: </strong>Jun 9, 2020
+        
+      
+    </div>
+
+    
+    
+    
+      
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#linux">
+            Linux
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#open-source-programs">
+            Open Source Programs
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
+
+    
+    <aside>
+      <p>Estimated reading time: 10 minutes.</p>
+    </aside>
+    <p>What if all of your software were free, like NVDA? What if the only
+thing asked of you by software makers was to donate or contribute? How
+would this effect your life, and the lives of developers? In this
+article, I will explain what open source is, what it is currently used
+for, my experiences with it, and how you can make it better.</p>
+<h1 id="what-is-open-source">What is Open Source?</h1>
+<p>Open source is a splinter of the <a href="https://en.wikipedia.org/wiki/Free_software_movement">Free Software
+movement</a>. The
+Free Software movement believes that everyone should be able to view a
+program&rsquo;s code, and modify it if needed. The thing which sets open
+source apart is that it doesn&rsquo;t mind working with companies which create
+closed source, or proprietary, software which cannot be modified or have
+its source code seen by the user.</p>
+<p>When free and open source spokespeople talk about freedom, they mean
+free as in free speech, not as in free things. This talk of freedom
+upsets business, so the term &ldquo;open source&rdquo; is used instead. Much open
+source software is free of cost, with the developers asking for donation
+instead of demanding payment.</p>
+<h1 id="what-is-open-source-used-for">What is Open Source used for?</h1>
+<p>Open source software is just about everywhere, and often comes with a
+tightly knit community of users. Examples of open source in the blind
+community include <a href="https://www.nvaccess.org/about-nvda/">NVDA</a>,
+<a href="https://www.libreoffice.org">LibreOffice</a>, <a href="https://wiki.gnome.org/Projects/Orca">Orca Screen
+Reader</a>, <a href="https://brailleblaster.org">Braille
+Blaster</a>, <a href="http://liblouis.org">Liblouis</a>,
+and <a href="https://github.com/tvraman/emacspeak">Emacspeak</a>. Examples of
+closed source include <a href="https://www.freedomscientific.com/products/software/jaws/">JAWS for Windows</a>, <a href="https://support.microsoft.com/en-us/help/17173/windows-10-hear-text-read-aloud">Narrator</a>, <a href="https://www.apple.com/accessibility/iphone/vision/">VoiceOver</a>, the latest
+version of
+<a href="https://support.google.com/accessibility/android/answer/6283677?hl=en">TalkBack</a>,
+<a href="https://duxburysystems.com">Duxberry Braille translator</a>, iOS, Windows, and plenty of apps you may have on
+your iPhone or Android phone.</p>
+<p>Interestingly, some projects are a mixture of both. JAWS incorporates
+Liblouis for braille translation, and so do Narrator and VoiceOver.
+Apple uses plenty of open source tools: Python, command line shells, and
+many command line tools on MacOS. Microsoft makes BRLTTY and Liblouis
+available for download to interface with Narrator.</p>
+<p>Linux, which founded many offshoots, is an entire operating system built
+on open source ideals. Blind people began customizing Linux for use with
+speech, and work is ongoing to make Linux an accessible operating
+system. This began with <a href="https://wiki.vinuxproject.org">Vinux</a>. It
+started up talking, something no other system had done before. One could
+use it with speech or braille, and used the eSpeak voices.</p>
+<p>That operating system, or distribution of Linux as they are called, is
+now abandoned, not having been updated in years. Another project, <a href="https://distrowatch.com/table.php?distribution=sonar">Sonar
+Gnu Linux</a>, also
+came and went. It was based on Arch Linux, and was my favorite
+distribution. People now use <a href="https://talkingarch.info/download.html">Talking
+Arch</a>, or
+<a href="https://tarch.org">Tarch</a>, if they are adventurous and <a href="https://slint.fr/wiki/doku.php?id=en:installation">Slint
+Linux</a> if they
+aren&rsquo;t. These are the most popular Linux distributions for those who are
+blind. If I&rsquo;ve missed anything, let me know. Some distributions which
+were not made for the blind are also accessible.
+<a href="https://getfedora.org">Fedora</a>, <a href="https://trisquel.info">Trisquel</a>,
+<a href="https://www.debian.org">Debian</a>, and <a href="https://ubuntu.com">Ubuntu</a> are
+also able to be installed, but the user must know the correct keyboard
+command to turn on the screen reader.</p>
+<p>Most open source software can be found on <a href="https://github.com">Github</a>.
+That&rsquo;s where NVDA, Orca, and many other tools, even for the blind, are.
+But how reliable are these tools? What about the operating system? Could
+one get rid of Windows with this software founded on ideals?</p>
+<h1 id="my-experiences-with-open-source">My experiences with Open Source</h1>
+<h2 id="linux">Linux</h2>
+<p>Accessibility is a software issue, so the root of software, the
+operating system, will make or break any accessibility. My experiences
+with Linux began, mainly, with an old operating system called
+<a href="https://wiki.vinuxproject.org">Vinux</a>. I didn&rsquo;t stick with it for long,
+and soon forgot about it, and it is now abandoned. Linux can run many
+different desktops, which give users the major system functions of
+accessing apps and system utilities. Gnome and Mate are accessible, just
+about everything else, for now, including KDE, isn&rsquo;t. Vinux used Gnome
+2, which is basically what Mate is now.</p>
+<p>I came back to Linux for a short while with Sonar. I really liked it,
+but missed the games and speech options Windows had. I liked all the
+software that we have access to on Windows, and browsing the Internet
+with Linux wasn&rsquo;t that good back then. I soon got into the Apple
+ecosystem with an iPhone and such, and already had a Mac for quite a
+while. Still, Linux called to me.</p>
+<p>I&rsquo;m never satisfied with the workflow I have. I always want to be more
+efficient, more quick, more capable in what I do. I always want better
+sound, even if 3D effects and virtual surround sound aren&rsquo;t actually
+necessary or real. Like a sighted person wants great graphics, I want
+great sound. On Linux, there is a way to enable virtual surround sound,
+but it offers little reward, and much configuration, crackling in audio,
+and doesn&rsquo;t augment stereo audio as options on other systems does. The
+Mac has a third-party option, <a href="https://www.globaldelight.com/boom/">Boom
+3D</a>, and Windows has <a href="https://www.windowscentral.com/how-use-windows-sonic-windows-10-creators-update">Windows Sonic
+for
+Headphones</a>.
+Both of these require nearly no configuration, augments much more audio,
+and only Boom 3D causes a bit of sluggishness.</p>
+<p>I also want a faster way of doing things. Many keyboard shortcuts,
+letter navigation of items in lists and menus, and ways of only getting
+the information I want. I have much of this on the Mac, with the Mail
+app allowing me, through table navigation, to speed through subjects
+instead of having to hear the row titles and contents and all before
+what I really want to hear, and being able to go to the previous or next
+message in a thread without needing to close the window. Linux has some
+of this, but many times things are unclear, with Orca, the Linux screen
+reader, just speaking the items, and not what type of item it is. This
+is clear in the area of Audacious settings where you choose sound
+effects.</p>
+<p>Even so, Linux has such an appeal to me. I have tried Fedora Linux,
+<a href="https://slint.fr/wiki/doku.php?id=:en:start">Slint</a>, Ubuntu, Debian, Arch, and found that there is always something
+missing. Accessibility isn&rsquo;t that good in the graphical interface, and
+much still takes a lot of configuring and asking the community. And I
+really hate asking for help.</p>
+<p>Recently, the <a href="https://mate-desktop.org">Mate desktop</a> team has
+released a version with accessibility fixes. This is important, as
+many companies, like app developers, Apple, and Google, rarely share
+that there are accessibility fixes in minor updates, and don&rsquo;t even
+share all the new features in major releases. This gives me some hope
+that the open source community at large just needs more blind people
+telling them about our needs. Then again, this is probably just
+another of my excuses to bash my head against the hardened wall of
+Linux, yet again. Plus, everything in the open source moves slowly,
+and this is doubly true for open source assistive technology.</p>
+<p>There are, however, blind people who use Linux, just as there are some
+in the blind community who use Android. In fact, there is an entire
+<a href="https://linux-a11y.org">Linux Accessibility Site</a>. However, the site
+does have links to abandoned software, and doesn&rsquo;t link to all
+accessibility initiatives, like <a href="https://stormux.org">Stormux</a>. Both
+Linux-a11y and Stormux ask for donations, so there is also duplicated
+effort and decentralization even in the blind Linux user community.</p>
+<p>Now, I use a Mac. It contains enough open source technology to support
+<a href="https://brew.sh">Homebrew</a>, a <a href="https://en.wikipedia.org/wiki/Package_manager">package
+manager</a>. I can run
+Emacs, with Emacspeak on it, along with just about any command line
+program I&rsquo;d use on Linux. The Mac&rsquo;s graphical interface is good enough
+for mail and some web browsing, just not so good with Google Docs, and I
+can probably do anything on it that a Linux user can do.</p>
+<p>And yet, sometimes, Linux calls to me still. VoiceOver isn&rsquo;t the best
+screen reader out there, and Linux has the appeal of being run by
+people, not corporations. And yet, looking at the <a href="https://www.gnu.org/accessibility/accessibility.en.html">GNU accessibility
+statement</a>,
+you&rsquo;d think it was updated in 2006 or so. It may have been, which is a
+slap in the face for any accessibility advocate. The GNU project, with
+this statement, says to us that we&rsquo;re only worth putting up a quick
+page, detailing the inaccessibility of old technologies and not
+maintaining it. It tells us that we&rsquo;re a good poster to hang up in their
+trophy room of &ldquo;people aided by our courageous stand for the minorities
+who desperately need our help,&rdquo; but then discarded for the &ldquo;community&rdquo;
+to handle. After all, the GNU don&rsquo;t know anything about helping the
+blind, do they? Can the GNU be expected to enforce accessibility among
+their projects? Doesn&rsquo;t the government take care of the poor blind
+people? Blind people have their Vinux and Sonar, why not just use those?
+No, that is definitely not segregation, not at all!</p>
+<h2 id="open-source-programs">Open Source Programs</h2>
+<p>I began using NVDA around high school. No one had ever heard of it at
+that point, in a day when people called all screen readers either &ldquo;JAWS&rdquo;
+or &ldquo;Microsoft.&rdquo; I&rsquo;ve not stopped using it ever sense. Its features have
+grown, its users growing even faster. It now has a community of
+programmers, translators, and writers. It is, in my opinion, the most
+versatile Windows screen reader. JAWS still works okay for some things,
+like malformed spreadsheets, but for everything else on Windows, I use
+NVDA.</p>
+<p>Braille Blaster is also a great project, making braille translation,
+embossing, and transcription free. I use it for translating EBooks into
+good, formatted braille files for reading on my iPhone using the BARD
+Mobile app. Now, I don&rsquo;t even use Duxberry, even though it is provided
+on my work computer.</p>
+<p>I&rsquo;ve found that open source programs, built upon closed source operating
+systems, are the best compromise. NVDA, BrailleBlaster, TDSR, and many
+other tools built for the blind community run on Windows or Mac. Having
+a great foundation in accessibility makes all the difference for users.</p>
+<h1 id="how-can-you-help">How can You help?</h1>
+<p>Github, as stated earlier, is a hub of open source projects. One great
+thing about the service is that anyone can contribute. Just make an
+account, and you&rsquo;re ready to help.</p>
+<p>If you can program, you can <a href="https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request">collaborate by modifying
+code</a>.
+If you try the software and find accessibility problems, you can tell
+developers about <a href="https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue">bugs or
+features</a>
+that need fixing or adding. If you find a project you like, they may
+have a Patreon to which you can donate, or you can simply spread the
+word.</p>
+<p>One large project which has become accessible through efforts of the
+blind reaching out is Retroarch. An issue was created asking for
+accessibility, and it was released in the very next version, and even
+more work is being done to make even more games accessible. Open source
+collaboration is great for even more than just programming. See projects
+I&rsquo;m working on, all text, on <a href="https://devinprater.github.io/about/">the About page of my original
+blog</a>.</p>
+<p>Another bit of news is that GTK, a way for programs to be displayed
+and written, has had a
+<a href="https://blog.gtk.org/2020/02/17/gtk-hackfest-2020-roadmap-and-accessibility/">Hackfest</a>,
+where accessibility was extensively discussed. It is hoped that this means
+that accessibility will become a larger issue in Linux, and that blind
+people will one day be able to use Linux as confidently as they use
+Windows and Mac now.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>As time goes by, I find myself drawn to open source. its promise of a
+better way of making software, the community of helpful people, and the
+freedom give me hope. While the Linux operating system does not come
+close to satisfying the hope I have for accessibility, programs and
+initiatives on top of Windows and Mac have thrived. While the poor
+accessibility statement of the GNU project shows that the community at
+large does not yet care much about accessibility, the community of blind
+people working for our own future, rather than that of a corporation,
+gives me hope of a bright future of digital accessibility for blind
+people.</p>
+<p>What do you think, reader? Does open source call to you as well? Do you
+just use whatever system you&rsquo;re given? Have you made peace with Linux&rsquo;s
+shortcomings around accessibility? Please, let me know. I am glad to
+receive feedback. If you&rsquo;d like, you may even suggest, via email or
+Twitter, articles for which you feel passionate about that need
+coverage. I will consider all that you send me, and thank you for
+reading.</p>
+
+  </main>
+  <div id="disqus-container">
+  
+</div>
+
+
+          <footer role="contentinfo">
+  <div>
+    <label for="themer">
+      dark theme: <input type="checkbox" id="themer" class="vh">
+      <span aria-hidden="true"></span>
+    </label>
+  </div>
+  
+    Made with Hugo, hosted with Github Pages.
+  
+</footer>
+
+        </div>
+      </div>
+    </div>
+    <script src="https://devinprater.github.io/js/prism.js"></script>
+
+
+
+<script src="https://devinprater.github.io/js/dom-scripts.js"></script>
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css" integrity="sha384-dbVIfZGuN1Yq7/1Ocstc1lUEm+AT+/rCkibIcC/OmWo5f0EA48Vf8CytHzGrSwbQ" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js" integrity="sha384-2BKqo+exmr9su6dir+qCw08N2ZKRucY4PrGQPPWU1A7FtlCGjmEGFqXCv5nyM5Ij" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+    
+  
+
+  </body>
+</html>

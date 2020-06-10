@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="generator" content="Hugo 0.72.0" />
+  <link rel="canonical" href="https://devinprater.github.io/2020-02-13-accessibility-consistency/">
+
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="https://devinprater.github.io/css/prism.css" media="none" onload="this.media='all';">
+
+  
+  
+  <link rel="stylesheet" type="text/css" href="https://devinprater.github.io/css/styles.css">
+
+  
+
+  <style id="inverter" media="none">
+    .intro-and-nav, .main-and-footer { filter: invert(100%) }
+    * { background-color: inherit }
+    img:not([src*=".svg"]), .colors, iframe, .demo-container { filter: invert(100%) }
+  </style>
+
+  
+  
+  <title>Apple’s accessibility consistency | Devin Prater’s Site</title>
+</head>
+
+  <body>
+    <a href="#main">skip to content</a>
+    <svg style="display: none">
+  <symbol id="bookmark" viewBox="0 0 40 50">
+   <g transform="translate(2266 3206.2)">
+    <path style="stroke:currentColor;stroke-width:3.2637;fill:none" d="m-2262.2-3203.4-.2331 42.195 16.319-16.318 16.318 16.318.2331-42.428z"/>
+   </g>
+  </symbol>
+
+  <symbol id="w3c" viewBox="0 0 127.09899 67.763">
+   <text font-size="83" style="font-size:83px;font-family:Trebuchet;letter-spacing:-12;fill-opacity:0" letter-spacing="-12" y="67.609352" x="-26.782778">W3C</text>
+   <text font-size="83" style="font-size:83px;font-weight:bold;font-family:Trebuchet;fill-opacity:0" y="67.609352" x="153.21722" font-weight="bold">SVG</text>
+   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m33.695.377 12.062 41.016 12.067-41.016h8.731l-19.968 67.386h-.831l-12.48-41.759-12.479 41.759h-.832l-19.965-67.386h8.736l12.061 41.016 8.154-27.618-3.993-13.397h8.737z"/>
+   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m91.355 46.132c0 6.104-1.624 11.234-4.862 15.394-3.248 4.158-7.45 6.237-12.607 6.237-3.882 0-7.263-1.238-10.148-3.702-2.885-2.47-5.02-5.812-6.406-10.022l6.82-2.829c1.001 2.552 2.317 4.562 3.953 6.028 1.636 1.469 3.56 2.207 5.781 2.207 2.329 0 4.3-1.306 5.909-3.911 1.609-2.606 2.411-5.738 2.411-9.401 0-4.049-.861-7.179-2.582-9.399-1.995-2.604-5.129-3.912-9.397-3.912h-3.327v-3.991l11.646-20.133h-14.062l-3.911 6.655h-2.493v-14.976h32.441v4.075l-12.31 21.217c4.324 1.385 7.596 3.911 9.815 7.571 2.22 3.659 3.329 7.953 3.329 12.892z"/>
+   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m125.21 0 1.414 8.6-5.008 9.583s-1.924-4.064-5.117-6.314c-2.693-1.899-4.447-2.309-7.186-1.746-3.527.73-7.516 4.938-9.258 10.13-2.084 6.21-2.104 9.218-2.178 11.978-.115 4.428.58 7.043.58 7.043s-3.04-5.626-3.011-13.866c.018-5.882.947-11.218 3.666-16.479 2.404-4.627 5.954-7.404 9.114-7.728 3.264-.343 5.848 1.229 7.841 2.938 2.089 1.788 4.213 5.698 4.213 5.698l4.94-9.837z"/>
+   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m125.82 48.674s-2.208 3.957-3.589 5.48c-1.379 1.524-3.849 4.209-6.896 5.555-3.049 1.343-4.646 1.598-7.661 1.306-3.01-.29-5.807-2.032-6.786-2.764-.979-.722-3.486-2.864-4.897-4.854-1.42-2-3.634-5.995-3.634-5.995s1.233 4.001 2.007 5.699c.442.977 1.81 3.965 3.749 6.572 1.805 2.425 5.315 6.604 10.652 7.545 5.336.945 9.002-1.449 9.907-2.031.907-.578 2.819-2.178 4.032-3.475 1.264-1.351 2.459-3.079 3.116-4.108.487-.758 1.276-2.286 1.276-2.286l-1.276-6.644z"/>
+  </symbol>
+
+  <symbol id="tag" viewBox="0 0 177.16535 177.16535">
+    <g transform="translate(0 -875.2)">
+     <path style="fill-rule:evenodd;stroke-width:0;fill:currentColor" d="m159.9 894.3-68.79 8.5872-75.42 77.336 61.931 60.397 75.429-76.565 6.8495-69.755zm-31.412 31.835a10.813 10.813 0 0 1 1.8443 2.247 10.813 10.813 0 0 1 -3.5174 14.872l-.0445.0275a10.813 10.813 0 0 1 -14.86 -3.5714 10.813 10.813 0 0 1 3.5563 -14.863 10.813 10.813 0 0 1 13.022 1.2884z"/>
+    </g>
+  </symbol>
+
+  <symbol id="balloon" viewBox="0 0 141.73228 177.16535">
+   <g transform="translate(0 -875.2)">
+    <g>
+     <path style="fill:currentColor" d="m68.156 882.83-.88753 1.4269c-4.9564 7.9666-6.3764 17.321-5.6731 37.378.36584 10.437 1.1246 23.51 1.6874 29.062.38895 3.8372 3.8278 32.454 4.6105 38.459 4.6694-.24176 9.2946.2879 14.377 1.481 1.2359-3.2937 5.2496-13.088 8.886-21.623 6.249-14.668 8.4128-21.264 10.253-31.252 1.2464-6.7626 1.6341-12.156 1.4204-19.764-.36325-12.93-2.1234-19.487-6.9377-25.843-2.0833-2.7507-6.9865-7.6112-7.9127-7.8436-.79716-.20019-6.6946-1.0922-6.7755-1.0248-.02213.0182-5.0006-.41858-7.5248-.22808l-2.149-.22808h-3.3738z"/>
+     <path style="fill:currentColor" d="m61.915 883.28-3.2484.4497c-1.7863.24724-3.5182.53481-3.8494.63994-2.4751.33811-4.7267.86957-6.7777 1.5696-.28598 0-1.0254.20146-2.3695.58589-5.0418 1.4418-6.6374 2.2604-8.2567 4.2364-6.281 7.6657-11.457 18.43-12.932 26.891-1.4667 8.4111.71353 22.583 5.0764 32.996 3.8064 9.0852 13.569 25.149 22.801 37.517 1.3741 1.841 2.1708 2.9286 2.4712 3.5792 3.5437-1.1699 6.8496-1.9336 10.082-2.3263-1.3569-5.7831-4.6968-21.86-6.8361-33.002-.92884-4.8368-2.4692-14.322-3.2452-19.991-.68557-5.0083-.77707-6.9534-.74159-15.791.04316-10.803.41822-16.162 1.5026-21.503 1.4593-5.9026 3.3494-11.077 6.3247-15.852z"/>
+     <path style="fill:currentColor" d="m94.499 885.78c-.10214-.0109-.13691 0-.0907.0409.16033.13489 1.329 1.0675 2.5976 2.0723 6.7003 5.307 11.273 14.568 12.658 25.638.52519 4.1949.24765 14.361-.5059 18.523-2.4775 13.684-9.7807 32.345-20.944 53.519l-3.0559 5.7971c2.8082.76579 5.7915 1.727 8.9926 2.8441 11.562-11.691 18.349-19.678 24.129-28.394 7.8992-11.913 11.132-20.234 12.24-31.518.98442-10.02-1.5579-20.876-6.7799-28.959-.2758-.4269-.57803-.86856-.89617-1.3166-3.247-6.13-9.752-12.053-21.264-16.131-2.3687-.86369-6.3657-2.0433-7.0802-2.1166z"/>
+     <path style="fill:currentColor" d="m32.52 892.22c-.20090-.13016-1.4606.81389-3.9132 2.7457-11.486 9.0476-17.632 24.186-16.078 39.61.79699 7.9138 2.4066 13.505 5.9184 20.562 5.8577 11.77 14.749 23.219 30.087 38.74.05838.059.12188.1244.18052.1838 1.3166-.5556 2.5965-1.0618 3.8429-1.5199-.66408-.32448-1.4608-1.3297-3.8116-4.4602-5.0951-6.785-8.7512-11.962-13.051-18.486-5.1379-7.7948-5.0097-7.5894-8.0586-13.054-6.2097-11.13-8.2674-17.725-8.6014-27.563-.21552-6.3494.13041-9.2733 1.775-14.987 2.1832-7.5849 3.9273-10.986 9.2693-18.07 1.7839-2.3656 2.6418-3.57 2.4409-3.7003z"/>
+     <path style="fill:currentColor" d="m69.133 992.37c-6.2405.0309-12.635.76718-19.554 2.5706 4.6956 4.7759 9.935 10.258 12.05 12.625l4.1272 4.6202h11.493l3.964-4.4516c2.0962-2.3541 7.4804-7.9845 12.201-12.768-8.378-1.4975-16.207-2.6353-24.281-2.5955z"/>
+     <rect style="stroke-width:0;fill:currentColor" ry="2.0328" height="27.746" width="22.766" y="1017.7" x="60.201"/>
+    </g>
+   </g>
+  </symbol>
+
+  <symbol id="info" viewBox="0 0 41.667 41.667">
+   <g transform="translate(-37.035 -1004.6)">
+    <path style="stroke-linejoin:round;stroke:currentColor;stroke-linecap:round;stroke-width:3.728;fill:none" d="m76.25 1030.2a18.968 18.968 0 0 1 -23.037 13.709 18.968 18.968 0 0 1 -13.738 -23.019 18.968 18.968 0 0 1 23.001 -13.768 18.968 18.968 0 0 1 13.798 22.984"/>
+    <g transform="matrix(1.1146 0 0 1.1146 -26.276 -124.92)">
+     <path style="stroke:currentColor;stroke-linecap:round;stroke-width:3.728;fill:none" d="m75.491 1039.5v-8.7472"/>
+     <path style="stroke-width:0;fill:currentColor" transform="scale(-1)" d="m-73.193-1024.5a2.3719 2.3719 0 0 1 -2.8807 1.7142 2.3719 2.3719 0 0 1 -1.718 -2.8785 2.3719 2.3719 0 0 1 2.8763 -1.7217 2.3719 2.3719 0 0 1 1.7254 2.8741"/>
+    </g>
+   </g>
+  </symbol>
+
+  <symbol id="warning" viewBox="0 0 48.430474 41.646302">
+    <g transform="translate(-1.1273 -1010.2)">
+     <path style="stroke-linejoin:round;stroke:currentColor;stroke-linecap:round;stroke-width:4.151;fill:none" d="m25.343 1012.3-22.14 37.496h44.28z"/>
+     <path style="stroke:currentColor;stroke-linecap:round;stroke-width:4.1512;fill:none" d="m25.54 1027.7v8.7472"/>
+     <path style="stroke-width:0;fill:currentColor" d="m27.839 1042.8a2.3719 2.3719 0 0 1 -2.8807 1.7143 2.3719 2.3719 0 0 1 -1.718 -2.8785 2.3719 2.3719 0 0 1 2.8763 -1.7217 2.3719 2.3719 0 0 1 1.7254 2.8741"/>
+    </g>
+  </symbol>
+
+  <symbol id="menu" viewBox="0 0 50 50">
+     <rect style="stroke-width:0;fill:currentColor" height="10" width="50" y="0" x="0"/>
+     <rect style="stroke-width:0;fill:currentColor" height="10" width="50" y="20" x="0"/>
+     <rect style="stroke-width:0;fill:currentColor" height="10" width="50" y="40" x="0"/>
+   </symbol>
+
+   <symbol id="link" viewBox="0 0 50 50">
+    <g transform="translate(0 -1002.4)">
+     <g transform="matrix(.095670 0 0 .095670 2.3233 1004.9)">
+      <g>
+       <path style="stroke-width:0;fill:currentColor" d="m452.84 192.9-128.65 128.65c-35.535 35.54-93.108 35.54-128.65 0l-42.881-42.886 42.881-42.876 42.884 42.876c11.845 11.822 31.064 11.846 42.886 0l128.64-128.64c11.816-11.831 11.816-31.066 0-42.9l-42.881-42.881c-11.822-11.814-31.064-11.814-42.887 0l-45.928 45.936c-21.292-12.531-45.491-17.905-69.449-16.291l72.501-72.526c35.535-35.521 93.136-35.521 128.64 0l42.886 42.881c35.535 35.523 35.535 93.141-.001 128.66zm-254.28 168.51-45.903 45.9c-11.845 11.846-31.064 11.817-42.881 0l-42.884-42.881c-11.845-11.821-11.845-31.041 0-42.886l128.65-128.65c11.819-11.814 31.069-11.814 42.884 0l42.886 42.886 42.876-42.886-42.876-42.881c-35.54-35.521-93.113-35.521-128.65 0l-128.65 128.64c-35.538 35.545-35.538 93.146 0 128.65l42.883 42.882c35.51 35.54 93.11 35.54 128.65 0l72.496-72.499c-23.956 1.597-48.092-3.784-69.474-16.283z"/>
+      </g>
+     </g>
+    </g>
+  </symbol>
+
+  <symbol id="doc" viewBox="0 0 35 45">
+   <g transform="translate(-147.53 -539.83)">
+    <path style="stroke:currentColor;stroke-width:2.4501;fill:none" d="m149.38 542.67v39.194h31.354v-39.194z"/>
+    <g style="stroke-width:25" transform="matrix(.098003 0 0 .098003 133.69 525.96)">
+     <path d="m220 252.36h200" style="stroke:currentColor;stroke-width:25;fill:none"/>
+     <path style="stroke:currentColor;stroke-width:25;fill:none" d="m220 409.95h200"/>
+     <path d="m220 488.74h200" style="stroke:currentColor;stroke-width:25;fill:none"/>
+     <path d="m220 331.15h200" style="stroke:currentColor;stroke-width:25;fill:none"/>
+    </g>
+   </g>
+ </symbol>
+
+ <symbol id="tick" viewBox="0 0 177.16535 177.16535">
+  <g transform="translate(0 -875.2)">
+   <rect style="stroke-width:0;fill:currentColor" transform="rotate(30)" height="155" width="40" y="702.99" x="556.82"/>
+   <rect style="stroke-width:0;fill:currentColor" transform="rotate(30)" height="40" width="90.404" y="817.99" x="506.42"/>
+  </g>
+ </symbol>
+</svg>
+
+    <div class="wrapper">
+      <header class="intro-and-nav" role="banner">
+  <div>
+    <div class="intro">
+      <a class="logo" href="/" aria-label="Devin Prater’s Site home page">
+        <img src="https://devinprater.github.io/images/logo.svg" alt="">
+      </a>
+      <p class="library-desc">
+        
+          Devin Prater’s blog and site.
+        
+      </p>
+    </div>
+    <nav id="patterns-nav" class="patterns" role="navigation">
+  <h2 class="vh">Main navigation</h2>
+  <button id="menu-button" aria-expanded="false">
+    <svg viewBox="0 0 50 50" aria-hidden="true" focusable="false">
+      <use xlink:href="#menu"></use>
+    </svg>
+    Menu
+  </button>
+  
+  <ul id="patterns-list">
+  
+    <li class="pattern">
+      
+      
+      
+      
+      <a href="/" >
+        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
+          <use xlink:href="#bookmark"></use>
+        </svg>
+        <span class="text">Home</span>
+      </a>
+    </li>
+  
+    <li class="pattern">
+      
+      
+      
+      
+      <a href="/post/" aria-current="page">
+        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
+          <use xlink:href="#bookmark"></use>
+        </svg>
+        <span class="text">Blog</span>
+      </a>
+    </li>
+  
+    <li class="pattern">
+      
+      
+      
+      
+      <a href="/tags/" >
+        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
+          <use xlink:href="#bookmark"></use>
+        </svg>
+        <span class="text">Tags</span>
+      </a>
+    </li>
+  
+    <li class="pattern">
+      
+      
+      
+      
+      <a href="/about/" >
+        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
+          <use xlink:href="#bookmark"></use>
+        </svg>
+        <span class="text">About</span>
+      </a>
+    </li>
+  
+    <li class="pattern">
+      
+      
+      
+      
+      <a href="/index.xml" >
+        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
+          <use xlink:href="#bookmark"></use>
+        </svg>
+        <span class="text">RSS</span>
+      </a>
+    </li>
+  
+  </ul>
+</nav>
+  </div>
+</header>
+      <div class="main-and-footer">
+        <div>
+          
+  <main id="main">
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Apple’s accessibility consistency
+    </h1>
+
+    <div class="date">
+      
+      
+      <strong aria-hidden="true">Publish date: </strong>Feb 13, 2020
+      
+        
+          <br>
+          <strong aria-hidden="true">Last updated: </strong>Jun 9, 2020
+        
+      
+    </div>
+
+    
+    
+    
+      
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#ios">
+            iOS
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#macos">
+            MacOS
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#the-future-of-apple-accessibility">
+            The future of Apple accessibility
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#google">
+            Google
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#the-future-of-google-accessibility">
+            The future of Google accessibility
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#microsoft">
+            Microsoft
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#the-future-of-microsoft-accessibility">
+            The future of Microsoft accessibility
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
+
+    
+    <aside>
+      <p>Estimated reading time: 23 minutes.</p>
+    </aside>
+    <p>This article will explore Apple’s consistent attention to accessibility,
+and how other tech companies with commitments to accessibility, like
+Microsoft and Google, compare to Apple in their accessibility efforts.
+It also shows where these companies can improve their consistency, and
+that no company is perfect at being an Assistive Technology provider
+yet.</p>
+<h1 id="introduction">Introduction</h1>
+<p>Apple has shown a commitment to
+<a href="https://www.apple.com/accessibility/">accessibility</a> since the early
+days of the iPhone, and since mac OSX Tiger. Its VoiceOver screen reader
+was the first built-in screen reader of any usability on a personal
+computer and smart phone. Now, VoiceOver is on every Apple product, even
+the HomePod. It is so prevalent that people I know have begun calling
+any screen reader “VoiceOver.” This level of consistency should be
+congratulated in a company of Apple’s size and wealth. But is this a
+continual trend, and what does this mean for competitors?</p>
+<p>This will be an opinion piece. I will not stick only to the facts as we
+have them, and won’t give sources for everything which I show as fact.
+This article is a testament to how accessibility can be made a
+fundamental part of a brand’s experience for effected people, so
+feelings and opinions will be involved.</p>
+<h1 id="the-trend-of-accessibility">The trend of accessibility</h1>
+<p>The following sections of the article will explore companies trends of
+accessibility so far. The focus is on Apple, but I’ll also show some of
+what its competitors have done over the years as well. As Apple has a
+greater following of blind people, and Applevis has documented so much
+of Apple’s progress, I can show more of it than I can its competitors,
+whose information written by their followers are scattered, thus harder
+to search for.</p>
+<h1 id="apple">Apple</h1>
+<p>Apple has a history of accessibility, shown by <a href="http://maccessibility.net/2011/02/10/blind-faith-a-decade-of-apple-accessibility">this
+article</a>.
+Written just under a decade ago, it goes over the previous decade’s
+advancements. As that article has done, I will focus on little of a
+company’s talk of accessibility, but more so its software releases and
+services.</p>
+<p>Apple is, by numbers and satisfaction, the leader in accessibility for
+users of its mobile operating systems, but not in general purpose
+computer operating systems. Microsoft’s Windows is used far more than
+Apple’s MacOS. Besides that, and services, Apple has made its VoiceOver
+screen reader on iOS much more powerful, and even flexible, than its
+competitor, Google’s TalkBack.</p>
+<h2 id="ios">iOS</h2>
+<p>As iPhones were released each year, so were newer versions of iOS. In
+<a href="https://www.applevis.com/blog/whats-new-accessibility-ios-6">iOS 6</a>,
+accessibility settings began working together, VoiceOver’s Rotor gained
+a few new abilities, new braille displays worked with VoiceOver, and
+bugs were fixed. In
+<a href="https://www.applevis.com/blog/whats-new-and-changed-blind-and-low-vision-users-ios-71">iOS 7</a>,
+we gained the ability to have more than one high quality voice, more
+Rotor options, and the ability to write text using handwriting.</p>
+<p>Next,
+<a href="https://www.applevis.com/blog/what-s-new-ios-8-accessibility-blind-low-vision-and-deaf-blind-users">iOS 8</a>
+was pretty special to me, personally, as it introduced the method of
+writing text that I almost always use now, Braille Screen Input. This
+lets me type on the screen of my phone in braille, making my typing
+exponentially faster. Along with typing, I can delete text, a word or
+character, and now, send messages from within the input mode. I can also
+change braille contraction levels, and lock orientation into one of two
+typing modes. Along with this, Apple added the Alex voice, its most
+natural yet, which was only before available on a Mac. For those who do
+not know braille or handwriting, a new “direct touch typing” method
+allows a user to type as quickly as a sighted person, if they can
+memorize exactly where the keys are, or have spell check and
+autocorrection enabled.</p>
+<p>In
+<a href="https://www.applevis.com/blog/what-s-new-and-changed-ios-9-accessibility-blind-and-deaf-blind-users">iOS 9</a>,
+VoiceOver users are able to choose Siri voices to speak using VoiceOver,
+as an extension of the list of Vocalizer voices, and Apple’s Alex voice.
+One can now control speech rate more easily, and the speed of speech can
+be greater than previously possible. One can control the time a double
+tap should take, a better method of selecting text, braille screen input
+improvements, and braille display fixes and new commands.</p>
+<p>Then,
+<a href="https://www.applevis.com/blog/what-s-new-ios-10-accessibility-blind-low-vision-and-deaf-blind-users">iOS 10</a>
+arrived, with a new way to organize apps, a pronunciation dictionary,
+even more voices, reorganized settings, new sounds for actions, a way to
+navigate threaded email, and some braille improvements. One great thing
+about the pronunciation editor is that it does not only apply to the
+screen reader, as in many Windows screen readers, but to the entire
+system speech. So, if you use VoiceOver, but also Speak Screen, both
+will speak as you have set them to. This is a testament to Apple’s
+attention to detail, and control of the entire system.</p>
+<p>With the release of
+<a href="https://www.applevis.com/blog/whats-new-ios-11-accessibility-blind-low-vision-and-deaf-blind-users">iOS 11</a>,
+we gained the ability to type to Siri, new Siri voices, verbosity
+settings, the ability to have subtitles read or brailled, and the
+ability to change the speaking pitch of the voice used by VoiceOver.
+VoiceOver can now describe some images, which will be greatly expanded
+later. We can now find misspelled words, which will also be expanded
+later. One can now add and change commands used by braille displays,
+which, yes, will be expanded upon later. A few things which haven’t been
+expanded upon yet are the ability to read formatting, however imprecise,
+with braille “status cells,” and the “reading” of Emoji. Word wrap and a
+few other braille features were also added.</p>
+<p>Last year, in
+<a href="https://www.applevis.com/blog/apple-releases-ios-12-bringing-new-and-enhanced-features-and-performance-improvements">iOS 12</a>,
+Apple added commands to jump to formatted text for braille display
+users, new Siri voices, verbosity options, confirmation of rotor actions
+and sent messages, expansion of the “misspelled” rotor option for
+correcting the misspelled word, and the ability to send VoiceOver to an
+HDMI output.</p>
+<p>Finally, In
+<a href="https://www.applevis.com/blog/whats-new-ios-13-accessibility-individuals-who-are-blind-or-deaf-blind">iOS 13</a>,
+Apple moved accessibility to the main settings list, out of the General
+section, provided even more natural Siri voices, haptics for VoiceOver,
+to aid alongside, or replace, the sounds already present, and the
+ability to modify or turn them off. A “vertical scroll bar” has also
+been added, as another method of scrolling content. VoiceOver can now
+give even greater suggestions for taking pictures, aligning the camera,
+and with the iPhone 11, what will be in the picture. One can also
+customize commands for the touch screen, braille display, and keyboard,
+expanding the ability braille users already had. One can even assign
+Siri shortcuts to a VoiceOver command, as Mac users have been able to do
+with Apple Script. One can now have VoiceOver interpret charts and
+graphs, either via explanations of data, or by an audible representation
+of them. This may prove extremely useful in education, and for
+visualizing data of any type. Speaking detected text has improved over
+the versions to include the detecting of text in unlabeled controls, and
+now can attempt to describe images as well. Braille users now have
+access to many new braille tables, like Esperanto and several other
+languages, although braille no longer switches languages along with
+speech.</p>
+<h2 id="macos">MacOS</h2>
+<p>MacOS has not seen so much improvement in accessibility over the years.
+VoiceOver isn’t a bad screen reader, though. It can be controlled using
+a trackpad, which no other desktop screen reader can boast. It can be
+used to navigate and activate items with only the four arrow keys. It
+uses the considerable amount of voices available on the Mac and for
+download. It simply isn’t updated nearly as often as VoiceOver for iOS.</p>
+<p>OSX 10.7, 10.8, and 10.9 have seen a few new features, like more
+VoiceOver voices, braille improvement, and other things. I couldn’t find
+much before Sierra, so we’ll start there.</p>
+<p>In Sierra, Apple added VoiceOver commands for controlling volume, to
+offset the absence of the physical function keys in new MacBook models.
+VoiceOver can also now play a sound for row changes in apps like Mail,
+instead of interrupting itself to announce “one row added,” because
+Apple’s speech synthesis server on the Mac doesn’t innately support a
+speech queue. This means that neither does VoiceOver, so interruptions
+must be worked around. Some announcements were changed, HTML content
+became web areas, and interaction became “in” and “out of” items. There
+were also bug fixes in this release.</p>
+<p>In High Sierra, one can now type to Siri, VoiceOver can now switch
+languages when reading multilingual text, as VoiceOver on the iPhone has
+been able to do since iOS 5 at least, improved braille editing and PDF
+reading support, image descriptions, and improved HTML 5 support.</p>
+<p>In <a href="https://www.applevis.com/blog/new-features-changes-and-accessibility-bugs-macos-mojave-blind-and-low-vision-users">MacOS
+Mojave</a>,
+Apple added the beginning of new iPad apps on Mac. These apps work
+poorly with VoiceOver, even still in Catalina. There were no new
+reported VoiceOver features in this release.</p>
+<p>This year, In <a href="https://www.applevis.com/blog/new-features-changes-improvements-and-bugs-macos-catalina-blind-and-low-vision-users">MacOS
+Catalina</a>,
+Apple added more control of punctuation, and XCode 11’s text editor is
+now a little more accessible, even though the Playgrounds function
+isn’t, and the Books app can now, after years of being on the Mac, be
+used for basic reading of books. Braille tables from iOS 13 are also
+available in MacOS.</p>
+<h2 id="the-future-of-apple-accessibility">The future of Apple accessibility</h2>
+<p>All of these changes, however, were discovered by users. Apple doesn’t
+really talk about all of its accessibility improvements, just some of
+the highlights. While I see great potential in accessible diagrams and
+graphs, Apple didn’t mention this, and users had to find this.
+Subsequently, there may be fixes and features that we still haven’t
+found, three versions of iOS 13 later. Feedback between Apple and its
+customers has never been great, and this is only to Apple’s detriment.
+Since Apple rarely responds to little feedback, users feel that their
+feedback doesn’t mean anything, so they stop sending it. Also of note is
+that on VoiceOver’s <a href="https://www.apple.com/accessibility/mac/vision/">Mac accessibility
+page</a>, the “Improved
+PDF, web, and messages navigation” section is from macOS 10.13, two
+versions behind what is currently new in VoiceOver.</p>
+<p>Another point is that services haven’t been the most accessible. Chief
+among them is Apple Arcade, which <a href="https://applevis.com/forum/apple-arcade-anyone">has no accessible
+games</a>, so far. Apple
+research, I’ve found, has some questions which have answers that are
+simply unlabeled buttons. While Apple TV Plus has audio description for
+all of their shows, this is a minor glimmer of light, shrouded by the
+inaccessibility of Apple Arcade, which features, now, over one hundred
+games, none of which I can play with any success. In all fairness, a
+blind person who is patient may be able to play a game like Dear Reader,
+which has some accessible items, but the main goal of that game is to
+find a word in a different color and correct it, which is completely at
+odds with complete blindness, but could be handled using speech
+parameter changes, audio cues, or other signals of font, color, or style
+changes.</p>
+<p>Time will tell if this new direction, no responsibility for not only
+other developers’ work, but also the Mac and work done by other
+developers and flaunted by Apple, will become the norm. After all, Apple
+Arcade is an entire Tab of the App Store; inaccessibility is in plain
+view. As a counterpoint, the first iPhone software, and even the second
+version, was inaccessible to blind people, but now the iPhone is the
+most popular smart phone, in developed nations, for blind people.</p>
+<p>Perhaps next year, Apple Arcade will have an accessible game or two. I
+can only hope that this outcome comes true, and not the steady stepping
+back of Apple from one of their founding blocks: accessibility. We
+cannot know, as no one at Apple tells us their plans. We aren’t the only
+ones, though, as mainstream technology media shows. We must grow
+accustom to waiting on Apple to show new things, and reacting
+accordingly, but also providing feedback, and pushing back against
+encroaching inaccessibility and decay of macOS.</p>
+<h1 id="apples-competitors">Apple’s competitors</h1>
+<p>In this blog post, I compare operating systems. To me, an operating
+system is the root of all software, and thus, the root of all digital
+accessibility. With this in mind, the reader may see why it is
+imperative that the operating system be as accessible, easy and
+delightful to use, and promote productivity as much as possible.
+Microsoft and Google are the largest competitors of Apple in the closed
+source operating system space, so they are what I will compare Apple to
+in the following sections.</p>
+<h2 id="google">Google</h2>
+<p>Google is the main contributor to the Android and Chromium projects.
+While both are open source, both are simply a base to be worked from,
+not the end result. Not even Google’s phones run “pure” Android, but
+have Google services and probably other things on the phone as well.
+Both, though, have varying accessibility as well. While Apple pays great
+attention to its mobile operating system’s accessibility, Google does
+not seem to put many resources towards that. However, its Chrome OS,
+which is used much in education, is much more easily accessible, and
+even somewhat of an enjoyable experience for a lite operating system.</p>
+<h3 id="android">Android</h3>
+<p>Android was released one year after iOS. TalkBack was released as part
+of Android 1.6. Back then, it only supported navigation via a keyboard,
+trackpad, or scroll ball. It wasn’t until version 4 when touch screen
+access was implemented into TalkBack for phones, and up to this day,
+only supports commands done with one finger, two finger gestures being
+passed through to Android as one finger commands. TalkBack has worked
+around this issue by recently, in Android version 8, gaining the ability
+to use the finger print sensor, if available, as a gesture pad for
+setting options, and the ability the switch spoken language, if using
+Google TTS, when reading text in more than one language. TalkBack uses
+graphical menus for setting options otherwise, or performing actions,
+like deleting email. It can be used with a Bluetooth keyboard. By
+default, it uses Google TTS, a lower quality, offline version of speech
+used for things like Google Translate, Google Maps, and the Google Home.
+TalkBack cannot use the higher quality Google TTS voices. Instead,
+voices from other vendors are downloaded for more natural sound.</p>
+<p>BrailleBack, discussed <a href="https://support.google.com/accessibility/android/answer/3535226">on its Google Support
+page</a>,
+is an accessibility service which, when used with TalkBack running,
+provides rudamentary braille support to Android. Commands are rugged,
+meaningless, and unfamiliar to users of other screen readers, and
+TalkBack’s speech cannot be turned off while using Brailleback, meaning
+that, as one person helpfully provided, that one must plug in a pair of
+headphones and not wear them, or turn down the phone’s volume, to gain
+silent usage of one’s phone using braille. Silent reading is one of
+braille’s main selling points, but accessibility, if not given the
+resources necessary, can become a host of workarounds. Furthermore,
+brailleback must be installed onto the phone, providing another barrier
+to entry for many deaf-blind users, so some simply buy iPods for braille
+if they wish to use an Android phone for customization or contrarian
+reasons, or simply stick with the iPhone as most blind people do.</p>
+<p>Now, though, many have moved to a new screen reader created by a Chinese
+developer, called Commentary. This screen reader does, however, have the
+ability to <a href="https://www.inclusiveandroid.com/content/commentary-screen-reader-decrypts-your-phone-if-you-have-full-encryption-turned">decrypt your
+phone</a>
+if you have encryption enabled. For braille users,
+<a href="https://brltty.app">BRLTTY</a> is used for braille usage. This level of
+customization, offset by the level of access which apps have to do
+anything they wish to your phone, is an edge that some enjoy living on,
+and it does allow things like third-party, and perhaps better screen
+readers, text to speech engines, apps for blind people like <a href="https://www.seeingwithsound.com">The
+vOICe</a>, which gives blind people
+artificial vision, and other gray area apps like emulators, which iOS
+will not accept on the App Store. Users who are technically inclined do
+tend to thrive on Android, finding workarounds a joy to find and use,
+whereas people who are not, or are but do not want to fiddle with apps
+to replace first-party apps which do not meet the needs of the user, and
+unoptimized settings, find themselves doing more configuring of the
+phone than using it.</p>
+<p>Third party offerings, like launchers, mail apps, web browsers, file
+managers, all have variable accessibility, which can change from version
+to version. Therefore, one must navigate the shifting landscape of first
+party tools which may sort of be good enough, third party tools which
+are accessible enough but may not do everything you need, and tools
+which users have found workarounds for using them. Third party speech
+synthesizers are also hit or miss, with some not working at all, others,
+like Eloquence, being now unsupported, and more, like ESpeak, sounding
+unnatural. The only good braille keyboard which is free hasn’t been
+updated in years, and Google has not made one of their own.</p>
+<p>Because of all this, it is safe to say that Android can be a powerful
+tool, but has not attained the focus needed to become a great
+accessibility tool as well. Google has begun locking down its operating
+system, taking away some things that apps could do before. This may come
+to inhibit third party tools which blind people now use to give Android
+better accessibility. I feel that it is better to have been on iOS,
+where things are locked down much, but you have, at least somewhat, a
+clear expectation of fairness on Apple’s part. Android is not a big
+income source for Google, so Google does not have to answer to app
+developers.</p>
+<h3 id="chrome-os">Chrome OS</h3>
+<p>Chrome OS is Google’s desktop operating system, running Chrome as the
+browser, with support for running Android apps. Its accessibility has
+improved plenty over the years, with ChromeVox gaining many features
+which make it a good screen reader. You can <a href="http://www.chromevox.com">read more about
+chromeVox</a>.</p>
+<p>One of the main successes to ChromeVox is its braille support. It is
+normal for most first-party screen readers to support braille nowadays.
+When one plugs in a braille display to a Chromebook with ChromeVox
+enabled, ChromeVox begins using that display automatically, if it is
+supported. The surprise here is that if one plugs it in when ChromeVox
+is off, ChromeVox will automatically turn on, and begin using the
+display. This is beyond what other screen readers can do. ChromeVox, and
+indeed TalkBack, do not yet support scripting, editing punctuation and
+pronounciation speech, and do not have “activities” as VoiceOver for iOS
+and Mac have, but ChromeVox feels much more polished and ready for use
+than TalkBack.</p>
+<h2 id="the-future-of-google-accessibility">The future of Google accessibility</h2>
+<p>Judging by the past, Google may add a few more features to TalkBack, but
+less than Apple adds to iOS. They have much to catch up on, however, as
+they have only two years ago added the ability for TalkBack to detect
+and switch languages, and use the finger print sensor like VoiceOver’s
+rotor. I have not seem much change over the two years since, except
+making a mode for tracking focus from a toggle to a mandatory feature. I
+suspect that, in time, they will remove the option to disable explore by
+touch, if they’ve not already.</p>
+<p>With Chrome OS, and Google Chrome in general, I hope that the future
+brings better things, now that Microsoft is involved in Chromium
+development. It could become even more tied to web standards. Perhaps
+ChromeVox will gain better sounding offline voices than Android’s lower
+quality Google TTS ones, or gain sounds performed using spacial audio
+for deeper immersion.</p>
+<h2 id="microsoft">Microsoft</h2>
+<p>Microsoft makes only one overarching operating system, with changes for
+XBox, HoloLens, personal computers, and other types of hardware. Windows
+has always been the dominant operating system for general purpose
+computing for blind people. It hasn’t always been accessible, and it is
+only in recent years that Microsoft have actively turned their attention
+to accessibility on Windows and XBox.</p>
+<p>Now, Windows’ accessibility increases with each update, and Narrator
+becomes a more useful screen reader. I feel that, in a year or so, blind
+people may be trained to use Narrator instead of other screen readers on
+Windows.</p>
+<h3 id="windows">Windows</h3>
+<p>In the early days of Windows, there were many different screen readers
+competing for dominance.
+<a href="https://www.freedomscientific.com/products/software/jaws/">JAWS</a>, Job
+Access with Speech, was the most dominant, with
+<a href="https://www.gwmicro.com/Window-Eyes/">Window-Eyes</a>, now abandoned, as
+second. They gathered information from the graphics card to describe
+what was on the screen. There were no accessibility interfaces back
+then.</p>
+<p>Years later, when
+<a href="https://en.wikipedia.org/wiki/Microsoft_Active_Accessibility">MSAA</a>,
+Microsoft Active Accessibility, was created, Window-Eyes decided to lean
+on that, while JAWS continued to use video intercept technology to
+gather information. In Windows 2000, Microsoft shipped a basic screen
+reader, Narrator. It wasn’t meant to be a full, useful screen reader,
+but one made so that a user could set up a more powerful one.</p>
+<p>Now, we have <a href="https://docs.microsoft.com/en-us/windows/win32/winauto/entry-uiauto-win32">UI
+Automation</a>,
+which is still not a very mature product, as screen readers are still
+not using it for everything, like Microsoft Office. GW Micro, makers of
+Window-eyes, bonded with AI Squared, producers of the ZoomText
+magnifier, which was bought by Freedom Scientific, whom promptly
+abandoned Window-eyes. These days, JAWS is being taken on by
+<a href="https://www.nvaccess.org">NVDA</a>, Nonvisual Desktop Access, a free and
+<em>open source</em> screen reader, and Microsoft’s own Narrator screen reader.</p>
+<p>In Windows 8, Microsoft began adding features to Narrator. Now, in
+Windows 10, four years later, Narrator has proven itself useful, and in
+some situations, helpful in ways that all other screen readers have not
+been. For example, one can install, setup, and begin using Windows 10
+using Narrator. Narrator is the only self-described screen reader which
+can, with little configuration, show formatting not by describing it,
+but by changing its speech parameters to “show” formatting by sound. The
+only other access technology which does this automatically is
+<a href="https://github.com/tvraman/emacspeak">Emacspeak</a>, the “complete audio
+desktop.” Its braille support must be downloaded and installed, for now,
+but is still better than Android’s support. Narrator cannot, however,
+use a laptop’s trackpad for navigation. Instead, Microsoft decided to
+add such spacial navigation to touchscreens, meaning that a user must
+reach up and feel around a large screen, instead of using the level
+trackpad as a smaller, more manageable area.</p>
+<p>Speaking of support, Microsoft’s support system is better in a few ways.
+First, unlike Apple, their feedback system allows more communication
+between the community and Microsoft developers. Users can comment on
+issues, and developers can ask questions, a bit like on Github. Windows
+Insider builds come with announcements by Microsoft with what is new,
+changed, fixed, and broken. If anything changes regarding accessibility,
+it is in the release notes. Microsoft is vocal about what is new in
+accessibility of Windows, in an era when many other companies seem
+almost ashamed to mention it in release notes. This is much better than
+Apple’s silence on many builds of their beta software, and no notice of
+accessibility improvements and features at all. Microsoft’s transparency
+is a breath of fresh air to me, as I am much more confident in their
+commitment to accessibility for it.</p>
+<p>Their commitment, however, doesn’t seem to pervade the whole company.
+The Microsoft Rewards program is hard to use for me, and contains
+quizzes where answers must be dragged and dropped. This may be fun for
+sighted users, but I cannot do them with any level of success, so they
+aren’t fun for me at all. Another problem is the quality of speech.
+While Apple has superb speech options like Macintalk Alex, Vocalizer, or
+the Siri voices, Microsoft’s offline voices sound bored, pause for too
+long, and have a robotic buzzing sound as they speak. I think that a
+company of Microsoft’s size could invest in better speech technology, or
+make their online voices available for download for offline use.
+Feedback has been given about this issue, so perhaps the next version of
+Windows will have more pleasant speech.</p>
+<p>Windows has a few downsides, though. It doesn’t support sound through
+its Linux subsystem, meaning I cannot use Emacs, with Emacspeak.
+Narrator does not yet report when a program opens, or when a new window
+appears, and other visual system events. Many newer Universal Windows
+apps can be tricky to navigate, and the Mail app still automatically
+expands threads as I arrow to them, which I do not want to happen,
+making the mail app annoying to use.</p>
+<h2 id="the-future-of-microsoft-accessibility">The future of Microsoft accessibility</h2>
+<p>I think that the future of Microsoft, regarding accessibility, is very
+bright. They seem dedicated to the cause, seeking feedback much more
+aggressively than Apple or Google, and many in the blind community love
+giving it to them. Windows will improve further, possibly with Narrator
+gaining the ability to play interface sounds in immersive audio using
+Windows Sonic for Headphones, braille becoming a deeper, and built in
+part of Narrator, and higher quality speech made available for download.
+Since Microsoft is also a gaming company, it could work on creating
+sound scapes for different activities: browsing the web, writing text,
+coding, reading, to aid in focus or creativity. Speech synthesis could
+be given even more parameters for speaking even more types of formatting
+or interface item types. really, with Microsoft’s attention to feedback,
+I feel that their potential is considerable for accessibility. Then
+again, it is equally possible that Apple will implement these features,
+but they aren’t as inviting as Microsoft when it comes to sharing what
+I’d <em>love</em> in an operating system as Microsoft has been, so I now just
+report bugs, not giving Apple new ideas.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>It may be interesting to note the symmetry of accessibility: Apple’s
+phone is the dominant phone, but Microsoft’s Windows platform is the
+dominant laptop and desktop system among blind people. Apple’s iPhone is
+more accessible than Google’s Android, but Google’s Chrome OS is more
+polished and updated accessibility-wise than Apple’s MacOS. Personally,
+I use a Mac because of its integration with iOS Notes, Messages, Mail,
+and other services, the Mail app is a joy to breeze through email with,
+and open source tools like Emacs with Emacspeak do not work as well on
+Windows. Also, speech matters to me, and I’d probably fall asleep much
+more often hearing Microsoft’s buzzing voices than the somewhat
+energetic sound of Alex on the Mac, who speaks professionally, calmly,
+and never gets bored. I do, however, use Windows for heavy usage of the
+web, especially Google web apps and services, and gaming.</p>
+<p>Time will tell if companies continue in their paths, Apple forging
+ahead, Microsoft burning bright, and Google… being Google. I hope,
+nevertheless, that this article has been useful for the reader, and that
+my opinions have been as fair as possible towards the companies. It
+should be noted that the accessibility teams for each company are
+individuals, have their own ideas of what accessibility is, means, and
+should be, and should be treated with care. After all, this past decade
+has been a long journey of, probably, most effort spent convincing
+managers that the features we now have are worth spending time on, and
+answering user complaints of “my phone is talking to me and i want it
+turned off right now!”.</p>
+<p>This does not excuse them for the decay of Android and Mac
+accessibility, and the lack of great speech options on Windows. It does
+not excuse them for Apple Arcade’s lack of accessible games, or
+Microsoft Rewards’ inaccessible quizzes. We must give honest, complete,
+and critical feedback to these people. After all, they do not know what
+we need, what will be useful, or, if we dare tell, what will be
+delightful for us to use, unless we give them this feedback. This
+applies to all software, whether it be Apple’s silent gathering of
+feedback, Microsoft’s open arms and inviting offers, or open source
+software’s issue trackers, Discord servers, mailing lists, and Github
+repositories. If we want improvement, we must ask for it. If we want a
+better future, we must make ourselves heard in the present. Let us all
+remember the past, so that we can influence the future.</p>
+<p>Now, what do you think of all this? Do you believe Apple will continue
+to march ahead regarding accessibility, or do you think that Microsoft,
+or even Google, has something bigger planned? Do you think that Apple is
+justified in their silence, or do you hope that they begin speaking more
+openly about their progress, at least in release notes? Do you like how
+open Microsoft is about accessibility, or do they even talk about
+accessibility for blind users enough to you? I’d love to know your
+comments, corrections, and constructive criticism, either in the
+comments, on Twitter, or anywhere else you can find me. Thanks so much
+for reading!</p>
+
+  </main>
+  <div id="disqus-container">
+  
+</div>
+
+
+          <footer role="contentinfo">
+  <div>
+    <label for="themer">
+      dark theme: <input type="checkbox" id="themer" class="vh">
+      <span aria-hidden="true"></span>
+    </label>
+  </div>
+  
+    Made with Hugo, hosted with Github Pages.
+  
+</footer>
+
+        </div>
+      </div>
+    </div>
+    <script src="https://devinprater.github.io/js/prism.js"></script>
+
+
+
+<script src="https://devinprater.github.io/js/dom-scripts.js"></script>
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css" integrity="sha384-dbVIfZGuN1Yq7/1Ocstc1lUEm+AT+/rCkibIcC/OmWo5f0EA48Vf8CytHzGrSwbQ" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js" integrity="sha384-2BKqo+exmr9su6dir+qCw08N2ZKRucY4PrGQPPWU1A7FtlCGjmEGFqXCv5nyM5Ij" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+    
+  
+
+  </body>
+</html>
