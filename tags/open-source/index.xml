@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>open-source on Devin Prater’s Site</title>
+    <link>https://devinprater.github.io/tags/open-source/</link>
+    <description>Recent content in open-source on Devin Prater’s Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 16 Feb 2020 20:11:04 +0000</lastBuildDate>
+    
+	<atom:link href="https://devinprater.github.io/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>open source blindness</title>
+      <link>https://devinprater.github.io/2020-02-16-open-source-blindness/</link>
+      <pubDate>Sun, 16 Feb 2020 20:11:04 +0000</pubDate>
+      
+      <guid>https://devinprater.github.io/2020-02-16-open-source-blindness/</guid>
+      <description>What if all of your software were free, like NVDA? What if the only thing asked of you by software makers was to donate or contribute? How would this effect your life, and the lives of developers? In this article, I will explain what open source is, what it is currently used for, my experiences with it, and how you can make it better.
+What is Open Source? Open source is a splinter of the Free Software movement.</description>
+    </item>
+    
+    <item>
+      <title>Advocacy of open source software</title>
+      <link>https://devinprater.github.io/2020-01-20-advocacy-of-open-source-software/</link>
+      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://devinprater.github.io/2020-01-20-advocacy-of-open-source-software/</guid>
+      <description>In this post, I’ll detail my experiences of advocating for accessibility in open source software, why it is important, and how others can help. I’ve not been doing it for long, but at least now, I’ve done a bit. I’ll also touch upon why I think open source software, on all operating systems, is important, and what closed source and closed feedback systems cannot offer, which open source grants. On the other hand, there are things which closed source somewhat grants, but which has faltered slightly in recent days.</description>
+    </item>
+    
+  </channel>
+</rss>

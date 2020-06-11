@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tech on Devin Prater’s Site</title>
+    <link>https://devinprater.github.io/tags/tech/</link>
+    <description>Recent content in tech on Devin Prater’s Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Apr 2020 12:15:06 +0000</lastBuildDate>
+    
+	<atom:link href="https://devinprater.github.io/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Brighter Apple</title>
+      <link>https://devinprater.github.io/2020-04-21-a-brighter-apple/</link>
+      <pubDate>Tue, 21 Apr 2020 12:15:06 +0000</pubDate>
+      
+      <guid>https://devinprater.github.io/2020-04-21-a-brighter-apple/</guid>
+      <description>Coding has always been hard for me. I&amp;rsquo;ve never been able to get my mind around loops, if and else, for and while, and break almost breaks me instead of the code. However, many people make it look easy, and for them, it probably is. In iOS 14, Apple may loosen their chains upon their technology enough for developers to explore the boundaries of what a pocket computer can do.</description>
+    </item>
+    
+    <item>
+      <title>Apple’s Ecosystem and Accessibility</title>
+      <link>https://devinprater.github.io/2020-03-27-apple-ecosystem/</link>
+      <pubDate>Fri, 27 Mar 2020 16:40:55 +0000</pubDate>
+      
+      <guid>https://devinprater.github.io/2020-03-27-apple-ecosystem/</guid>
+      <description>Earlier this year, my Airpods Pro began making a clicking sound, when in Noise Cancellation or transparency mode. I didn’t think much of it, and just used them regularly, until sound began distorting after a while of listening. I’ve simply stopped using them, as I shudder to think how much a cab ride to the nearest Apple Store, potentially an hour away, would cost. This is only one problem with the Apple ecosystem: being locked into Apple’s wireless headphones, other Bluetooth headphones, or other workarounds, and Apple Stores being far away, which is what I’ll be focusing on in this article.</description>
+    </item>
+    
+    <item>
+      <title>quick apple update</title>
+      <link>https://devinprater.github.io/2020-03-03-quick-apple-update/</link>
+      <pubDate>Tue, 03 Mar 2020 03:43:32 +0000</pubDate>
+      
+      <guid>https://devinprater.github.io/2020-03-03-quick-apple-update/</guid>
+      <description>In a [previous blog post]({% link _posts/2020-02-13-accessibility-consistency.md %}), I talked about Apple having a few problems to fix. Last month, they fixed one of them, being Apple Research. The hearing study now will have accessible hearing tests and questions. Focus is still a little jumpy in the Heart and Movement study questions, and my watch screen has become a moving part so I can’t participate in that study completely, or track my sleep accurately, but getting transportation to the Apple Store is something I’ve covered well on Twitter already.</description>
+    </item>
+    
+    <item>
+      <title>text formatting for the blind</title>
+      <link>https://devinprater.github.io/2020-02-23-text-formatting-for-the-blind/</link>
+      <pubDate>Sun, 23 Feb 2020 13:46:56 +0000</pubDate>
+      
+      <guid>https://devinprater.github.io/2020-02-23-text-formatting-for-the-blind/</guid>
+      <description>Text formatting is used in many areas, from books, newspapers, articles, websites, and documents. Paragraphs, headings, lists, italics, bold, and many other characteristics are used to emphasize, denote chapters, and mark changes in scenes or actions. Sighted users can use formatting to find points of interest in text. What about people who are blind? Is formatting effective for us? Can it be useful?
+In this article, I will explore text formatting, and how blind people use it or dismiss it.</description>
+    </item>
+    
+    <item>
+      <title>Apple’s accessibility consistency</title>
+      <link>https://devinprater.github.io/2020-02-13-accessibility-consistency/</link>
+      <pubDate>Thu, 13 Feb 2020 15:13:23 +0000</pubDate>
+      
+      <guid>https://devinprater.github.io/2020-02-13-accessibility-consistency/</guid>
+      <description>This article will explore Apple’s consistent attention to accessibility, and how other tech companies with commitments to accessibility, like Microsoft and Google, compare to Apple in their accessibility efforts. It also shows where these companies can improve their consistency, and that no company is perfect at being an Assistive Technology provider yet.
+Introduction Apple has shown a commitment to accessibility since the early days of the iPhone, and since mac OSX Tiger.</description>
+    </item>
+    
+  </channel>
+</rss>

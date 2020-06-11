@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>apple on Devin Prater’s Site</title>
+    <link>https://devinprater.github.io/tags/apple/</link>
+    <description>Recent content in apple on Devin Prater’s Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Apr 2020 12:15:06 +0000</lastBuildDate>
+    
+	<atom:link href="https://devinprater.github.io/tags/apple/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Brighter Apple</title>
+      <link>https://devinprater.github.io/2020-04-21-a-brighter-apple/</link>
+      <pubDate>Tue, 21 Apr 2020 12:15:06 +0000</pubDate>
+      
+      <guid>https://devinprater.github.io/2020-04-21-a-brighter-apple/</guid>
+      <description>Coding has always been hard for me. I&amp;rsquo;ve never been able to get my mind around loops, if and else, for and while, and break almost breaks me instead of the code. However, many people make it look easy, and for them, it probably is. In iOS 14, Apple may loosen their chains upon their technology enough for developers to explore the boundaries of what a pocket computer can do.</description>
+    </item>
+    
+    <item>
+      <title>Writing Richly</title>
+      <link>https://devinprater.github.io/2020-04-16-writing-richly/</link>
+      <pubDate>Thu, 16 Apr 2020 01:47:34 +0000</pubDate>
+      
+      <guid>https://devinprater.github.io/2020-04-16-writing-richly/</guid>
+      <description>Whenever you read a text message, forum post, Tweet, or Facebook status, have you ever seen some one surround a word with stars, like *this*? Have you noticed some one surround a phrase with two stars? This is Markdown, a form of formatting text for web usage.
+I believe, however, that Markdown deserves more than just web usage. I can write in Markdown in this blog, I can use it on Github, and even in a few social networks.</description>
+    </item>
+    
+    <item>
+      <title>Apple’s Ecosystem and Accessibility</title>
+      <link>https://devinprater.github.io/2020-03-27-apple-ecosystem/</link>
+      <pubDate>Fri, 27 Mar 2020 16:40:55 +0000</pubDate>
+      
+      <guid>https://devinprater.github.io/2020-03-27-apple-ecosystem/</guid>
+      <description>Earlier this year, my Airpods Pro began making a clicking sound, when in Noise Cancellation or transparency mode. I didn’t think much of it, and just used them regularly, until sound began distorting after a while of listening. I’ve simply stopped using them, as I shudder to think how much a cab ride to the nearest Apple Store, potentially an hour away, would cost. This is only one problem with the Apple ecosystem: being locked into Apple’s wireless headphones, other Bluetooth headphones, or other workarounds, and Apple Stores being far away, which is what I’ll be focusing on in this article.</description>
+    </item>
+    
+    <item>
+      <title>quick apple update</title>
+      <link>https://devinprater.github.io/2020-03-03-quick-apple-update/</link>
+      <pubDate>Tue, 03 Mar 2020 03:43:32 +0000</pubDate>
+      
+      <guid>https://devinprater.github.io/2020-03-03-quick-apple-update/</guid>
+      <description>In a [previous blog post]({% link _posts/2020-02-13-accessibility-consistency.md %}), I talked about Apple having a few problems to fix. Last month, they fixed one of them, being Apple Research. The hearing study now will have accessible hearing tests and questions. Focus is still a little jumpy in the Heart and Movement study questions, and my watch screen has become a moving part so I can’t participate in that study completely, or track my sleep accurately, but getting transportation to the Apple Store is something I’ve covered well on Twitter already.</description>
+    </item>
+    
+  </channel>
+</rss>

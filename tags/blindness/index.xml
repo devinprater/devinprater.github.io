@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Devin Prater’s Site</title>
-    <link>https://devinprater.github.io/</link>
-    <description>Recent content in Home on Devin Prater’s Site</description>
+    <title>blindness on Devin Prater’s Site</title>
+    <link>https://devinprater.github.io/tags/blindness/</link>
+    <description>Recent content in blindness on Devin Prater’s Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Tue, 21 Apr 2020 12:15:06 +0000</lastBuildDate>
     
-	<atom:link href="https://devinprater.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://devinprater.github.io/tags/blindness/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>About</title>
-      <link>https://devinprater.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devinprater.github.io/about/</guid>
-      <description>About the blogger My name is Devin Prater. I’m a 26 year old technical assistant, Christian, gamer, accessibility advocate, blind person, Science Fiction and Fantasy reader, and computer aficionado. I come from the state of Alabama, where things move slow and there’s cornbread and chicken, and football is the sport. I’d much rather eat something quick and simple, and read, than watch sports and go places.
-I grew up at the Alabama School for the Blind, learning plenty of scholastic information, but not much about how to live.</description>
-    </item>
     
     <item>
       <title>A Brighter Apple</title>
@@ -40,32 +31,12 @@ I believe, however, that Markdown deserves more than just web usage. I can write
     </item>
     
     <item>
-      <title>test</title>
-      <link>https://devinprater.github.io/test/</link>
-      <pubDate>Wed, 08 Apr 2020 08:10:49 +0000</pubDate>
-      
-      <guid>https://devinprater.github.io/test/</guid>
-      <description>This will test IOS’ support for definition lists.
- Test term Test definition test term two test definition two test definition 2.1  </description>
-    </item>
-    
-    <item>
       <title>Apple’s Ecosystem and Accessibility</title>
       <link>https://devinprater.github.io/2020-03-27-apple-ecosystem/</link>
       <pubDate>Fri, 27 Mar 2020 16:40:55 +0000</pubDate>
       
       <guid>https://devinprater.github.io/2020-03-27-apple-ecosystem/</guid>
       <description>Earlier this year, my Airpods Pro began making a clicking sound, when in Noise Cancellation or transparency mode. I didn’t think much of it, and just used them regularly, until sound began distorting after a while of listening. I’ve simply stopped using them, as I shudder to think how much a cab ride to the nearest Apple Store, potentially an hour away, would cost. This is only one problem with the Apple ecosystem: being locked into Apple’s wireless headphones, other Bluetooth headphones, or other workarounds, and Apple Stores being far away, which is what I’ll be focusing on in this article.</description>
-    </item>
-    
-    <item>
-      <title>open source news</title>
-      <link>https://devinprater.github.io/2020-03-07-open-source-news/</link>
-      <pubDate>Sat, 07 Mar 2020 16:08:22 +0000</pubDate>
-      
-      <guid>https://devinprater.github.io/2020-03-07-open-source-news/</guid>
-      <description>This article will be something rather different from my normal postings. I’ve decided to begin doing news posts, rather than just my ramblings. Oh, there will still be rambles, as I have an opinion on everything, and readers might as well know the person I am, to understand more about my viewpoint, to gauge the content relative to the content writer.
-The scope of the news will vary, but I expect it to be mostly open source technology, relevant to the blind community.</description>
     </item>
     
     <item>
