@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Devin Prater’s Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Apr 2020 12:15:06 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2020 09:50:08 -0500</lastBuildDate>
     
 	<atom:link href="https://devinprater.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>apple</title>
       <link>https://devinprater.github.io/tags/apple/</link>
-      <pubDate>Tue, 21 Apr 2020 12:15:06 +0000</pubDate>
+      <pubDate>Sun, 21 Jun 2020 09:50:08 -0500</pubDate>
       
       <guid>https://devinprater.github.io/tags/apple/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Christianity</title>
+      <link>https://devinprater.github.io/tags/christianity/</link>
+      <pubDate>Sun, 14 Jun 2020 16:47:02 -0500</pubDate>
+      
+      <guid>https://devinprater.github.io/tags/christianity/</guid>
       <description></description>
     </item>
     
