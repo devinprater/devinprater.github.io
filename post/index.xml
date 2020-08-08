@@ -11,6 +11,16 @@
     
     
     <item>
+      <title>Switching Tools</title>
+      <link>https://devinprater.github.io/switching-tools/</link>
+      <pubDate>Fri, 07 Aug 2020 21:57:53 -0500</pubDate>
+      
+      <guid>https://devinprater.github.io/switching-tools/</guid>
+      <description>This is basically a test post. I&amp;rsquo;ve switched from Emacs to VS Code, and I&amp;rsquo;ll detail why below. The gist is that Emacs is unhelpful, only easy to set up on Mac and Linux, and Emacs packages are not standard, and Emacspeak, the speech extension for Emacs, just can&amp;rsquo;t keep up with extensions like LanguageTool, and probably won&amp;rsquo;t because coding is Emacs&amp;rsquo; main use case, not writing.
+Why I used Emacs Emacs has been my work tool for about a year now.</description>
+    </item>
+    
+    <item>
       <title>What I want to see at WWDC2020</title>
       <link>https://devinprater.github.io/what-i-want-to-see-at-wwdc2020/</link>
       <pubDate>Sun, 21 Jun 2020 09:50:08 -0500</pubDate>

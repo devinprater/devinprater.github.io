@@ -6,10 +6,20 @@
     <description>Recent content in blindness on Devin Prater’s Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Apr 2020 12:15:06 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2020 21:57:53 -0500</lastBuildDate>
     
 	<atom:link href="https://devinprater.github.io/tags/blindness/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Switching Tools</title>
+      <link>https://devinprater.github.io/switching-tools/</link>
+      <pubDate>Fri, 07 Aug 2020 21:57:53 -0500</pubDate>
+      
+      <guid>https://devinprater.github.io/switching-tools/</guid>
+      <description>This is basically a test post. I&amp;rsquo;ve switched from Emacs to VS Code, and I&amp;rsquo;ll detail why below. The gist is that Emacs is unhelpful, only easy to set up on Mac and Linux, and Emacs packages are not standard, and Emacspeak, the speech extension for Emacs, just can&amp;rsquo;t keep up with extensions like LanguageTool, and probably won&amp;rsquo;t because coding is Emacs&amp;rsquo; main use case, not writing.
+Why I used Emacs Emacs has been my work tool for about a year now.</description>
+    </item>
     
     <item>
       <title>A Brighter Apple</title>

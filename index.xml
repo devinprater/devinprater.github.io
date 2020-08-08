@@ -21,21 +21,22 @@ I grew up at the Alabama School for the Blind, learning plenty of scholastic inf
     </item>
     
     <item>
+      <title>Switching Tools</title>
+      <link>https://devinprater.github.io/switching-tools/</link>
+      <pubDate>Fri, 07 Aug 2020 21:57:53 -0500</pubDate>
+      
+      <guid>https://devinprater.github.io/switching-tools/</guid>
+      <description>This is basically a test post. I&amp;rsquo;ve switched from Emacs to VS Code, and I&amp;rsquo;ll detail why below. The gist is that Emacs is unhelpful, only easy to set up on Mac and Linux, and Emacs packages are not standard, and Emacspeak, the speech extension for Emacs, just can&amp;rsquo;t keep up with extensions like LanguageTool, and probably won&amp;rsquo;t because coding is Emacs&amp;rsquo; main use case, not writing.
+Why I used Emacs Emacs has been my work tool for about a year now.</description>
+    </item>
+    
+    <item>
       <title>What I want to see at WWDC2020</title>
       <link>https://devinprater.github.io/what-i-want-to-see-at-wwdc2020/</link>
       <pubDate>Sun, 21 Jun 2020 09:50:08 -0500</pubDate>
       
       <guid>https://devinprater.github.io/what-i-want-to-see-at-wwdc2020/</guid>
       <description>WWDC is Apple’s “World Wide Developer Conference.” It’s where developers come to learn about what will be new in Apple’s operating systems (iOS, iPad OS, MacOS, ETC.), and learn how to make the best of Apple’s walled garden of tools to program apps. Tech reporters also come to the event, to gather all the news and distill it into the expected bite-sized, simple pieces. Be assured, my readers, that I will not hold anything back from you in my analysis of the event.</description>
-    </item>
-    
-    <item>
-      <title>The least of us</title>
-      <link>https://devinprater.github.io/draft/the-least-of-us/</link>
-      <pubDate>Sun, 14 Jun 2020 16:47:02 -0500</pubDate>
-      
-      <guid>https://devinprater.github.io/draft/the-least-of-us/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -64,7 +65,7 @@ I believe, however, that Markdown deserves more than just web usage. I can write
       
       <guid>https://devinprater.github.io/test/</guid>
       <description>This will test IOS’ support for definition lists.
- Test term Test definition test term two test definition two test definition 2.1  </description>
+Test termTest definitiontest term twotest definition twotest definition 2.1</description>
     </item>
     
     <item>
