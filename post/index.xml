@@ -5,10 +5,15 @@
     <link>https://devinprater.github.io/post/</link>
     <description>Recent content in Blog on Devin Prater’s Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://devinprater.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    
+    <language>en-us</language><atom:link href="https://devinprater.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VoiceOver Recognition</title>
+      <link>https://devinprater.github.io/voiceover-recognition/</link>
+      <pubDate>Sun, 25 Oct 2020 07:28:35 -0500</pubDate>
+      
+      <guid>https://devinprater.github.io/voiceover-recognition/</guid>
+      <description>Introduction At the launch of the iPhone 3GS, Apple unveiled VoiceOver on the iPhone. Blind users and accessibility experts had been used to screen readers on computers, and even rudimentary screen readers for smart phones that used a keyboard, trackball, or quadrants of a touch screen for navigation and usage. But here was a screen reader that not only came prepackaged on a modern, relatively inexpensive to the competition, and off-the-shelf device, but it also allowed the user to use the touch screen as it is, a touch device.</description>
+    </item>
     
     <item>
       <title>Switching Tools</title>
@@ -16,7 +21,7 @@
       <pubDate>Fri, 07 Aug 2020 21:57:53 -0500</pubDate>
       
       <guid>https://devinprater.github.io/switching-tools/</guid>
-      <description>This is basically a test post. I&amp;rsquo;ve switched from Emacs to VS Code, and I&amp;rsquo;ll detail why below. The gist is that Emacs is unhelpful, only easy to set up on Mac and Linux, and Emacs packages are not standard, and Emacspeak, the speech extension for Emacs, just can&amp;rsquo;t keep up with extensions like LanguageTool, and probably won&amp;rsquo;t because coding is Emacs&amp;rsquo; main use case, not writing.
+      <description>This is basically a test post. I&amp;rsquo;ve switched from Emacs to VS Code, and I&amp;rsquo;ll detail why below. The gist is that Emacs is unhelpful, only easy to set up on Mac and Linux, and Emacs packages are not standard, and Emacspeak, the speech extension for Emacs, just can&amp;rsquo;t keep up with extensions like LanguageTool, and probably won&amp;rsquo;t because coding is Emacs&#39; main use case, not writing.
 Why I used Emacs Emacs has been my work tool for about a year now.</description>
     </item>
     

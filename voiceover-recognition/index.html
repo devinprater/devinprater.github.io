@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.78.1" />
-  <link rel="canonical" href="https://devinprater.github.io/switching-tools/">
+  <link rel="canonical" href="https://devinprater.github.io/voiceover-recognition/">
 
   
 
@@ -34,7 +34,7 @@
 
   
   
-  <title>Switching Tools | Devin Prater’s Site</title>
+  <title>VoiceOver Recognition | Devin Prater’s Site</title>
 </head>
 
   <body>
@@ -232,17 +232,17 @@
     <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
       <use xlink:href="#bookmark"></use>
     </svg>
-    Switching Tools
+    VoiceOver Recognition
   </h1>
 
   <div class="date">
     
     
-    <strong>Publish date: </strong>Aug 7, 2020
+    <strong>Publish date: </strong>Oct 25, 2020
     
     
     <br>
-    <strong>Last updated: </strong>Aug 8, 2020
+    <strong>Last updated: </strong>Nov 11, 2020
     
     
   </div>
@@ -257,14 +257,22 @@
           <use xlink:href="#tag"></use>
         </svg>
         
-        <a href="https://devinprater.github.io/tags/blindness/">Blindness</a>
+        <a href="https://devinprater.github.io/tags/blindness/">blindness</a>
+      </li>
+      
+      <li>
+        <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+          <use xlink:href="#tag"></use>
+        </svg>
+        
+        <a href="https://devinprater.github.io/tags/apple/">apple</a>
       </li>
       
     </ul>
   </div>
   
   <aside>
-    <p>Estimated reading time: 8 min.</p>
+    <p>Estimated reading time: 6 min.</p>
   </aside>
 
   
@@ -279,8 +287,8 @@
           
           
           
-          <a href="#why-i-used-emacs">
-            Why I used Emacs
+          <a href="#introduction">
+            Introduction
           </a>
         </li>
       
@@ -289,8 +297,8 @@
           
           
           
-          <a href="#making-good-out-of-bad">
-            Making Good out of Bad
+          <a href="#voiceover-recognition-the-features">
+            VoiceOver Recognition, the features
           </a>
         </li>
       
@@ -299,8 +307,8 @@
           
           
           
-          <a href="#vs-code-doesnt-play-sounds">
-            VS Code doesn’t play sounds!
+          <a href="#benefits-of-voiceover-recognition">
+            Benefits of VoiceOver Recognition
           </a>
         </li>
       
@@ -309,8 +317,8 @@
           
           
           
-          <a href="#vs-code-doesnt-even-have-a-settings-interface">
-            VS Code doesn’t even have a settings interface!
+          <a href="#comparing-vo-recognition-to-other-options">
+            Comparing VO Recognition to Other Options
           </a>
         </li>
       
@@ -319,38 +327,8 @@
           
           
           
-          <a href="#but-what-about-the-awful-windows-voices">
-            But what about the awful Windows voices!
-          </a>
-        </li>
-      
-        <li>
-          
-          
-          
-          
-          <a href="#bonus-points-for-vs-code">
-            Bonus points for VS Code
-          </a>
-        </li>
-      
-        <li>
-          
-          
-          
-          
-          <a href="#so-any-downsides-to-vs-code">
-            So, any downsides to VS Code?
-          </a>
-        </li>
-      
-        <li>
-          
-          
-          
-          
-          <a href="#conclusion">
-            Conclusion
+          <a href="#the-history-of-these-features">
+            The history of these features
           </a>
         </li>
       
@@ -359,133 +337,36 @@
 
 
   
-  <p>This is basically a test post. I&rsquo;ve switched from Emacs to VS Code, and I&rsquo;ll
-detail why below. The gist is that Emacs is unhelpful, only easy to set up on Mac
-and Linux, and Emacs packages are not standard, and Emacspeak, the speech
-extension for Emacs, just can&rsquo;t keep up with extensions like LanguageTool, and
-probably won&rsquo;t because coding is Emacs' main use case, not writing.</p>
-<h2 id="why-i-used-emacs">Why I used Emacs</h2>
-<p>Emacs has been my work tool for about a year now. I went along with its strange
-commands, and even got to liking them. I memorized strange terminology in order
-to get the most of the editor. Don&rsquo;t get me wrong, Emacs is a wonderful tool,
-and Emacspeak allows me to use it with confidence and even enjoyment.</p>
-<p>Before the end, I was writing blog posts, both here and on a Wordpress blog,
-using Git and GitHub, and even reading EBooks. I also adore Org-mode, which I
-still find superior to anything else for note taking, compiling quick reports,
-and just about anything writing-related. Seriously, being able to export just
-one part of a file, instead of the whole large file containing every bit of
-work-related notes, is huge, and I&rsquo;ll now have to use folders, subfolders,
-and folders under those to come close to achieving that level of
-productivity. And no, the Org-mode extension for VS Code doesn&rsquo;t have a third of
-the ability of the native Emacs Org-mode.</p>
-<p>But, Emacs was founded on the do-it-yourself mentality, and it&rsquo;ll stay that way.
-If you don&rsquo;t know what to look for, Emacs will just sit there, without any
-guidance for you. I&rsquo;ll get more into that as I compare it with VS Code.</p>
-<h2 id="making-good-out-of-bad">Making Good out of Bad</h2>
-<p>One day, my MacBook, which is what I run Emacs on, ran very low on battery. It
-was in the morning that day, and I have a Windows computer also, so I decided to
-see if I could get things done on it. I&rsquo;d tried writing on it before, using
-Markdown in Word, or even VS Code before. But my screen reader, NVDA, wouldn&rsquo;t
-read indentation like Emacspeak did, or pause between reading formatting symbols in Markdown like
-Emacspeak did, play sounds for quick alerts of action like Emacspeak did, or
-even have a settings interface like Emacs did, and definitely didn&rsquo;t have a
-voice like Alex on the Mac. Those were my thoughts when I&rsquo;d tried it before.
-I&rsquo;ll tackle them all, now that I&rsquo;ve used VS Code for almost a week.</p>
-<p>So, I managed to get Markdown support close to how I used it in Emacs, minus the
-quick jumping between headings with a single keyboard command. I still miss
-that. The LanguageTool extension works perfectly, although I had to learn that
-to access the corrections it gave I have to press <strong>Control + . (period)</strong>.
-Every extension I&rsquo;ve installed so far has worked with NVDA. I cannot say that
-for Emacs with Emacspeak. Since the web is so standardized, there isn&rsquo;t too much
-an extension could do to not be accessible. Sometimes I wish the suggestions
-didn&rsquo;t pop up all the time in some language modes, but I&rsquo;ll take that any day
-over inaccessibility.</p>
-<p>So, on with debunking the problems I had at first. Hopefully this will help
-newcomers to VS Code, or those who are cynical that basically a web app can do
-what they need:</p>
-<h3 id="nvda-doesnt-read-indentation">NVDA doesn&rsquo;t read indentation!</h3>
-<p>Yes, it can. It can either speak the indentation, or beep, starting at, I
-believe, low C for the baseline and moving up tones. Sometimes I have to pay a
-bit of attention to notice the difference between no space and one space, but
-that&rsquo;s what having it speak is for.</p>
-<h3 id="nvda-doesnt-pause-between-formatting-symbols">NVDA doesn&rsquo;t pause between formatting symbols!</h3>
-<p>This is true, and unavoidable for now. But, unlike Emacspeak, NVDA has the
-ability to use a braille display, which makes reading, digesting information,
-and learning a lot easier for those whose mind, like mine, is more like a train
-than a race car. In the future, NVDA&rsquo;s speech refactoring may make pausing, or
-changing pitch for syntax highlighting, a reality.</p>
-<h2 id="vs-code-doesnt-play-sounds">VS Code doesn&rsquo;t play sounds!</h2>
-<p>This is true too, and I&rsquo;ve not found a setting or extension to make this happen.
-Maybe one day&hellip;</p>
-<h2 id="vs-code-doesnt-even-have-a-settings-interface">VS Code doesn&rsquo;t even have a settings interface!</h2>
-<p>Before, I thought one had to edit the JSON file for settings to change them. It
-turns out that if you press <strong>Control + , (comma)</strong>, you get a simple, easy,
-Windows interface. This is a bit rough around the edges, because you have to Tab
-twice from one setting to the next, and you could roam from one section of
-settings to another, but it&rsquo;s easier than Emacs.</p>
-<h2 id="but-what-about-the-awful-windows-voices">But what about the awful Windows voices!</h2>
-<p>Yes, Windows voices still are dry and boring, or sound fuzzy, but NVDA has many
-options for speech now. I&rsquo;ve settled on one that I can live with. No, it doesn&rsquo;t
-have the seeming contextual awareness of paragraphs like Alex, but it&rsquo;s Windows.
-I can&rsquo;t expect <em>too</em> much.</p>
-<h2 id="bonus-points-for-vs-code">Bonus points for VS Code</h2>
-<h3 id="git">Git</h3>
-<p>I&rsquo;m only now starting to get Git. It&rsquo;s a program that allows you to keep
-multiple versions of things, so you can roll back your work, or even work on
-separate parts of your work in separate branches of the project. Emacs just&hellip;
-sits there as usual, assuming you have any idea of what you&rsquo;re doing. VS Code,
-though, actively tries to help. If you have Git, it offers an extension for
-that. If you open a Git repository, it asks if you&rsquo;d like it to fetch changes
-every once in a while to make sure things are up-to-date when you commit your
-changes. I was able to commit a pull request in VS Code easily and with minimal
-fuss. In Emacs, I didn&rsquo;t even know where to begin. And any program that takes
-guessing and meaningless work off my shoulders is a program I&rsquo;ll keep.</p>
-<h3 id="suggestions-while-typing">Suggestions while typing</h3>
-<p>VS Code is pretty good at this. If I&rsquo;m writing code, it will offer suggestions
-as I type. Sometimes they&rsquo;re helpful, sometimes they aren&rsquo;t. In text modes, this
-doesn&rsquo;t happen; it appears that this only happens in programming modes. Emacs
-would just let you type and type and type, and then browsing Reddit you&rsquo;d find
-out about snippet packages that may or may not work with Emacspeak.</p>
-<h3 id="standardized">Standardized</h3>
-<p>As mentioned before, VS Code is basically a web app. Emacs is a program written
-in mostly Emacs Lisp, and a bit written in C. Extensions in VS Code are written
-in JavaScript, whereas extensions in Emacs are written in its Lisp dialect.
-Since Emacs is completely text based, any kind of fancy interface must be made
-manually, which usually means that Emacspeak will not work with it, unless the
-author, or a community member, massages the data enough to make it work. This is
-a constant battle, and it won&rsquo;t get easier for anyone involved.</p>
-<p>VS Code is a graphical tool that has plenty of keyboard commands, and screen
-reader support. Its completion, correction, and terminal processes have already
-been created, so all extensions have to do is hook into that. This means that a
-lot of extensions are accessible, without even knowing it.</p>
-<h2 id="so-any-downsides-to-vs-code">So, any downsides to VS Code?</h2>
-<p>VS Code is not perfect by any stretch. When screen reader support is enabled, a
-few features are actually disabled because Microsoft doesn&rsquo;t know how to convey
-them to the user without using sound. Code folding is disabled, which would make
-navigating markdown a lot simpler. Word wrapping is disabled, meaning that a
-paragraph is on one very long line. I&rsquo;ve found Rewrap, a third-party extension
-that I can use, so that&rsquo;s fixed. There are no sounds, so the only way I know
-there are problems is by going to the next problem, or opening the issues panel.</p>
-<p>Overall though, VS Code has impressed me, and I continuously find wonderful,
-time-saving, mind-clearing moments where I breathe a sigh of relief that to
-create a list in markdown, I can just select lines of text, and choose “toggle
-list” from the commands panel, whereas with Emacs I had to mark the list of
-lines and remember some strange command like “string-insert-rectangle” and type
-“*” to make all of those list items. These kinds of time-savers make me more
-productive, offsetting slightly the lack of features akin to those in Org-mode.</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>I didn&rsquo;t expect this post to be so long, but it will be a good test to see if VS
-Code&rsquo;s Hugo support is enough to replace Easy-Hugo on Emacs. While VS Code
-doesn&rsquo;t have a book reader, at least, not one I think I&rsquo;d like, or a media
-player with Tune-In Radio support made for the blind, and many other packages,
-it is a great editor, and does have tools like Hugo extensions that make it
-slightly more that an editor. I should branch out more and see what tools
-Windows now has for these functions anyways. I already use Foobar2000 for media,
-I just have to find a good book reader that doesn&rsquo;t get rid of formatting info.</p>
-<p>So, I hope you all have enjoyed reading this long test of VS Code, and an update
-on what I&rsquo;ve been doing lately when not playing video games and other things.</p>
-<p>In other news, I&rsquo;ve been using the iOS 14 and macOS 11 public betas. I&rsquo;ll report
-on my findings on those when the systems are released this fall.</p>
+  <h2 id="introduction">Introduction</h2>
+<p>At the launch of the iPhone 3GS, Apple unveiled VoiceOver on the iPhone. Blind users and accessibility experts had been used to screen readers on computers, and even rudimentary screen readers for smart phones that used a keyboard, trackball, or quadrants of a touch screen for navigation and usage. But here was a screen reader that not only came prepackaged on a modern, relatively inexpensive to the competition, and off-the-shelf device, but it also allowed the user to use the touch screen as it is, a touch device.</p>
+<p>This year, VoiceOver added a feature called &ldquo;VoiceOver recognition.&rdquo; This feature allows VoiceOver to utilize the machine learning coprocessor in newer iPhone models to describe images with near-human quality, make apps more accessible using ML models, and read the text in images.</p>
+<p>This article will explore these new features, go into their benefits, compare VoiceOver Recognition to other options, and discuss the history of these features, and what&rsquo;s next.</p>
+<h2 id="voiceover-recognition-the-features">VoiceOver Recognition, the features</h2>
+<p>VoiceOver Recognition, as discussed before, contains three separate features: Image Recognition, Screen Recognition, and Text recognition. All three work together to bring the best experience. In accessible apps and sites, though, Image and Text recognition do the job fine. All three features must be downloaded and turned on in VoiceOver settings. Image recognition acts upon images automatically, employing Text recognition when text is found in an image.</p>
+<p>Screen recognition makes inaccessible apps as good as currently possible with the ML (Machine Learning) model. It is still great, though. It allows me to play Final Fantasy Record Keeper quite easily. It is not perfect, but it is only the beginning!</p>
+<h2 id="benefits-of-voiceover-recognition">Benefits of VoiceOver Recognition</h2>
+<p>Imagine, if you are sighted, that you have never seen a picture before, or if you have, that you&rsquo;ve never seen a picture you&rsquo;ve taken yourself. Imagine that all the pictures you have viewed on social media have been blurry and vague. Sure, you can see some movies, but they are far and few between. And apps? You can only access a few, relative to the number of total apps. And games are laughably simple and forgettable.</p>
+<p>That is how digital life is for blind people. Now, however, we have a tool that
+helps with that immensely. VoiceOver Recognition gives amazing descriptions for
+photos. Not perfect, and sometimes when playing a game, I just get &ldquo;A photo of a
+video game&rdquo; as a description, but again, this is the first version. And photos
+in news articles and on websites, and in apps, are amazingly accurate. If I
+didn&rsquo;t know better, I would think someone at Apple is busy describing all the
+images I come across. While Screen Recognition can fail spectacularly sometimes,
+especially with apps that do not look native to iOS, it has allowed me to get
+out of sticky situations in some apps and has allowed me to press the occasional button that VoiceOver can&rsquo;t press due to poor app coding and such.
+And I can play a few text-heavy games with it, like Game of Thrones, a tale of
+crows.</p>
+<p>Even my ability to take pictures is greatly enhanced with image recognition. With this feature, I can open the Camera app, put VoiceOver focus on the &ldquo;view finder,&rdquo; and it will describe what is in the camera view! When it changes, I must move focus away and back to the View Finder, but that&rsquo;s a small price to pay for a &ldquo;talking camera&rdquo; that is actually accurate.</p>
+<h2 id="comparing-vo-recognition-to-other-options">Comparing VO Recognition to Other Options</h2>
+<p>Blind people may then say &ldquo;Okay, what about Narrator on Windows? It does the same thing, right?&rdquo; No. First, the photo is sent to a server owned by Microsoft. On iOS, the photo is captioned using the ML Coprocessor. What Microsoft needs and Internet connection and remote server to do, Apple does far better with the chip on your device!</p>
+<p>You may then say &ldquo;Well, how does it give better results?&rdquo; First, it&rsquo;s automatic. Land on an image, and it works! Second, it is not shy about what it thinks it sees. If it is confident in its description, it will simply describe it. Narrator, and Seeing AI, always say &ldquo;Image may contain: &quot; before giving a guess. And, with more complex images, Narrator fails, and so does Seeing AI. I have read that this is set to improve, but I&rsquo;ve not seen the improvements yet. Only when VoiceOver Recognition isn&rsquo;t confident in what it sees, it says, &ldquo;Photo contains,&rdquo; and then gives a list of objects that it is surer of. This does not happen nearly as frequently as Narrator/Seeing AI, though.</p>
+<p>You may also say &ldquo;Okay, so how is this better than NVDA&rsquo;s OCR? You can use it to click on items in an app.&rdquo; Yes, and that is great, it really is, and I thank the NVDA developers every time I use VMWare with Linux because there always seems to be something going on with it. But with VoiceOver Recognition, you get an actual natively &ldquo;accessible,&rdquo; app. You don&rsquo;t have to click on anything, and you know what VoiceOver thinks the item type of something is: a button, text field, ETC., and can interact with the item accordingly. With NVDA, you have a sort of mouse. With VO Recognition, you have an entire app experience.</p>
+<h2 id="the-history-of-these-features">The history of these features</h2>
+<p>Using AI to bolster the accessibility of user Interfaces is not a new idea. It has been floating around the blind community for a while now. I remember discussing it on an APH (American Printing House for the Blind) mailing list around a decade ago. Back then, however, it was just a toy idea. No one thought it could be done with current, at the time, Android 2.3 era hardware or software. It continued to be brought up by blind people who dreamed bigger than I, but never really went anyway.</p>
+<p>Starting with the iPhone X R, Apple began shipping a machine learning Coprocessor within their iPhones. Then n iOS 13, VoiceOver gained the ability to describe images. This was not using the ML chip, however, since older phones could take advantage of it. I thought they may improve this, but I had no idea they would do as great a job as they are doing with iOS 14.</p>
+<h3 id="whats-next">What&rsquo;s Next?</h3>
+<p>As I&rsquo;ve said a few times now, this is only version one. I suspect Apple will continue building on their huge success this year, fleshing out Screen recognition, and perhaps having VoiceOver automatically speak what&rsquo;s in the camera view when preparing to take a picture, and perhaps adding even more than I cannot imagine now. I suspect, however, that this is leading to an even larger reveal for accessibility in the next few years, Augmented and Virtual reality. Apple Glasses, after all, would be very useful if they could describe what&rsquo;s around a blind person.</p>
 
 </main>
 <div id="disqus-container">
