@@ -50,6 +50,14 @@
   <lastmod>2020-11-28T04:10:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://devinprater.github.io/netcast.oga.rss</loc>
+  <lastmod>2020-12-23T05:20:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://devinprater.github.io/netcast.opus.rss</loc>
+  <lastmod>2020-12-23T05:20:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://devinprater.github.io/post/index.xml</loc>
   <lastmod>2020-11-28T04:10:00Z</lastmod>
  </sitemap>
@@ -59,7 +67,7 @@
  </sitemap>
  <sitemap>
   <loc>https://devinprater.github.io/sitemap.xml</loc>
-  <lastmod>2020-12-23T04:12:00Z</lastmod>
+  <lastmod>2020-12-23T05:20:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://devinprater.github.io/tags/advocacy/index.xml</loc>
