@@ -1,275 +1,1273 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <meta name="generator" content="Hugo 0.78.1" />
-  <link rel="canonical" href="https://devinprater.github.io/">
-
-  
-    
-      <meta name="description" content="Devin Prater’s blog and site.">
-    
-  
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
-
-  <link rel="stylesheet" href="https://devinprater.github.io/css/prism.css" media="none" onload="this.media='all';">
-
-  
-  
-  <link rel="stylesheet" type="text/css" href="https://devinprater.github.io/css/styles.css">
-
-  
-
-  <style id="inverter" media="none">
-    .intro-and-nav, .main-and-footer { filter: invert(100%) }
-    * { background-color: inherit }
-    img:not([src*=".svg"]), .colors, iframe, .demo-container { filter: invert(100%) }
-  </style>
-
-  
-  
-    
-  
-  <title>Devin Prater’s Site</title>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Devin's thoughts on tech, accessibility, blindness, open source, and anything else.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Devin's Site</title>
+<link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="rss.xml">
+<link rel="canonical" href="https://devinprater.github.io/">
+<link rel="next" href="index-1.html" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/test/" type="text/html">
 </head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
 
-  <body>
-    <a href="#main">skip to content</a>
-    <svg style="display: none">
-  <symbol id="bookmark" viewBox="0 0 40 50">
-   <g transform="translate(2266 3206.2)">
-    <path style="stroke:currentColor;stroke-width:3.2637;fill:none" d="m-2262.2-3203.4-.2331 42.195 16.319-16.318 16.318 16.318.2331-42.428z"/>
-   </g>
-  </symbol>
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+<!-- DuckDuckGo custom search -->
+<form method="get" id="search" action="https://duckduckgo.com/" class="navbar-form pull-left">
+<input type="hidden" name="sites" value="https://devinprater.github.io/"><input type="hidden" name="k8" value="#444444"><input type="hidden" name="k9" value="#D51920"><input type="hidden" name="kt" value="h"><input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px;"><input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+</form>
+<!-- End of custom search -->
 
-  <symbol id="w3c" viewBox="0 0 127.09899 67.763">
-   <text font-size="83" style="font-size:83px;font-family:Trebuchet;letter-spacing:-12;fill-opacity:0" letter-spacing="-12" y="67.609352" x="-26.782778">W3C</text>
-   <text font-size="83" style="font-size:83px;font-weight:bold;font-family:Trebuchet;fill-opacity:0" y="67.609352" x="153.21722" font-weight="bold">SVG</text>
-   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m33.695.377 12.062 41.016 12.067-41.016h8.731l-19.968 67.386h-.831l-12.48-41.759-12.479 41.759h-.832l-19.965-67.386h8.736l12.061 41.016 8.154-27.618-3.993-13.397h8.737z"/>
-   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m91.355 46.132c0 6.104-1.624 11.234-4.862 15.394-3.248 4.158-7.45 6.237-12.607 6.237-3.882 0-7.263-1.238-10.148-3.702-2.885-2.47-5.02-5.812-6.406-10.022l6.82-2.829c1.001 2.552 2.317 4.562 3.953 6.028 1.636 1.469 3.56 2.207 5.781 2.207 2.329 0 4.3-1.306 5.909-3.911 1.609-2.606 2.411-5.738 2.411-9.401 0-4.049-.861-7.179-2.582-9.399-1.995-2.604-5.129-3.912-9.397-3.912h-3.327v-3.991l11.646-20.133h-14.062l-3.911 6.655h-2.493v-14.976h32.441v4.075l-12.31 21.217c4.324 1.385 7.596 3.911 9.815 7.571 2.22 3.659 3.329 7.953 3.329 12.892z"/>
-   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m125.21 0 1.414 8.6-5.008 9.583s-1.924-4.064-5.117-6.314c-2.693-1.899-4.447-2.309-7.186-1.746-3.527.73-7.516 4.938-9.258 10.13-2.084 6.21-2.104 9.218-2.178 11.978-.115 4.428.58 7.043.58 7.043s-3.04-5.626-3.011-13.866c.018-5.882.947-11.218 3.666-16.479 2.404-4.627 5.954-7.404 9.114-7.728 3.264-.343 5.848 1.229 7.841 2.938 2.089 1.788 4.213 5.698 4.213 5.698l4.94-9.837z"/>
-   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m125.82 48.674s-2.208 3.957-3.589 5.48c-1.379 1.524-3.849 4.209-6.896 5.555-3.049 1.343-4.646 1.598-7.661 1.306-3.01-.29-5.807-2.032-6.786-2.764-.979-.722-3.486-2.864-4.897-4.854-1.42-2-3.634-5.995-3.634-5.995s1.233 4.001 2.007 5.699c.442.977 1.81 3.965 3.749 6.572 1.805 2.425 5.315 6.604 10.652 7.545 5.336.945 9.002-1.449 9.907-2.031.907-.578 2.819-2.178 4.032-3.475 1.264-1.351 2.459-3.079 3.116-4.108.487-.758 1.276-2.286 1.276-2.286l-1.276-6.644z"/>
-  </symbol>
-
-  <symbol id="tag" viewBox="0 0 177.16535 177.16535">
-    <g transform="translate(0 -875.2)">
-     <path style="fill-rule:evenodd;stroke-width:0;fill:currentColor" d="m159.9 894.3-68.79 8.5872-75.42 77.336 61.931 60.397 75.429-76.565 6.8495-69.755zm-31.412 31.835a10.813 10.813 0 0 1 1.8443 2.247 10.813 10.813 0 0 1 -3.5174 14.872l-.0445.0275a10.813 10.813 0 0 1 -14.86 -3.5714 10.813 10.813 0 0 1 3.5563 -14.863 10.813 10.813 0 0 1 13.022 1.2884z"/>
-    </g>
-  </symbol>
-
-  <symbol id="balloon" viewBox="0 0 141.73228 177.16535">
-   <g transform="translate(0 -875.2)">
-    <g>
-     <path style="fill:currentColor" d="m68.156 882.83-.88753 1.4269c-4.9564 7.9666-6.3764 17.321-5.6731 37.378.36584 10.437 1.1246 23.51 1.6874 29.062.38895 3.8372 3.8278 32.454 4.6105 38.459 4.6694-.24176 9.2946.2879 14.377 1.481 1.2359-3.2937 5.2496-13.088 8.886-21.623 6.249-14.668 8.4128-21.264 10.253-31.252 1.2464-6.7626 1.6341-12.156 1.4204-19.764-.36325-12.93-2.1234-19.487-6.9377-25.843-2.0833-2.7507-6.9865-7.6112-7.9127-7.8436-.79716-.20019-6.6946-1.0922-6.7755-1.0248-.02213.0182-5.0006-.41858-7.5248-.22808l-2.149-.22808h-3.3738z"/>
-     <path style="fill:currentColor" d="m61.915 883.28-3.2484.4497c-1.7863.24724-3.5182.53481-3.8494.63994-2.4751.33811-4.7267.86957-6.7777 1.5696-.28598 0-1.0254.20146-2.3695.58589-5.0418 1.4418-6.6374 2.2604-8.2567 4.2364-6.281 7.6657-11.457 18.43-12.932 26.891-1.4667 8.4111.71353 22.583 5.0764 32.996 3.8064 9.0852 13.569 25.149 22.801 37.517 1.3741 1.841 2.1708 2.9286 2.4712 3.5792 3.5437-1.1699 6.8496-1.9336 10.082-2.3263-1.3569-5.7831-4.6968-21.86-6.8361-33.002-.92884-4.8368-2.4692-14.322-3.2452-19.991-.68557-5.0083-.77707-6.9534-.74159-15.791.04316-10.803.41822-16.162 1.5026-21.503 1.4593-5.9026 3.3494-11.077 6.3247-15.852z"/>
-     <path style="fill:currentColor" d="m94.499 885.78c-.10214-.0109-.13691 0-.0907.0409.16033.13489 1.329 1.0675 2.5976 2.0723 6.7003 5.307 11.273 14.568 12.658 25.638.52519 4.1949.24765 14.361-.5059 18.523-2.4775 13.684-9.7807 32.345-20.944 53.519l-3.0559 5.7971c2.8082.76579 5.7915 1.727 8.9926 2.8441 11.562-11.691 18.349-19.678 24.129-28.394 7.8992-11.913 11.132-20.234 12.24-31.518.98442-10.02-1.5579-20.876-6.7799-28.959-.2758-.4269-.57803-.86856-.89617-1.3166-3.247-6.13-9.752-12.053-21.264-16.131-2.3687-.86369-6.3657-2.0433-7.0802-2.1166z"/>
-     <path style="fill:currentColor" d="m32.52 892.22c-.20090-.13016-1.4606.81389-3.9132 2.7457-11.486 9.0476-17.632 24.186-16.078 39.61.79699 7.9138 2.4066 13.505 5.9184 20.562 5.8577 11.77 14.749 23.219 30.087 38.74.05838.059.12188.1244.18052.1838 1.3166-.5556 2.5965-1.0618 3.8429-1.5199-.66408-.32448-1.4608-1.3297-3.8116-4.4602-5.0951-6.785-8.7512-11.962-13.051-18.486-5.1379-7.7948-5.0097-7.5894-8.0586-13.054-6.2097-11.13-8.2674-17.725-8.6014-27.563-.21552-6.3494.13041-9.2733 1.775-14.987 2.1832-7.5849 3.9273-10.986 9.2693-18.07 1.7839-2.3656 2.6418-3.57 2.4409-3.7003z"/>
-     <path style="fill:currentColor" d="m69.133 992.37c-6.2405.0309-12.635.76718-19.554 2.5706 4.6956 4.7759 9.935 10.258 12.05 12.625l4.1272 4.6202h11.493l3.964-4.4516c2.0962-2.3541 7.4804-7.9845 12.201-12.768-8.378-1.4975-16.207-2.6353-24.281-2.5955z"/>
-     <rect style="stroke-width:0;fill:currentColor" ry="2.0328" height="27.746" width="22.766" y="1017.7" x="60.201"/>
-    </g>
-   </g>
-  </symbol>
-
-  <symbol id="info" viewBox="0 0 41.667 41.667">
-   <g transform="translate(-37.035 -1004.6)">
-    <path style="stroke-linejoin:round;stroke:currentColor;stroke-linecap:round;stroke-width:3.728;fill:none" d="m76.25 1030.2a18.968 18.968 0 0 1 -23.037 13.709 18.968 18.968 0 0 1 -13.738 -23.019 18.968 18.968 0 0 1 23.001 -13.768 18.968 18.968 0 0 1 13.798 22.984"/>
-    <g transform="matrix(1.1146 0 0 1.1146 -26.276 -124.92)">
-     <path style="stroke:currentColor;stroke-linecap:round;stroke-width:3.728;fill:none" d="m75.491 1039.5v-8.7472"/>
-     <path style="stroke-width:0;fill:currentColor" transform="scale(-1)" d="m-73.193-1024.5a2.3719 2.3719 0 0 1 -2.8807 1.7142 2.3719 2.3719 0 0 1 -1.718 -2.8785 2.3719 2.3719 0 0 1 2.8763 -1.7217 2.3719 2.3719 0 0 1 1.7254 2.8741"/>
-    </g>
-   </g>
-  </symbol>
-
-  <symbol id="warning" viewBox="0 0 48.430474 41.646302">
-    <g transform="translate(-1.1273 -1010.2)">
-     <path style="stroke-linejoin:round;stroke:currentColor;stroke-linecap:round;stroke-width:4.151;fill:none" d="m25.343 1012.3-22.14 37.496h44.28z"/>
-     <path style="stroke:currentColor;stroke-linecap:round;stroke-width:4.1512;fill:none" d="m25.54 1027.7v8.7472"/>
-     <path style="stroke-width:0;fill:currentColor" d="m27.839 1042.8a2.3719 2.3719 0 0 1 -2.8807 1.7143 2.3719 2.3719 0 0 1 -1.718 -2.8785 2.3719 2.3719 0 0 1 2.8763 -1.7217 2.3719 2.3719 0 0 1 1.7254 2.8741"/>
-    </g>
-  </symbol>
-
-  <symbol id="menu" viewBox="0 0 50 50">
-     <rect style="stroke-width:0;fill:currentColor" height="10" width="50" y="0" x="0"/>
-     <rect style="stroke-width:0;fill:currentColor" height="10" width="50" y="20" x="0"/>
-     <rect style="stroke-width:0;fill:currentColor" height="10" width="50" y="40" x="0"/>
-   </symbol>
-
-   <symbol id="link" viewBox="0 0 50 50">
-    <g transform="translate(0 -1002.4)">
-     <g transform="matrix(.095670 0 0 .095670 2.3233 1004.9)">
-      <g>
-       <path style="stroke-width:0;fill:currentColor" d="m452.84 192.9-128.65 128.65c-35.535 35.54-93.108 35.54-128.65 0l-42.881-42.886 42.881-42.876 42.884 42.876c11.845 11.822 31.064 11.846 42.886 0l128.64-128.64c11.816-11.831 11.816-31.066 0-42.9l-42.881-42.881c-11.822-11.814-31.064-11.814-42.887 0l-45.928 45.936c-21.292-12.531-45.491-17.905-69.449-16.291l72.501-72.526c35.535-35.521 93.136-35.521 128.64 0l42.886 42.881c35.535 35.523 35.535 93.141-.001 128.66zm-254.28 168.51-45.903 45.9c-11.845 11.846-31.064 11.817-42.881 0l-42.884-42.881c-11.845-11.821-11.845-31.041 0-42.886l128.65-128.65c11.819-11.814 31.069-11.814 42.884 0l42.886 42.886 42.876-42.886-42.876-42.881c-35.54-35.521-93.113-35.521-128.65 0l-128.65 128.64c-35.538 35.545-35.538 93.146 0 128.65l42.883 42.882c35.51 35.54 93.11 35.54 128.65 0l72.496-72.499c-23.956 1.597-48.092-3.784-69.474-16.283z"/>
-      </g>
-     </g>
-    </g>
-  </symbol>
-
-  <symbol id="doc" viewBox="0 0 35 45">
-   <g transform="translate(-147.53 -539.83)">
-    <path style="stroke:currentColor;stroke-width:2.4501;fill:none" d="m149.38 542.67v39.194h31.354v-39.194z"/>
-    <g style="stroke-width:25" transform="matrix(.098003 0 0 .098003 133.69 525.96)">
-     <path d="m220 252.36h200" style="stroke:currentColor;stroke-width:25;fill:none"/>
-     <path style="stroke:currentColor;stroke-width:25;fill:none" d="m220 409.95h200"/>
-     <path d="m220 488.74h200" style="stroke:currentColor;stroke-width:25;fill:none"/>
-     <path d="m220 331.15h200" style="stroke:currentColor;stroke-width:25;fill:none"/>
-    </g>
-   </g>
- </symbol>
-
- <symbol id="tick" viewBox="0 0 177.16535 177.16535">
-  <g transform="translate(0 -875.2)">
-   <rect style="stroke-width:0;fill:currentColor" transform="rotate(30)" height="155" width="40" y="702.99" x="556.82"/>
-   <rect style="stroke-width:0;fill:currentColor" transform="rotate(30)" height="40" width="90.404" y="817.99" x="506.42"/>
-  </g>
- </symbol>
-</svg>
-
-    <div class="wrapper">
-      <header class="intro-and-nav" role="banner">
-  <div>
-    <div class="intro">
-      <a
-        class="logo"
-        href="https://devinprater.github.io"
-        aria-label="Devin Prater’s Site home page"
-      >
-        <img src="https://devinprater.github.io/images/logo.svg" alt="">
-      </a>
-      <p class="library-desc">
-         Devin Prater’s blog and site. 
-      </p>
-    </div>
-    <nav id="patterns-nav" class="patterns" role="navigation">
-  <h2 class="vh">Main navigation</h2>
-  <button id="menu-button" aria-expanded="false">
-    <svg viewBox="0 0 50 50" aria-hidden="true" focusable="false">
-      <use xlink:href="#menu"></use>
-    </svg>
-    Menu
-  </button>
-  
-  <ul id="patterns-list">
-  
-    <li class="pattern">
-      
-      
-      
-      
-      <a href="/" aria-current="page">
-        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
-          <use xlink:href="#bookmark"></use>
-        </svg>
-        <span class="text">Home</span>
-      </a>
-    </li>
-  
-    <li class="pattern">
-      
-      
-      
-      
-      <a href="/post/" >
-        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
-          <use xlink:href="#bookmark"></use>
-        </svg>
-        <span class="text">Blog</span>
-      </a>
-    </li>
-  
-    <li class="pattern">
-      
-      
-      
-      
-      <a href="/tags/" >
-        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
-          <use xlink:href="#bookmark"></use>
-        </svg>
-        <span class="text">Tags</span>
-      </a>
-    </li>
-  
-    <li class="pattern">
-      
-      
-      
-      
-      <a href="/about/" >
-        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
-          <use xlink:href="#bookmark"></use>
-        </svg>
-        <span class="text">About</span>
-      </a>
-    </li>
-  
-    <li class="pattern">
-      
-      
-      
-      
-      <a href="/index.xml" >
-        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
-          <use xlink:href="#bookmark"></use>
-        </svg>
-        <span class="text">RSS</span>
-      </a>
-    </li>
-  
-  </ul>
-</nav>
-  </div>
-</header>
-
-      <div class="main-and-footer">
-        <div>
-          
-  <main id="main">
-    <h1>Home</h1>
-    <h1 id="welcome-to-my-site">Welcome to my site</h1>
-<p>This is the site of Devin Prater. Find out about me on my about page.</p>
-
-  </main>
-
-          <footer role="contentinfo">
-  <div>
-    <label for="themer">
-      dark theme: <input type="checkbox" id="themer" class="vh">
-      <span aria-hidden="true"></span>
-    </label>
-  </div>
-  
-    Made with Hugo, hosted with Github Pages.
-  
-</footer>
-
+            </div>
         </div>
-      </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href=".">
+
+            <span id="blog-title">Devin's Site</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
     </div>
-    <script src="https://devinprater.github.io/js/prism.js"></script>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="archive.html" class="nav-link">Archive</a>
+                </li>
+<li class="nav-item">
+<a href="categories/" class="nav-link">Tags</a>
+                </li>
+<li class="nav-item">
+<a href="rss.xml" class="nav-link">RSS feed</a>
 
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
 
-
-<script src="https://devinprater.github.io/js/dom-scripts.js"></script>
-
-
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+    
+        
 
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css" integrity="sha384-dbVIfZGuN1Yq7/1Ocstc1lUEm+AT+/rCkibIcC/OmWo5f0EA48Vf8CytHzGrSwbQ" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js" integrity="sha384-2BKqo+exmr9su6dir+qCw08N2ZKRucY4PrGQPPWU1A7FtlCGjmEGFqXCv5nyM5Ij" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+        
+    <div class="postindex">
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/test/" class="u-url">test</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Devin Prater
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/test/" rel="bookmark">
+            <time class="published dt-published" datetime="2020-12-22T19:32:32-06:00" itemprop="datePublished" title="2020-12-22 19:32">2020-12-22 19:32</time></a>
+            </p>
+                        <p class="commentline">
+        
+        <a href="posts/test/#utterances-thread">Comments</a>
 
+
+                </p>
+</div>
+            </header><div class="e-content entry-content">
+                    <p>
+This is a test of Nikola.
+</p>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/voiceover-recognition/" class="u-url">VoiceOver Recognition</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Devin Prater
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/voiceover-recognition/" rel="bookmark">
+            <time class="published dt-published" datetime="2020-10-25T12:28:35-05:00" itemprop="datePublished" title="2020-10-25 12:28">2020-10-25 12:28</time></a>
+            </p>
+                        <p class="commentline">
+        
+        <a href="posts/voiceover-recognition/#utterances-thread">Comments</a>
+
+
+                </p>
+</div>
+            </header><div class="e-content entry-content">
+                    <div>
+<h3>Introduction</h3>
+<p>At the launch of the iPhone 3GS, Apple unveiled VoiceOver on the iPhone. Blind users and accessibility experts had been used to screen readers on computers, and even rudimentary screen readers for smart phones that used a keyboard, trackball, or quadrants of a touch screen for navigation and usage. But here was a screen reader that not only came prepackaged on a modern, relatively inexpensive to the competition, and off-the-shelf device, but it also allowed the user to use the touch screen as it is, a touch device.</p>
+<p>This year, VoiceOver added a feature called "VoiceOver recognition." This feature allows VoiceOver to utilize the machine learning coprocessor in newer iPhone models to describe images with near-human quality, make apps more accessible using ML models, and read the text in images.</p>
+<p>This article will explore these new features, go into their benefits, compare VoiceOver Recognition to other options, and discuss the history of these features, and what's next.</p>
+<h3>VoiceOver Recognition, the features</h3>
+<p>VoiceOver Recognition, as discussed before, contains three separate features: Image Recognition, Screen Recognition, and Text recognition. All three work together to bring the best experience. In accessible apps and sites, though, Image and Text recognition do the job fine. All three features must be downloaded and turned on in VoiceOver settings. Image recognition acts upon images automatically, employing Text recognition when text is found in an image.</p>
+<p>Screen recognition makes inaccessible apps as good as currently possible with the ML (Machine Learning) model. It is still great, though. It allows me to play Final Fantasy Record Keeper quite easily. It is not perfect, but it is only the beginning!</p>
+<h3>Benefits of VoiceOver Recognition</h3>
+<p>Imagine, if you are sighted, that you have never seen a picture before, or if you have, that you've never seen a picture you've taken yourself. Imagine that all the pictures you have viewed on social media have been blurry and vague. Sure, you can see some movies, but they are far and few between. And apps? You can only access a few, relative to the number of total apps. And games are laughably simple and forgettable.</p>
+<p>That is how digital life is for blind people. Now, however, we have a tool that
+helps with that immensely. VoiceOver Recognition gives amazing descriptions for
+photos. Not perfect, and sometimes when playing a game, I just get "A photo of a
+video game" as a description, but again, this is the first version. And photos
+in news articles and on websites, and in apps, are amazingly accurate. If I
+didn't know better, I would think someone at Apple is busy describing all the
+images I come across. While Screen Recognition can fail spectacularly sometimes,
+especially with apps that do not look native to iOS, it has allowed me to get
+out of sticky situations in some apps and has allowed me to press the occasional button that VoiceOver can't press due to poor app coding and such.
+And I can play a few text-heavy games with it, like Game of Thrones, a tale of
+crows.</p>
+<p>Even my ability to take pictures is greatly enhanced with image recognition. With this feature, I can open the Camera app, put VoiceOver focus on the "view finder," and it will describe what is in the camera view! When it changes, I must move focus away and back to the View Finder, but that's a small price to pay for a "talking camera" that is actually accurate.</p>
+<h3>Comparing VO Recognition to Other Options</h3>
+<p>Blind people may then say "Okay, what about Narrator on Windows? It does the same thing, right?" No. First, the photo is sent to a server owned by Microsoft. On iOS, the photo is captioned using the ML Coprocessor. What Microsoft needs and Internet connection and remote server to do, Apple does far better with the chip on your device!</p>
+<p>You may then say "Well, how does it give better results?" First, it's automatic. Land on an image, and it works! Second, it is not shy about what it thinks it sees. If it is confident in its description, it will simply describe it. Narrator, and Seeing AI, always say "Image may contain: " before giving a guess. And, with more complex images, Narrator fails, and so does Seeing AI. I have read that this is set to improve, but I've not seen the improvements yet. Only when VoiceOver Recognition isn't confident in what it sees, it says, "Photo contains," and then gives a list of objects that it is surer of. This does not happen nearly as frequently as Narrator/Seeing AI, though.</p>
+<p>You may also say "Okay, so how is this better than NVDA's OCR? You can use it to click on items in an app." Yes, and that is great, it really is, and I thank the NVDA developers every time I use VMWare with Linux because there always seems to be something going on with it. But with VoiceOver Recognition, you get an actual natively "accessible," app. You don't have to click on anything, and you know what VoiceOver thinks the item type of something is: a button, text field, ETC., and can interact with the item accordingly. With NVDA, you have a sort of mouse. With VO Recognition, you have an entire app experience.</p>
+<h3>The history of these features</h3>
+<p>Using AI to bolster the accessibility of user Interfaces is not a new idea. It has been floating around the blind community for a while now. I remember discussing it on an APH (American Printing House for the Blind) mailing list around a decade ago. Back then, however, it was just a toy idea. No one thought it could be done with current, at the time, Android 2.3 era hardware or software. It continued to be brought up by blind people who dreamed bigger than I, but never really went anyway.</p>
+<p>Starting with the iPhone X R, Apple began shipping a machine learning Coprocessor within their iPhones. Then n iOS 13, VoiceOver gained the ability to describe images. This was not using the ML chip, however, since older phones could take advantage of it. I thought they may improve this, but I had no idea they would do as great a job as they are doing with iOS 14.</p>
+<h4>What's Next?</h4>
+<p>As I've said a few times now, this is only version one. I suspect Apple will continue building on their huge success this year, fleshing out Screen recognition, and perhaps having VoiceOver automatically speak what's in the camera view when preparing to take a picture, and perhaps adding even more than I cannot imagine now. I suspect, however, that this is leading to an even larger reveal for accessibility in the next few years, Augmented and Virtual reality. Apple Glasses, after all, would be very useful if they could describe what's around a blind person.</p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/switching-tools/" class="u-url">Switching Tools</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Devin Prater
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/switching-tools/" rel="bookmark">
+            <time class="published dt-published" datetime="2020-08-08T02:57:53-05:00" itemprop="datePublished" title="2020-08-08 02:57">2020-08-08 02:57</time></a>
+            </p>
+                        <p class="commentline">
+        
+        <a href="posts/switching-tools/#utterances-thread">Comments</a>
+
+
+                </p>
+</div>
+            </header><div class="e-content entry-content">
+                    <div>
+<p>This is basically a test post. I've switched from Emacs to VS Code, and I'll
+detail why below. The gist is that Emacs is unhelpful, only easy to set up on Mac
+and Linux, and Emacs packages are not standard, and Emacspeak, the speech
+extension for Emacs, just can't keep up with extensions like LanguageTool, and
+probably won't because coding is Emacs' main use case, not writing.</p>
+<h3>Why I used Emacs</h3>
+<p>Emacs has been my work tool for about a year now. I went along with its strange
+commands, and even got to liking them. I memorized strange terminology in order
+to get the most of the editor. Don't get me wrong, Emacs is a wonderful tool,
+and Emacspeak allows me to use it with confidence and even enjoyment.</p>
+<p>Before the end, I was writing blog posts, both here and on a Wordpress blog,
+using Git and GitHub, and even reading EBooks. I also adore Org-mode, which I
+still find superior to anything else for note taking, compiling quick reports,
+and just about anything writing-related. Seriously, being able to export just
+one part of a file, instead of the whole large file containing every bit of
+work-related notes, is huge, and I'll now have to use folders, subfolders,
+and folders under those to come close to achieving that level of
+productivity. And no, the Org-mode extension for VS Code doesn't have a third of
+the ability of the native Emacs Org-mode.</p>
+<p>But, Emacs was founded on the do-it-yourself mentality, and it'll stay that way.
+If you don't know what to look for, Emacs will just sit there, without any
+guidance for you. I'll get more into that as I compare it with VS Code.</p>
+<h3>Making Good out of Bad</h3>
+<p>One day, my MacBook, which is what I run Emacs on, ran very low on battery. It
+was in the morning that day, and I have a Windows computer also, so I decided to
+see if I could get things done on it. I'd tried writing on it before, using
+Markdown in Word, or even VS Code before. But my screen reader, NVDA, wouldn't
+read indentation like Emacspeak did, or pause between reading formatting symbols in Markdown like
+Emacspeak did, play sounds for quick alerts of action like Emacspeak did, or
+even have a settings interface like Emacs did, and definitely didn't have a
+voice like Alex on the Mac. Those were my thoughts when I'd tried it before.
+I'll tackle them all, now that I've used VS Code for almost a week.</p>
+<p>So, I managed to get Markdown support close to how I used it in Emacs, minus the
+quick jumping between headings with a single keyboard command. I still miss
+that. The LanguageTool extension works perfectly, although I had to learn that
+to access the corrections it gave I have to press <strong>Control + . (period)</strong>.
+Every extension I've installed so far has worked with NVDA. I cannot say that
+for Emacs with Emacspeak. Since the web is so standardized, there isn't too much
+an extension could do to not be accessible. Sometimes I wish the suggestions
+didn't pop up all the time in some language modes, but I'll take that any day
+over inaccessibility.</p>
+<p>So, on with debunking the problems I had at first. Hopefully this will help
+newcomers to VS Code, or those who are cynical that basically a web app can do
+what they need:</p>
+<h4>NVDA doesn't read indentation!</h4>
+<p>Yes, it can. It can either speak the indentation, or beep, starting at, I
+believe, low C for the baseline and moving up tones. Sometimes I have to pay a
+bit of attention to notice the difference between no space and one space, but
+that's what having it speak is for.</p>
+<h4>NVDA doesn't pause between formatting symbols!</h4>
+<p>This is true, and unavoidable for now. But, unlike Emacspeak, NVDA has the
+ability to use a braille display, which makes reading, digesting information,
+and learning a lot easier for those whose mind, like mine, is more like a train
+than a race car. In the future, NVDA's speech refactoring may make pausing, or
+changing pitch for syntax highlighting, a reality.</p>
+<h3>VS Code doesn't play sounds!</h3>
+<p>This is true too, and I've not found a setting or extension to make this happen.
+Maybe one day...</p>
+<h3>VS Code doesn't even have a settings interface!</h3>
+<p>Before, I thought one had to edit the JSON file for settings to change them. It
+turns out that if you press <strong>Control + , (comma)</strong>, you get a simple, easy,
+Windows interface. This is a bit rough around the edges, because you have to Tab
+twice from one setting to the next, and you could roam from one section of
+settings to another, but it's easier than Emacs.</p>
+<h3>But what about the awful Windows voices!</h3>
+<p>Yes, Windows voices still are dry and boring, or sound fuzzy, but NVDA has many
+options for speech now. I've settled on one that I can live with. No, it doesn't
+have the seeming contextual awareness of paragraphs like Alex, but it's Windows.
+I can't expect <em>too</em> much.</p>
+<h3>Bonus points for VS Code</h3>
+<h4>Git</h4>
+<p>I'm only now starting to get Git. It's a program that allows you to keep
+multiple versions of things, so you can roll back your work, or even work on
+separate parts of your work in separate branches of the project. Emacs just...
+sits there as usual, assuming you have any idea of what you're doing. VS Code,
+though, actively tries to help. If you have Git, it offers an extension for
+that. If you open a Git repository, it asks if you'd like it to fetch changes
+every once in a while to make sure things are up-to-date when you commit your
+changes. I was able to commit a pull request in VS Code easily and with minimal
+fuss. In Emacs, I didn't even know where to begin. And any program that takes
+guessing and meaningless work off my shoulders is a program I'll keep.</p>
+<h4>Suggestions while typing</h4>
+<p>VS Code is pretty good at this. If I'm writing code, it will offer suggestions
+as I type. Sometimes they're helpful, sometimes they aren't. In text modes, this
+doesn't happen; it appears that this only happens in programming modes. Emacs
+would just let you type and type and type, and then browsing Reddit you'd find
+out about snippet packages that may or may not work with Emacspeak.</p>
+<h4>Standardized</h4>
+<p>As mentioned before, VS Code is basically a web app. Emacs is a program written
+in mostly Emacs Lisp, and a bit written in C. Extensions in VS Code are written
+in JavaScript, whereas extensions in Emacs are written in its Lisp dialect.
+Since Emacs is completely text based, any kind of fancy interface must be made
+manually, which usually means that Emacspeak will not work with it, unless the
+author, or a community member, massages the data enough to make it work. This is
+a constant battle, and it won't get easier for anyone involved.</p>
+<p>VS Code is a graphical tool that has plenty of keyboard commands, and screen
+reader support. Its completion, correction, and terminal processes have already
+been created, so all extensions have to do is hook into that. This means that a
+lot of extensions are accessible, without even knowing it.</p>
+<h3>So, any downsides to VS Code?</h3>
+<p>VS Code is not perfect by any stretch. When screen reader support is enabled, a
+few features are actually disabled because Microsoft doesn't know how to convey
+them to the user without using sound. Code folding is disabled, which would make
+navigating markdown a lot simpler. Word wrapping is disabled, meaning that a
+paragraph is on one very long line. I've found Rewrap, a third-party extension
+that I can use, so that's fixed. There are no sounds, so the only way I know
+there are problems is by going to the next problem, or opening the issues panel.</p>
+<p>Overall though, VS Code has impressed me, and I continuously find wonderful,
+time-saving, mind-clearing moments where I breathe a sigh of relief that to
+create a list in markdown, I can just select lines of text, and choose “toggle
+list” from the commands panel, whereas with Emacs I had to mark the list of
+lines and remember some strange command like “string-insert-rectangle” and type
+“*” to make all of those list items. These kinds of time-savers make me more
+productive, offsetting slightly the lack of features akin to those in Org-mode.</p>
+<h3>Conclusion</h3>
+<p>I didn't expect this post to be so long, but it will be a good test to see if VS
+Code's Hugo support is enough to replace Easy-Hugo on Emacs. While VS Code
+doesn't have a book reader, at least, not one I think I'd like, or a media
+player with Tune-In Radio support made for the blind, and many other packages,
+it is a great editor, and does have tools like Hugo extensions that make it
+slightly more that an editor. I should branch out more and see what tools
+Windows now has for these functions anyways. I already use Foobar2000 for media,
+I just have to find a good book reader that doesn't get rid of formatting info.</p>
+<p>So, I hope you all have enjoyed reading this long test of VS Code, and an update
+on what I've been doing lately when not playing video games and other things.</p>
+<p>In other news, I've been using the iOS 14 and macOS 11 public betas. I'll report
+on my findings on those when the systems are released this fall.</p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/what-i-want-to-see-at-wwdc2020/" class="u-url">What I want to see at WWDC</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Devin Prater
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/what-i-want-to-see-at-wwdc2020/" rel="bookmark">
+            <time class="published dt-published" datetime="2020-06-01T00:00:00-05:00" itemprop="datePublished" title="2020-06-01 00:00">2020-06-01 00:00</time></a>
+            </p>
+                        <p class="commentline">
+        
+        <a href="posts/what-i-want-to-see-at-wwdc2020/#utterances-thread">Comments</a>
+
+
+                </p>
+</div>
+            </header><div class="e-content entry-content">
+                    <div>
+<p>WWDC is Apple's "World Wide Developer Conference." It's where developers
+come to learn about what will be new in Apple's operating systems (iOS,
+iPad OS, MacOS, ETC.), and learn how to make the best of Apple's walled
+garden of tools to program apps. Tech reporters also come to the event,
+to gather all the news and distill it into the expected bite-sized,
+simple pieces. Be assured, my readers, that I will not hold anything
+back from you in my analysis of the event.</p>
+<p>WWDC is not here just yet. I know, many news sites are predicting and
+yammering and getting all giddy with "what if" excitement. I won't bore
+you with such useless speculation just to fill the headlines and
+homepages. I fear that I lack the imagination and incentive to create
+such pieces. Besides, I'm more interested in what a device can <em>do</em>, and
+less about how it looks or feels.</p>
+<p>However, I am Invested in Apple's operating systems. I do want to see
+Apple succeed in accessibility and think that, if they put enough work
+into it, and gave the accessibility team more freedom and staff, that
+accessibility would greatly improve. It is in that spirit that I give
+you my hopes, not predictions, for WWDC 2020. This "wishlist" will be
+separated into headings based on the operating system, and further
+divided into subsections of that operating system. After WWDC, I will
+revisit this post, and updated it with notes on WWDC if things change on
+the wishlist, and then do a post containing more notes and findings from
+the event.</p>
+<h3>MacOS</h3>
+<p>MacOS is Apple's general computer (desktop/laptop) operating system.
+With much tried and true frameworks and programs, it is a reliable
+system for most people. It even has functions that Windows doesn't, like
+the ability to select text anywhere and have that text spoken
+immediately, not screen reader needed, and remap keyboard modifier keys,
+and system wide spell checking. These help me greatly in all of my work.</p>
+<p>Its screen reader is VoiceOver. It's like VoiceOver on the iPhone, but
+made for a complex operating system, and has some complex keyboard
+commands. Accessibility, like anywhere else, is not perfect on the Mac.
+There are bugs that have stood for a long time, and new bugs that I fear
+will hang around. There are also features that I'd love to see added, to
+make the Mac even better.</p>
+<p>In short, MacOS accessibility isn't a toy. I want the Mac to be treated
+like it's worth something . From the many bugs, to missing features, the
+Mac really needs some love accessibility-wise. Many tech "reporters" say
+that the Mac is a grown and stable operating system. For blind people,
+though, the Mac is shriveled and stale.</p>
+<h4>Catalyst needs an accessibility boost</h4>
+<p>"Catalyst" is Apple's bridge between iPad apps and Mac apps. It allows
+developers, Apple included, to bring iPad apps to the Mac. Started in
+MacOS Mojave with Apple's own apps, Catalyst accessibility was...
+serviceable. It wasn't great, but there wasn't anything we couldn't do
+with the apps. It just wasn't the best experience. The apps were very
+flat, and one needed to use the VoiceOver custom actions menu, without
+the ability to use letter navigation, to select actions like one would
+using the "actions" rotor on the iPad.</p>
+<p>Now, in Catalina, the Catalyst technology is available for third-party
+developers, but accessibility issues still remain. The apps don't feel
+like Mac apps at all, not even Apple's own apps. So, in MacOS 10.16, I
+hope to see at least Apple's own apps be much more accessible,
+especially if the Messages app will be an iPad catalyst app.</p>
+<h4>VoiceOver needs a queue</h4>
+<p>Screen readers convey information through speech, usually. This isn't
+new for people who are blind, but what may be new is that they manage
+what is spoken using a queue. This means that when you're playing a game
+and new text appears, the screen reader doesn't interrupt itself from
+speaking the important description of the environment just to speak that
+an unimportant NPC just came into the area.</p>
+<p>VoiceOver, sadly, does not have this feature, or if it does, it hardly
+ever uses it. Now, it looks like the speech synthesis architecture has a
+queue <a href="https://developer.apple.com/documentation/avfoundation/avspeechsynthesizer">built
+in</a>,
+so VoiceOver should be using this to great effect. But it isn't. This
+means that doing anything complex in the Terminal app is unproductive.
+Even using web apps, which have VoiceOver speak events, can be
+frustrating when VoiceOver interrupts itself to say \"loading new
+tweets\" and such. It was so bad that the VoiceOver team had to give the
+option for a sound to play instead of the \"one row added\" notification
+for the mail app.</p>
+<p>This is a large oversight, and it has gone on long enough. So, in MacOS
+10.16, I desperately hope that VoiceOver can finally manage speech like
+a true screen reader, with a speech queue.</p>
+<h4>Insertion point at... null</h4>
+<p>Long time Apple fans may know what the insertion point is. For Windows,
+Android, and Linux users, it is the cursor, or Point. It is where you
+insert text. On Mac and iOS, VoiceOver calls this the insertion point,
+and it appears in text fields. The only problem is, VoiceOver says it
+appears on read‐only places, like websites in earlier versions of MacOS
+10.15, and emails to this day.</p>
+<p>VoiceOver believes that there is an insertion point in the email
+somewhere, but says that it is at "null", meaning that it is at 0, or
+doesn't exist. That's because there isn't one. This only appears when
+you are reading by element, <strong>VO + Right or Left arrow</strong>, and not when
+you are reading by line with just the up and down arrows, where there is
+a sort of cursor to keep track of where you are. But this cursor is,
+most likely, a VoiceOver construct, so it should know that when moving
+by element, there practically isn't one besides VoiceOver's own "cursor"
+that is focusing on things.</p>
+<p>This bug is embarrassing. I wouldn't want my supervisor seeing this kind
+of bug in the technology that I use to do professional work. I stress
+again that the Mac is <em>not</em> a toy. Yes, it has "novelty" voices, and
+yes, some blind people talk like them for fun, or use them in daily work
+to be silly. I don't, though, because the Mac is my <strong>work</strong> machine.
+What's a computer, Apple asks? A Mac, that's what! I rely on this
+computer for my job, and if things don't improve, I'll probably move to
+Linux, which is the next best option for my workflow. Of course, things
+there don't improve much either, but at least the screen reader is
+actually used by its creator and testers, so silly bugs like that don't
+appear in a <strong>pro</strong> device. So, in MacOS 10.16, I hope that the
+accessibility team took a long vacation from adding stuff and spent a
+lot of time on fixing MacOS' VoiceOver so that I can be proud to own a
+Mac again.</p>
+<h4>I need more fingers</h4>
+<p>The Mac has so many keyboard commands, and letter navigation in all
+menus and lists make navigating the Mac a breeze. But some of the
+keyboard commands were clearly made for a desktop machine. I have a
+MacBook Pro, late 2019 with four Thunderbolt ports, but still the same
+Function, Control (remapped to escape), Option, Command, Space, Command,
+Option, Capslock (remapped to control because Emacs), keyboard layout.
+In order to lock the screen, then, with the normal keyboard layout
+(without remapping due to the touch bar and Emacs), I'd have to lock the
+screen by holding the command key with my right thumb, hold control with
+my left pinkie, and... and... how do I reach the Q? Ah, found it! I
+think. That may be A, or 1, though.</p>
+<p>My point is, we blind people pretty much <strong>always</strong> use the keyboard.
+sure, we can use the track pad, but that's an option, not a requirement
+like the touch screen of an iPhone. Keyboard commands should be
+ergonomic, for every Mac model, not just the iMac. So, in Mac OS 10.16,
+I hope to see more ergonomic keyboard commands for MacBooks. I hope
+VoiceOver commands become more ergonomic as well, as pressing <strong>Control
++ Option + Command + 2</strong> or even <strong>Capslock + Command + 2</strong> gets pretty
+cramped. I know, the Touchbar means less keys, but my goodness I hate
+using those commands when I need to. And no, having us use the VoiceOver
+menu isn't a fix. It's a workaround. And no, having us use letter
+navigation to lock the screen or do any number of hard keyboard commands
+is not a fix, it's a workaround.</p>
+<h4>Find and replace Touchbar with Function keys</h4>
+<p>I've talked about the Touchbar in earlier articles, so I'll just give an
+overview here. The Mac does not have a Touchscreen. The Touchscreen is
+slower for blind people to use, and so is the Touchbar. We can't even
+customize it, as that part of system preferences is seemingly
+inaccessible to us. One Mac user said he has answers on how to use it
+well, but I asked him about it, and haven't seen a reply to my query.
+For now, then, the Touchbar is useless to me, and blind people who, like
+me, use their Macs to get work done.</p>
+<p>Now, one place it could be good at is in Pages. While in Pages, the
+Touchbar acts like a row of formatting buttons. But there are keyboard
+commands for almost all of them, except for adding a heading. If the
+Touchbar were that useful everywhere else, it may have a place in my
+workflow. But I write all of my documents, when I can help it, in
+Markdown or Org-mode, inside Emacs or another text editor. So the
+Touchbar would be better gone from my MacBook, and replaced by the much
+more useful function keys, with tactile buttons that do one thing when
+pressed in each context, and I know what they'll do when pressed.</p>
+<p>So, in a new model of the MacBook, I want the <strong>option</strong> to use regular
+function keys, even if it costs \$20 more. Either that, or give me a
+reason to use this useless touch strip that only acts to eliminate keys
+that VoiceOver can use and make keyboarding that much more limited. And
+no, an external keyboard is not a fix. It's a workaround.</p>
+<h4>Text formatting with VoiceOver</h4>
+<p>This applies to both MacOS and iOS, but it'd be more useful on the Mac,
+so I'm putting it here. As I wrote in my <em>Writing Richly</em> post,
+formatting is important for both reading and writing. I did send Apple
+feedback based on this, so I hope that in 10.16, I, and all other blind
+people, are able to read and write with as much access to formatting as
+sighted people.</p>
+<h4>What's that window say?</h4>
+<p>In MacOS Catalina, Apple added a little‐known feature to VoiceOver: the
+ability to get a "caption" from any element, or "control", on the
+screen.</p>
+<h3>iOS</h3>
+<h4>There's nothing on the screen</h4>
+<p>There are many iOS apps that are very accessible. They work well with
+VoiceOver, and can be used fine by blind people. However, there are also
+many which appear blank to VoiceOver, so cannot easily be used.
+VoiceOver could use its already‐good text recognition technology to scan
+the entire screen if an element cannot be found with an accessible
+label, other than the app title. Then, it could get the location of the
+scanned text and items, and allow a user to feel around the screen to
+find them.</p>
+<p>This could dramatically improve access to everything from games, to
+utility apps written in an inaccessible framework, like QT. May QT be
+forgotten, forever. So, in iOS 14, I hope that Apple majorly ramps up
+its use of AI in VoiceOver. Besides, that would put Google, the AI
+company, even further to shame, since they don't use AI at all in
+TalkBack to recognize inaccessible items or images.</p>
+<h3>Services</h3>
+<h4>Apple Arcade for <em>everyone</em>
+</h4>
+<p>Apple Arcade came out some time last year. 100 games were promised
+around launch time, and at \$5 per month, it is an amazing deal, as you
+can play these games forever; there is no rotation like in XBox Game
+Pass. For now, though, there have been no games that blind people can
+play, so I just canceled my subscription, my hope in Apple dwindling
+further. So, in this year's WWDC, I hope that Apple not only adds
+accessible games to Apple Arcade, or even makes a few of their own, but
+shows them off. People should <em>know</em> that Apple truly cares, as much as
+a 1.5 trillion dollar corporation can, about accessibility and people
+who are blind, who <em>cannot</em> play regular, inaccessible games.</p>
+<h3>Conclusion</h3>
+<p>I hope this article has enlivened your imagination a bit regarding the
+soon‐to‐be WWDC 2020. I've detailed what I want to see in MacOS, my most
+often used Apple system, iOS, and Apple's services. Now, what do you
+want to see? Please, let me know by commenting wherever this article is
+shared.</p>
+<p>Thanks so much for reading my articles. If you have any suggestions,
+corrections, or other comments, please don't hesitate to reach out to
+me. I eagerly await your comments.</p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020-05-02-whats-a-computer/" class="u-url">what's a computer?</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Devin Prater
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/2020-05-02-whats-a-computer/" rel="bookmark">
+            <time class="published dt-published" datetime="2020-05-02T14:26:05Z" itemprop="datePublished" title="2020-05-02 14:26">2020-05-02 14:26</time></a>
+            </p>
+                        <p class="commentline">
+        
+        <a href="posts/2020-05-02-whats-a-computer/#utterances-thread">Comments</a>
+
+
+                </p>
+</div>
+            </header><div class="e-content entry-content">
+                    <p>How many computers do you have? Do own just an iPhone, the pocket
+computer? Do you have an Apple Watch, the wrist computer? Do you have
+a laptop or desktop, the general purpose computers? Do you have a
+Raspberry Pi, the hobbyist computer? All of these are types of
+computers. But what does it mean for a device to be a computer?
+Furthermore, what does it mean for a device to be a <em>good</em> computer?
+In this article, I will give my thoughts on the question posed in
+Apple’s <a href="https://9to5mac.com/2017/11/16/ipad-pro-whats-a-computer-ad/">what's a
+computer</a>
+ad for the iPad Pro. I will be focusing on people who are blind, but
+this should spark conversation across all kinds of people with needs
+other than Facebook and social media.</p>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020-04-21-a-brighter-apple/" class="u-url">A Brighter Apple</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Devin Prater
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/2020-04-21-a-brighter-apple/" rel="bookmark">
+            <time class="published dt-published" datetime="2020-04-21T12:15:06Z" itemprop="datePublished" title="2020-04-21 12:15">2020-04-21 12:15</time></a>
+            </p>
+                        <p class="commentline">
+        
+        <a href="posts/2020-04-21-a-brighter-apple/#utterances-thread">Comments</a>
+
+
+                </p>
+</div>
+            </header><div class="e-content entry-content">
+                    <div>
+<p>Coding has always been hard for me. I've never been able to get my mind
+around loops, if and else, for and while, and break almost breaks me
+instead of the code. However, many people make it look easy, and for
+them, it probably is. In iOS 14, Apple may loosen their chains upon
+their technology enough for developers to explore the boundaries of what
+a pocket computer can do.</p>
+<p>Apple is very controlling. All of its operating systems can only run
+on its own hardware. Its hardware can only be used to practically run
+officially sanctioned operating systems, unless a Linux user can get
+passed the security on the Mac. And, for a long time, notwithstanding
+workarounds that have never been so easy, apps on iOS have only been
+usable if they were downloaded through Apple's own App Store. In iOS
+14, however, things may change for the better.</p>
+<p>Earlier this year, Applevis released a blog post about iOS 14 possibly
+gaining <a href="https://www.applevis.com/blog/apple-reported-be-exploring-ways-let-developers-provide-custom-text-speech-synthesizers-ios">Custom Text to Speech engine
+support</a>.
+While I won't write about it here, as it seems a minor topic to me, I
+will say that this is something that the community of blind people
+have been asking for since VoiceOver revolutionized our lives.
+Furthermore, though, it is greater evidence that Apple is beginning to
+open up, just a tad. it isn't, however, the first time we've seen
+Apple open up, a bit, for accessibility reasons. Apple allows us, in
+iOS 13, to change VoiceOver commands, and it uses the <a href="http://liblouis.org">Liblouis
+braille tables</a> to display languages in Braille
+that weren't available before.</p>
+<p>In this article, I will discuss and theorize about the availability of
+<a href="https://www.macrumors.com/2020/04/21/rumor-mobile-version-of-xcode-for-ipad/">XCode on
+iOS</a>,
+which is supposedly going to be released this year, and how it can help
+people learn to code, bring
+<a href="https://en.wikipedia.org/wiki/Sideloading">sideloading</a> to many more
+people, and how it can bring emulation in full force to iOS.</p>
+<h2>Learning to code on iOS</h2>
+<p>As I've said before, coding has never been easy for me. My skills are
+still very much at the beginner level. I can write "print" statements in
+Python, and maybe in Swift, but languages like Quorum, Java, and C++ are
+so verbose and require much more forethought than Python. Swift seems a
+bit like Python, although just as complex as Java and more verbose
+languages when one becomes more advanced.</p>
+<p>With XCode on the Mac, accessibility isn't great. Editing text is okay,
+but even viewing output seems impossible on first look, and I'm still
+not sure if it can even be done. This means that the <a href="https://books.apple.com/book/id1118575552">Intro to App
+development with Swift</a>
+Playground materials are inaccessible. This has been verified today with
+the XCode 10 version. Sure, we can read the source code, but cannot
+directly activate the "next" link to move to the next page. And no,
+workarounds are not equal access. Furthermore, neither teachers nor
+students should have to look for workarounds to use a course created by
+Apple, one of the richest companies in the world, whose accessibility
+team is great, for iOS.</p>
+<p>Because of this, I expect XCode for iOS will be a new beginning, of
+sorts, for all teams who work on it, not just the accessibility team. It
+will be a way for new, young developers to come to coding on their
+phone, or more probably, their iPad, without the history of workarounds
+that many developers on the Mac who are blind know today. It will also
+allow blind developers to create powerful, accessible apps. If it is
+true that Macs will run Apple's own "A" processor someday, then perhaps
+this XCode for iOS will move to the Mac, as Apple TV is attempting to
+do. Hopefully, by then, iOS apps on the Mac will actually be usable,
+instead of messes, accessibility-wise.</p>
+<p>Windows users also cannot currently officially code for iOS. Most blind
+users have a Windows computer and an iPhone. Having XCode on iOS will
+allow more blind people, who are good at coding, to try their hand at
+developing iOS apps. This could also bring more powerful apps,
+as blind Windows users are used to the power of programs like
+Foobar2000, NVDA addons, and lots of choice.</p>
+<p>Another benefit of having XCode on iOS is that, because of the number
+of users, there will be even more people working on open source
+projects, which they could easily download and import into XCode. For
+example, perhaps <a href="https://github.com/hrydgard/ppsspp/issues/11696">PPSSPP User InterFace
+accessibility</a> could
+be improved, or the Delta emulator could become <a href="https://github.com/rileytestut/DeltaCore/issues/13">completely accessible
+and
+groundbreaking</a>.
+Of course, closed source app development could be aided by this as
+well, but it is harder to join, or make, a closed source development
+team than it is to contribute to an open source one.</p>
+<h2>Sideloading with XCode</h2>
+<p>Sideloading is the process of running apps on iOS which are not accepted
+by the iOS App Store. These include video game console emulators,
+torrent downloaders, and apps which allow users to watch "free" movies
+and TV shows. The last set of apps, I agree, shouldn't be on the app
+store, but the first two are not illegal, but simply could facilitate
+illegal operations; pun intended.</p>
+<p>Sideloading can be done in many ways. You can load the XCode project
+into XCode for Mac, build it, and send it to your own device. This must
+be renewed every seven days, but is the most difficult technically to
+do. You can sign up for a third-party app store, which allows you to
+download apps which are hosted elsewhere and may not be the latest
+version, but there is a good chance that the certificate which they use
+to sign the app will be revoked by Apple. Finally, there are a few apps
+which automate the signing of apps, and pushes the app to the device.</p>
+<p>Two of these methods, however, require a Mac computer. Many people,
+especially blind people, only use a Windows computer and an iPhone. This
+usually isn't a problem, as most blind people either use their phone for
+much of what they do, or use their computer for much of what they do.
+However, this means that people who have Windows, but not a Mac, cannot
+sideload apps. So, if a blind person creates an extension to alert you
+that your screen curtain isn't on, which means that a VoiceOver user
+doesn't have a feature enabled so that the screen is blank, that app
+cannot be distributed on the App Store, and cannot be sideloaded by
+Windows users. And I highly doubt a third-party app store would host
+such a niche app.</p>
+<h2>Emulating with XCode</h2>
+<p>Emulators were once a legal gray area. They allow gamers to play video
+games, from game consoles like the Playstation Portable, on computers,
+tablets, or phones. They have become legal, however, due to Sony's
+<a href="https://en.wikipedia.org/wiki/Sony_Computer_Entertainment,_Inc._v._Connectix_Corp.">lawsuits of emulator
+developers</a>.
+While emulation is legal, however, downloading games from the Internet,
+unless, some say, you own the game, is not. Steve Jobs himself, at the
+1999 MacWorld conference, <a href="https://youtu.be/vN2vxYnAZf0?t=5038">showed off an
+emulator</a>, one for playing
+Playstation games. Now, emulators are not allowed onto the iOS App
+Store, unless they have been made by the developers of the games which
+are being emulated.</p>
+<p>XCode on iOS would also help in emulator use. The more people use
+emulators, the more their use will spread. iPhones are also definitely
+powerful enough to run emulators; the newer the iPhone, the faster the
+emulation. An iPhone X R, for example, is powerful enough to run a
+Playstation Portable game at full speed, even while not being
+optimized for the hardware, and being interpreted. It's like running
+nearly a PS3 game using Python. <a href="https://www.youtube.com/watch?v=tVkYhCmq-dI">A video I
+made</a> demonstrates this.
+The game, Dissidia DuoDecim, isn't as accessible as its predecessor.
+However, it runs, as far as I could tell, at full speed. This
+spectacularly shows that the computers in our pockets, the ones we use
+to drone over Facebook, be riled up by news sites, or play Pokemon Go,
+are much more powerful, and are capable of far more than what we use
+of them.</p>
+<p>Also, since blind people will have access to the code ran with XCode,
+fixes to sound, the user interface, and even enhancements to both, are
+possible. PSP games could be enhanced using Apple's <a href="https://developer.apple.com/audio/">3D audio
+effects</a>. Games could be described
+using Apple's <a href="https://developer.apple.com/documentation/vision">Machine Learning
+Vision</a> technology.
+This applies to even more than accessibility, however. Since more users
+will be learning to code, or finally have the ability to code for iOS,
+bugs in iOS ports of open source software can more quickly be resolved.</p>
+<h2>Conclusion</h2>
+<p>In this article, I have discussed the possibility of XCode for iOS, and
+how it could improve learning to code, sideloading apps, and emulation
+of video games. I hope that this information has been informative, and
+has enlivened the imaginations of my readers.</p>
+<p>Now, what do you all think? Are you a blind person who wants to learn to
+code in an accessible environment? Are you a sighted person who wants to
+play Final Fantasy VII on your phone? Or are you one who wants to help
+fix accessibility issues in apps? Discussion is very welcome, anywhere
+this post is shared to. I welcome any feedback, input, or corrections.
+And, as always, thank you so much for reading this article.</p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020-04-16-writing-richly/" class="u-url">Writing Richly</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Devin Prater
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/2020-04-16-writing-richly/" rel="bookmark">
+            <time class="published dt-published" datetime="2020-04-16T01:47:34Z" itemprop="datePublished" title="2020-04-16 01:47">2020-04-16 01:47</time></a>
+            </p>
+                        <p class="commentline">
+        
+        <a href="posts/2020-04-16-writing-richly/#utterances-thread">Comments</a>
+
+
+                </p>
+</div>
+            </header><div class="e-content entry-content">
+                    <div>
+<p>Whenever you read a text message, forum post, Tweet, or Facebook
+status, have you ever seen some one surround a word with stars, like
+<code>*this*</code>? Have you noticed some one surround a phrase with two stars?
+This is Markdown, a form of formatting text for web usage.</p>
+<p>I believe, however, that Markdown deserves more than just web usage. I
+can write in Markdown in this blog, I can use it on Github, and even
+in a few social networks. But wouldn’t it be even more useful
+everywhere? If we could write in Markdown throughout the whole
+operating system, couldn’t we be more expressive? And for
+accessibility issues, Markdown is great because a blind person can
+just write to format, instead of having to deal with clunky, slow
+interfaces.</p>
+<p>So, in this article, I will discuss the importance of rich text, how
+Markdown could empower people with disabilities, and how it could work
+system-wide throughout all computers, even the ones in our pockets.</p>
+<h3>What’s this rich text and who needs all that?</h3>
+<p>Have you ever written in Notepad? It’s pretty plain, isn’t it? That is
+plain text. No bold, no italics, no underline, nothing. Just, if you
+like that, plain, simple text. If you don’t like plain text, you find
+yourself wanting more power, more ability to link things together,
+more ways to describe your text and make the medium, in some ways, a
+way to get the message across.</p>
+<p>Because of this need, rich text was created. One can use this in Word
+Pad, Microsoft Word, Google Docs, LibreOffice, or any other word
+processor worth something. When I speak of rich text, to make things
+simple, I mean anything that is not plain text, including HTML, as it
+describes rich text. Rich text is in a lot of places now, yes, but it
+is not everywhere, and is not the same in the places that it is in.</p>
+<p>So, who needs all that? Why not just stick with plain text? I mean
+come on man, you’re blind! You can’t see the rich text. In a way, this
+is true. I cannot see the richness of text, but in a moment, we’ll get
+to how that can be done. But for sighted people, which text message is
+better?</p>
+<p>Okay, but how’s your day going?</p>
+<p>Okay, but how’s <em>your</em> day going?</p>
+<pre class="code literal-block"><span class="err">Okay, but how’s *your* day going?</span>
+</pre>
+<p>For blind people, the second message has the word “your” italicized.
+Sure, we may have gotten used to stars surrounding words meaning
+something, but that is a workaround, and not nearly the optimal
+outcome of rich text.</p>
+<p>So what can you do with Markdown? You can do plenty of stuff. You
+could use it for simply using one blank line between blocks of text to
+show paragraphs in your journal. You could use it to create headings
+for chapters in your book. You could use it to make links to websites
+in your email. You could even simply use it to italicize an emphasized
+word in a text. Markdown can be as little or as much as you need it
+to. And if you don’t add any stars, hashes, dashes, brackets, or HTML
+markup, it’s just as it is, plain text.</p>
+<p>Also, it doesn’t have to be hard. Even Emacs, an advanced text editor,
+gives you questions when you add a link, like “Link text,” “Link
+address,” and so on. Questions like that can be asked of you, and you
+simply fill in the information, and the Markdown is created for you.</p>
+<h3>Okay but what about us blind people?</h3>
+<p>To put it simply, Markdown shows us rich text. In the next section,
+I’ll talk about how, but for now, let’s focus on why. With nearly all
+screen readers, text formatting is not shown to us. Only Narrator on
+Windows 10 shows formatting with minimal configuration, and JAWS can
+be used to show formatting using much configuration of speech and
+sound schemes.</p>
+<p>But, do we want that kind of information? I think so. Why wouldn’t we
+want to know exactly what a sighted person sees, in a way that we can
+easily, and quickly, understand? Why would we not want to know what an
+author intended us to know in a book? We accept formatting symbols in
+Braille, and even expect it. So, why not in digital form?</p>
+<p>NVDA on Windows can be set to speak formatting information as we read,
+but it can be bold on quite arduous to hear italics on all this
+italics off as we read what we write bold off. Orca can speak
+formatting like NVDA, as well. VoiceOver on the Mac can be set to
+speak formatting, like NVDA, and also has the ability to make a small
+sound when it encounters formatting. This is better, but how would one
+distinguish bold, italics, or underline from a simple color change?</p>
+<p>Even VoiceOver on iOS, which arguably gets much more attention than
+its Mac sibling, cannot read formatting information. The closest we
+get is the phrase separated from the rest of the paragraph into its
+own item, showing that it’s different, in Safari and other web apps.
+But how is it different? What formatting was applied to this
+“different” text? Otherwise, text is plain, so no blind people even
+know that there is a possibility of formatting, let alone that that
+formatting isn’t made known to us by the program tasked with giving us
+this information. In some apps, like notes, one can get some
+formatting information by reading line by line in the Note text field,
+but what if one simply wants to read the whole thing?</p>
+<p>Okay but what about writing rich text? I mean, you just hit a hotkey
+and it works, so what could be better than that? First, when you press
+Control + I to italicize, there is no guarantee that “italics on” will
+be spoken. In fact, that is the case in LibreOffice for Windows: you
+do not know if the toggle key toggled the formatting on or off. You
+could write some text, select it, then format it, but again, you don’t
+know if you just italicized that text, or removed the italics. You may
+be able to check formatting with your screen reader’s command, but
+that’s slow, and you would hate to do that all throughout the
+document. Furthermore, dealing with spoken formatting as it is, it
+takes some time to read your formatted text. Hearing descriptions of
+formatting changes tires the mind, as it must interpret the fast-paced
+speech, get a sense of formatting flipped from off to on, and quickly
+return to interpreting text instead of text formatting instruction.
+Also, because all text formatting changes are spoken like the text
+surrounding it, you may have to slow down your speech just to get
+somewhat ahead of things enough to not grow tired from the relentless
+text streaming through your mind. This could be the case with star
+star bold or italics star star, and if screen readers would use more
+fine control of the pauses of a speech synthesizer, a lot of the
+exhausting sifting through of information which is rapidly fired at us
+would be lessened, but I don’t see much of that happening any time
+soon.</p>
+<p>Even on iOS, where things are simpler, one must deal with the same
+problems as on other systems, except knowing if formatting is turned
+on or off before writing. There is also the problem of using the touch
+screen, using menus just to select to format a heading. This can be
+worked around using a Bluetooth keyboard, if the program you’re
+working in even has a keyboard command to make a heading, but not
+everyone has, or wants, one of those.</p>
+<p>Markdown fixes, at least, most of this. We can <em>write</em> in Markdown,
+controlling our formatting exactly, and <em>read</em> in Markdown, getting
+much more information than we ever have before, while also getting
+less excessive textual information, hearing “star” instead of “italics
+on” and “italics off” does make a difference. “Star” is not usually
+read surrounding words, and has already become, in a sense, a
+formatting term. “Italics on” sounds like plain text, is not a symbol,
+and while it is a formatting term, has many syllables, and just takes
+time to say. Coupled with the helpfulness of Markdown for people
+without disabilities, adding it across an entire operating system
+would be useful for <em>everyone</em>; not just the few people with
+disabilities, and not just for the majority without.</p>
+<h3>So, how could this work?</h3>
+<p>Operating systems, the programs which sit between you and the programs
+you run, has many layers and parts working together to make the
+experience as smooth as the programmers know how. In order for
+Markdown to be understood, there must be a part of the operating
+system that translates it into something that the thing that displays
+text understands. Furthermore, this thing must be able to display the
+resulting rich text, or Markdown interpretation, throughout the whole
+system, not just in Google Docs, not just in Pages, not just in Word,
+but in Note Pad, in Messages, in Notes, in a search box.</p>
+<p>With that implemented, though, how should it be used? I think that
+there should be options. It’s about time some companies released their
+customers from the “one size fits all” mentality anyway. There should
+be an option to replace formatting done with Markdown with rich text
+unless the line the formatting is on has input focus, a mode for
+simply showing the Markdown only and no rich text, and an option for
+showing both.</p>
+<p>For sighted people, I imagine seeing Markdown would be distracting.
+They want to see a heading, not the hash mark that makes the line a
+heading. So, hide Markdown unless that heading line is navigated to.</p>
+<p>For blind people, or for people who find plain text easier to work
+with, and for whom the display of text in different sizes and font
+faces is jarring or distracting, having Markdown only would be great,
+while being translated for others to see as rich text. Blind people
+could write in Markdown, and others can see it as rich text, while the
+blind person sees simply what they wrote, in Markdown.</p>
+<p>For some people, being able to see both would be great. Being able to
+see the Markdown they write, along with the text that it produces,
+could be a great way for users to become more comfortable with
+Markdown. It could be used for beginners to rich text editing, as
+well.</p>
+<h4>But, which version of Markdown should be used?</h4>
+<p>As with every open source, or heatedly debated, thing in this world,
+there are many ways of doing things. Markdown is no different. There
+is <a href="https://github.com/mmark-md/mmark">strict Markdown</a>, <a href="https://commonmark.org">Common
+Mark</a>, <a href="https://github.github.com/gfm/">Github Flavored
+Markdown</a>, <a href="https://nshipster.com/swift-documentation/">Swift
+Markdown</a>, <a href="https://pandoc.org/MANUAL.html">Pandoc
+Markdown</a>, and probably many others. I
+think that Pandoc’s Markdown would be the best, most extended variant
+to use, but I know that most operating system developers will stick
+with their own. Apple will stick with Swift Markdown, Microsoft may
+stick with Github Markdown, and the Linux developers may use Pandoc,
+if Pandoc is available as a package on the user’s architecture, and if
+not, then it’s some one else’s issue.</p>
+<h3>Conclusion</h3>
+<p>In this article, I have attempted to communicate the importance of
+rich text, why Markdown would make editing rich text easy for
+everyone, including people with disabilities, and how it could be
+implemented. So now, what do you all think? Would Markdown be helpful
+for you? Would writing blog posts, term papers, journal entries, text
+messages, notes, or Facebook posts be enhanced by Markdown rich text?
+For blind people, would reading books, articles, or other text, and
+hearing the Markdown for bold, italics, and other such formatting make
+the text stand out more, make it more beautiful to you, or just get in
+your way? For developers, what would it take to add Markdown support
+to an operating system, or even your writing app? How hard will it be?</p>
+<p>Please, let me know your thoughts, using the contact info, or replying
+to the posts on social media made about this article. And, as always,
+thank you so much for reading this post.</p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020-03-27-apple-ecosystem/" class="u-url">Apple’s Ecosystem and Accessibility</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Devin Prater
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/2020-03-27-apple-ecosystem/" rel="bookmark">
+            <time class="published dt-published" datetime="2020-03-27T16:40:55Z" itemprop="datePublished" title="2020-03-27 16:40">2020-03-27 16:40</time></a>
+            </p>
+                        <p class="commentline">
+        
+        <a href="posts/2020-03-27-apple-ecosystem/#utterances-thread">Comments</a>
+
+
+                </p>
+</div>
+            </header><div class="e-content entry-content">
+                    <div>
+<p>Earlier this year, my Airpods Pro began making a clicking sound, when
+in Noise Cancellation or transparency mode. I didn’t think much of it,
+and just used them regularly, until sound began distorting after a
+while of listening. I’ve simply stopped using them, as I shudder to
+think how much a cab ride to the nearest Apple Store, potentially an
+hour away, would cost. This is only one problem with the Apple
+ecosystem: being locked into Apple’s wireless headphones, other
+Bluetooth headphones, or other workarounds, and Apple Stores being far
+away, which is what I’ll be focusing on in this article. I will show,
+in the following paragraphs, how Apple’s handling of its ecosystem
+effects the hardware and software regarding accessibility matters.
+These matters may effect some in the general population, but people
+with disabilities are effected much more acutely.</p>
+<h2>Hardware</h2>
+<p>Apple’s hardware has usually been very well built. Reviewers often
+talk about nothing else. From the iPhone’s camera, iPad’s screen,
+Mac’s CPU and RAM, to the Watch’s health sensors, and the Airpod’s H1
+chip, hardware, for Apple, is a big part of their products, and
+reviewers focus on that. But how does that help or hinder accessibility?</p>
+<h3>The TouchBar on the Mac</h3>
+<p>In late 2016, Apple’s <a href="https://en.wikipedia.org/wiki/MacBook_Pro">MacBook Pro</a> gained the <a href="https://support.apple.com/guide/mac-help/touch-bar-mchlbfd5b039/mac">Touch Bar</a>, a touch strip
+across the top of the keyboard, replacing the function keys. The
+reason was to add variable icons which could visibly change functions
+across the operating system. Many people may have liked this change,
+as they could use hand-eye coordination to perform functions they
+otherwise would have used the trackpad and menus for. These type of
+users would not have known about keyboard shortcuts, using the
+function keys, and other easy ways of getting the same functions done
+without needing yet another touch input.</p>
+<p>Blind people, however, are a bit different. We usually know many
+keyboard shortcuts, use the function keys without a problem, and do
+not always need a touch screen. The Touch Bar can be used, but it is
+much slower, as we have no tactile way of finding just one distinct
+item on the touch bar, like the play/pause button, or the volume
+slider. Once we have found the function we want, we must tap it twice
+to activate, like a sighted person must left click twice, once to
+focus the item, the next to activate it. In fact, VoiceOver, the
+screen reader for the Mac, had to adopt a command to raise or lower
+the volume via keyboard, since it is slower to do so on the Touch Bar.
+On the other hand, most operating system and application features can
+be accessed via keyboard commands, so I only need to use the Touch Bar
+for system functions like volume, brightness of the screen, and media
+playback when I’m not in the media player.</p>
+<p>If a blind person wants to use their Mac as a Windows machine also,
+through Bootcamp, they must attach an external keyboard, or simply not
+use the function keys, as Windows screen readers have no such notion
+of a Touch Bar function key row, thus will not read what a user is
+selecting, and will also not let a user explore the touch bar to find
+a function before activating them, so one touch activates an item,
+even if it isn’t the one a user wants. See <a href="https://www.applevis.com/forum/macbook-pro-touch-bar-windows-10">this Applevis forum post</a>
+for more information on this.</p>
+<p>I feel that Apple should have made this change on the MacBook Air, for
+regular consumers, and left the Pro machines alone. Yes, they could
+have made the power button into the Touch ID button on the pro
+machines, and I hope that, just as they revived the scissor-switch
+keyboards, they revive the Function keys as well. It would help me
+greatly in doing even simple tasks easier, like pausing, skipping, and
+rewinding audio, and handling volume and brightness more quickly.</p>
+<p>There is still hope, however. This year, Apple released the MacBook
+Air refresh with the new keyboard. It has an Escape key, at least.
+Now, they just need to add back the other twelve keys on that row, and
+things will be back to normal.</p>
+<h3>The headphone jack</h3>
+<p>In 2016’s iPhone 7 and 7+, Apple removed the headphone jack, replacing
+it with their own Airpods, other Bluetooth headphones, and Lightning
+audio. They did not add another Lightning port onto the phone so that
+one could listen to wired headphones and charge the phone at the same
+time, or, as they did with the TouchBar on the MacBook, but left
+people to choose between wireless options if one wanted to be able to
+listen and charge the phone.</p>
+<p>For most people, this isn’t an issue. They don’t usually need
+headphones, only using them when listening to music or movies, or
+playing games. Even then, some people just listen on speakers built
+into their phone, or use external speakers, like the HomePod. They
+also do not have to worry about latency. Music is not effected by it,
+and videos are usually delayed, so that the picture synchronizes with
+the audio.</p>
+<p>For blind people, however, headphones are important. In order to use
+an iPhone, most blind people use a screen reader, which speaks
+information out loud using a voice like the one Siri uses. Using a
+screen reader without headphones means that anyone nearby can hear
+what the user’s phone is saying, which can reveal sensitive
+information like the phone numbers of people who call or text the
+person, user passwords, and even the pass code to their phone. This
+means that headphones are quite necessary. Some blind people own
+Braille displays, which gets output from a screen reader and displays
+it in braille, but these devices are expensive, starting at $600, up
+to near $6000, so are out of most blind people’s price ranges.</p>
+<p>Wireless headphones, using Bluetooth, often have large lags when being
+used. If you play a game using them, you’ll surely notice it. A blind
+person who uses Bluetooth headphones must deal with that for all
+interactions with the phone. Imagine having to deal with a phone with
+a screen that lags behind what you’re doing on the phone, even by 300
+Milliseconds. Some Bluetooth headphones are better, but none can match
+wired ones. Apple’s Airpods 2 and Airpods Pro come closer, but have
+their own problems: they still must be charged, have lesser battery
+life, and cost much for the sound quality they come with.</p>
+<p>To solve all of these problems, I have bought a $10 Lightning to 3.5
+Millimeter Headphone adapter, and use that with the headphones that I
+already have. Sure, I have to take my iPhone with me in my pocket
+wherever I go, but I usually do that anyways now that my Apple Watch
+is broken also. Sure, I don’t have my Lightning connector free, but I
+have a charging mat that I use to charge the phone. There is no lag
+when using VoiceOver, the sound quality is very good, and I don’t have
+to charge my headphones.</p>
+<p>Hope is not lost, however. There is a <a href="https://www.businessinsider.com/apple-iphone-13-rumor-wireless-no-lightning-charging-port-2019-12">rumor</a> that iPhones could be
+completely wireless. Of course, one still must plug the iPhone into a
+computer, so it could be like the older MacBook products with a
+magnetic spot to plug dongles into. In this case, a third-party dongle
+could add the Lightning and headphone jack back to the iPhone.</p>
+<h3>The Home button and TouchID</h3>
+<p>In 2017, Apple shipped the iPhone X, the first iPhone without a home
+button. This was meant to extend the iPhone’s screen completely across
+the bottom of the screen, even though they had to notch the screen at
+the top. Along with the removal of the home button, they added FaceID.
+This replaced TouchID as the authentication method for unlocking the
+device in general usage of the phone.</p>
+<p>Most users do not have a problem with FaceID. They raise the phone to
+look at it, and as they look at the camera, the phone unlocks. They
+can then swipe the lock screen away from the bottom, revealing the
+home screen. For sighted users, this is a quick, easy, and intuitive
+motion.</p>
+<p>For blind people, it isn’t so simple. We do not have to look at our
+phones in order to use them. In fact, users with braille displays or
+hardware, Bluetooth keyboards, do not have to touch their phone. These
+users can easily and quickly enter their pass codes, however, so they
+usually are not effected by this. Most users must pick up the phone,
+wait for the unlock sound from the screen reader, then put it back
+down on the surface they were using it on before. If FaceID doesn’t
+work, they must angle the phone away and back again for another try.
+if it fails a few more times, they must enter their pass code,
+with headphones in, if they seek to preserve their privacy around
+others.</p>
+<p>Hope is not lost, however. There is a <a href="https://www.imore.com/iphone-9">rumor</a> that a new iPhone SE type
+device, the iPhone 9, could be released this year with a home button,
+TouchID, and still sport the A13 CPU. This would be something that I
+myself may purchase, as I doubt there will be much greater features in
+the iPhone 12, released later this year.</p>
+<h2>Software</h2>
+<p>Apple’s software usually comes last in reviews. Reviewers may talk
+about the smooth animations, camera machine learning effects, or
+updates to apps. For users of Apple’s accessibility services, however,
+software is the core experience of a device, and what sets MacOS apart
+from Windows and Linux, and iOS apart from Android. I have covered
+Apple’s accessibility options extensively <a href="https://geeksmodo.com/apples-accessibility-consistency/">elsewhere</a>, so I will use
+this section to highlight parts of software which effect accessibility
+indirectly.</p>
+<h3>Gatekeeper on MacOS</h3>
+<p>For a pro machine, the Mac lately has become a mess of confirmation
+dialog boxes and hindrances to opening software not blessed by Apple or
+its notarization process. For most users, even most blind users, this
+won’t be much of an issue. If you use Apple’s apps, or apps from the
+App Store, you’ll be fine. But what happens when you want to use, say,
+Emacs for editing text, or Retroarch for playing video games?</p>
+<p>Blind people sometimes use specialized software to complete tasks. We
+use apps on our phones for recognizing pictures, money, and images of
+text, since these are not usually accessible to us. On the Mac, I use
+<a href="https://www.gnu.org/software/emacs/">Emacs</a> for editing text, using the <a href="https://github.com/tvraman/emacspeak">Emacspeak</a> extension, because I find
+it much easier and more enjoyable than Text Edit, Pages, and other
+alternatives. In fact, I am using Emacs right now, to write, and
+publish, this blog post. However, this program is not notarized by
+Apple’s processes, so instead of just being able to open it, I must
+open it from the contextual menu, press “Cancel,” then open it again,
+and press “Open.” My laptop is a pro machine; I should be treated as a
+professional. These features, as with the Touch Bar, should be left to
+MacBook Air users, or left for iPad users, when, or if, the iPad
+becomes a general-purpose computer.</p>
+<h2>Conclusion</h2>
+<p>In this article, I’ve explored how some of Apple’s decisions across
+its ecosystem have effected accessibility. Hardware has changed much,
+with software mainly being usable besides accessibility bugs and
+overbearing security. More about direct accessibility in software and
+services can be found in other articles. Other, smaller issues include
+the lack of Apple Stores is smaller cities, turning on iPhone not
+producing a vibration, sound, or other way for a blind person to
+immediately know when it has turned on, and the Mac’s startup chime
+disabled by default.</p>
+<p>Now, what do you think, readers? I’d love to have your feedback, and
+thank you for reading.</p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020-03-07-open-source-news/" class="u-url">open source news</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Devin Prater
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/2020-03-07-open-source-news/" rel="bookmark">
+            <time class="published dt-published" datetime="2020-03-07T16:08:22Z" itemprop="datePublished" title="2020-03-07 16:08">2020-03-07 16:08</time></a>
+            </p>
+                        <p class="commentline">
+        
+        <a href="posts/2020-03-07-open-source-news/#utterances-thread">Comments</a>
+
+
+                </p>
+</div>
+            </header><div class="e-content entry-content">
+                    <div>
+<p>This article will be something rather different from my normal
+postings. I’ve decided to begin doing news posts, rather than just my
+ramblings. Oh, there will still be rambles, as I have an opinion on
+everything, and readers might as well know the person I am, to
+understand more about my viewpoint, to gauge the content relative to
+the content writer.</p>
+<p>The scope of the news will vary, but I expect it to be mostly open
+source technology, relevant to the blind community. This may change,
+as readers may always contact me requesting that I write articles or
+news items about subjects. I will let the folks at <a href="https://www.blindbargains.com">Blind
+Bargains</a> chase after Humanware,
+Vispero, HIMS, and other such “big names” in the Assistive Technology
+world. I seek for my content to be different, meaningful, and lacking
+the comedic nature of Podcasts for the blind. Yes, I do have a slight
+grudge against larger sites who can dictate, pretty well without fail,
+what readers know about. After all, if a blind person only listens to
+the Blind Bargains podcast, or even reads their news posts, will they
+know about these advancements, like retroarch accessibility, Stormux, and so on? In
+any case, with that out of the way, let’s be on with the news.</p>
+<h2>Retroarch is accessible</h2>
+<p>Retroarch, the program that brings many video game emulators together
+into one unified interface, was made accessible in December 2019.
+Along with its ability to grab text from the screen of games and speak
+it, this brings accessibility to many games, on all 3 major operating
+systems for desktop and laptop computers. No, Android and iOS cannot
+benefit from this yet. Also, there is more to come.</p>
+<p>For a detailed page on using Retroarch for the blind, see <a href="https://docs.libretro.com/guides/retroarch-accessibility-guide/">this
+guide</a>.</p>
+<h2>GTK 4 could be more accessible</h2>
+<p>This year, folks from GTK met with some accessibility advocates. They
+came up with <a href="https://blog.gtk.org/2020/02/17/gtk-hackfest-2020-roadmap-and-accessibility/">this
+roadmap</a>
+for better accessibility. GTK is the way some Linux apps are given
+graphical representations, like buttons, check boxes, and so on. As I
+always say, the operating system is the root of accessibility, and the
+stronger that root is, the more enjoyable it will be for blind people
+to use Linux.</p>
+<p>I hope that this will bring much more accessibility to GTK programs,
+and get rid of a lot of reasons to stick with Mac or Windows for many
+more technically inclined blind people, like myself. Yes, even I have
+reservations about using it. Will it be good enough? Will I be able to
+get work done? Will I be able to play the game I like most? Will it
+require a lot of work? At least with better GTK accessibility, a few
+of those questions will be better answered affirmatively.</p>
+<h2>Mate 1.24 brings greater accessibility</h2>
+<p>Last month, Mate released <a href="https://mate-desktop.org/blog/2020-02-10-mate-1-24-released/">version 1.24</a> of its desktop environment,
+which is basically like a version of the Windows desktop, handling the
+start menu, task bar, and other such aspects of a graphical interface.
+Mate uses a system more like Windows XP, while other desktops, like
+Gnome, are more new in their approaches.</p>
+<p>Just search for “accessibility” on the linked page, and you’ll find
+quite a few improvements. This is a great sign; I really like it when
+organizations, or companies, display their accessibility commitment
+proudly in updates, and not just the bland “bug fixes and performance
+improvements” mantra tiredly used in most change logs today.</p>
+<h2>Stormux: a distribution which might stick around</h2>
+<p>After the quiet death of <a href="https://f123.org/en/">F123</a>, a contributor
+to the blind Linux community, Storm, created a fork of F123, calling
+it <a href="https://stormux.org/welcome-to-stormux/">Stormux</a>. The project is
+new, and still has a few problems, but is designed to be a jumping off
+point into Arch Linux, which is a more advanced, but very up-to-date,
+variant of Linux. It is only available for the Raspberry Pi 4 computer
+for now, and I will have a chance to test it soon. The website is as
+new as the software, so the <a href="https://stormux.org/downloads/">downloads
+section</a> is not linked to the main
+page, neither is much else. In the coming months, both the website and
+operating system should see some development.</p>
+<h2>Conclusion</h2>
+<p>This has been my first news article on this blog. I hope to write more
+of these, along with my normal posts, as new developments occur.
+However, I cannot know about everything, so if one of my readers finds
+or creates something new, and wishes for it to be written about and
+possibly read, please let me know. I will not turn away anyone because
+of obscurity or lack of general perceived interest.</p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020-03-03-quick-apple-update/" class="u-url">quick apple update</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Devin Prater
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/2020-03-03-quick-apple-update/" rel="bookmark">
+            <time class="published dt-published" datetime="2020-03-03T03:43:32Z" itemprop="datePublished" title="2020-03-03 03:43">2020-03-03 03:43</time></a>
+            </p>
+                        <p class="commentline">
+        
+        <a href="posts/2020-03-03-quick-apple-update/#utterances-thread">Comments</a>
+
+
+                </p>
+</div>
+            </header><div class="e-content entry-content">
+                    <div>
+<p>In a <a href="posts/2020-03-03-quick-apple-update/%7B%%20link%0A_posts/2020-02-13-accessibility-consistency.md%20%%7D">previous blog post</a>, I
+talked about Apple having a few problems to fix. Last month, they
+fixed one of them, being Apple Research. The hearing study now will
+have accessible hearing tests and questions. Focus is still a little
+jumpy in the Heart and Movement study questions, and my watch screen
+has become a moving part so I can’t participate in that study
+completely, or track my sleep accurately, but getting transportation
+to the Apple Store is something I’ve covered well on Twitter already.</p>
+<p>So, thanks so much to the people at Apple who handled the Research
+accessibility to this point, and may it become even better, reversing
+the trend started with the inaccessibility of Apple Arcade.</p>
+</div>
+                </div>
+            </article>
+</div>
     
-  
+        <ul class="pager postindexpager clearfix">
+<li class="next"><a href="index-1.html" rel="next">Older posts</a></li>
+        </ul>
+<!--End of body content--><footer id="footer">
+            Contents © 2020         <a href="mailto:r.d.t.prater@gmail.com">Devin Prater</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a>
+            
+            
+        </footer>
+</div>
+</div>
 
-  </body>
+
+        <script src="assets/js/all-nocdn.js"></script><script src="https://polyfill.io/v3/polyfill.js?features=Intl.RelativeTimeFormat.%7Elocale.en"></script><script src="assets/js/luxon.min.js"></script><!-- fancy dates --><script>
+        luxon.Settings.defaultLocale = "en";
+        fancydates(2, {"preset": false, "format": "yyyy-MM-dd HH:mm"});
+        </script><!-- end fancy dates --><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
 </html>

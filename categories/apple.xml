@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Devin's Site (Posts about apple)</title><link>https://devinprater.github.io/</link><description></description><atom:link href="https://devinprater.github.io/categories/apple.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:r.d.t.prater@gmail.com"&gt;Devin Prater&lt;/a&gt; 
+&lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
+&lt;img alt="Creative Commons License BY-NC-SA"
+style="border-width:0; margin-bottom:12px;"
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;</copyright><lastBuildDate>Wed, 23 Dec 2020 04:12:38 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>VoiceOver Recognition</title><link>https://devinprater.github.io/posts/voiceover-recognition/</link><dc:creator>Devin Prater</dc:creator><description>&lt;div&gt;&lt;h3&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;At the launch of the iPhone 3GS, Apple unveiled VoiceOver on the iPhone. Blind users and accessibility experts had been used to screen readers on computers, and even rudimentary screen readers for smart phones that used a keyboard, trackball, or quadrants of a touch screen for navigation and usage. But here was a screen reader that not only came prepackaged on a modern, relatively inexpensive to the competition, and off-the-shelf device, but it also allowed the user to use the touch screen as it is, a touch device.&lt;/p&gt;
+&lt;p&gt;This year, VoiceOver added a feature called "VoiceOver recognition." This feature allows VoiceOver to utilize the machine learning coprocessor in newer iPhone models to describe images with near-human quality, make apps more accessible using ML models, and read the text in images.&lt;/p&gt;
+&lt;p&gt;This article will explore these new features, go into their benefits, compare VoiceOver Recognition to other options, and discuss the history of these features, and what's next.&lt;/p&gt;
+&lt;h3&gt;VoiceOver Recognition, the features&lt;/h3&gt;
+&lt;p&gt;VoiceOver Recognition, as discussed before, contains three separate features: Image Recognition, Screen Recognition, and Text recognition. All three work together to bring the best experience. In accessible apps and sites, though, Image and Text recognition do the job fine. All three features must be downloaded and turned on in VoiceOver settings. Image recognition acts upon images automatically, employing Text recognition when text is found in an image.&lt;/p&gt;
+&lt;p&gt;Screen recognition makes inaccessible apps as good as currently possible with the ML (Machine Learning) model. It is still great, though. It allows me to play Final Fantasy Record Keeper quite easily. It is not perfect, but it is only the beginning!&lt;/p&gt;
+&lt;h3&gt;Benefits of VoiceOver Recognition&lt;/h3&gt;
+&lt;p&gt;Imagine, if you are sighted, that you have never seen a picture before, or if you have, that you've never seen a picture you've taken yourself. Imagine that all the pictures you have viewed on social media have been blurry and vague. Sure, you can see some movies, but they are far and few between. And apps? You can only access a few, relative to the number of total apps. And games are laughably simple and forgettable.&lt;/p&gt;
+&lt;p&gt;That is how digital life is for blind people. Now, however, we have a tool that
+helps with that immensely. VoiceOver Recognition gives amazing descriptions for
+photos. Not perfect, and sometimes when playing a game, I just get "A photo of a
+video game" as a description, but again, this is the first version. And photos
+in news articles and on websites, and in apps, are amazingly accurate. If I
+didn't know better, I would think someone at Apple is busy describing all the
+images I come across. While Screen Recognition can fail spectacularly sometimes,
+especially with apps that do not look native to iOS, it has allowed me to get
+out of sticky situations in some apps and has allowed me to press the occasional button that VoiceOver can't press due to poor app coding and such.
+And I can play a few text-heavy games with it, like Game of Thrones, a tale of
+crows.&lt;/p&gt;
+&lt;p&gt;Even my ability to take pictures is greatly enhanced with image recognition. With this feature, I can open the Camera app, put VoiceOver focus on the "view finder," and it will describe what is in the camera view! When it changes, I must move focus away and back to the View Finder, but that's a small price to pay for a "talking camera" that is actually accurate.&lt;/p&gt;
+&lt;h3&gt;Comparing VO Recognition to Other Options&lt;/h3&gt;
+&lt;p&gt;Blind people may then say "Okay, what about Narrator on Windows? It does the same thing, right?" No. First, the photo is sent to a server owned by Microsoft. On iOS, the photo is captioned using the ML Coprocessor. What Microsoft needs and Internet connection and remote server to do, Apple does far better with the chip on your device!&lt;/p&gt;
+&lt;p&gt;You may then say "Well, how does it give better results?" First, it's automatic. Land on an image, and it works! Second, it is not shy about what it thinks it sees. If it is confident in its description, it will simply describe it. Narrator, and Seeing AI, always say "Image may contain: " before giving a guess. And, with more complex images, Narrator fails, and so does Seeing AI. I have read that this is set to improve, but I've not seen the improvements yet. Only when VoiceOver Recognition isn't confident in what it sees, it says, "Photo contains," and then gives a list of objects that it is surer of. This does not happen nearly as frequently as Narrator/Seeing AI, though.&lt;/p&gt;
+&lt;p&gt;You may also say "Okay, so how is this better than NVDA's OCR? You can use it to click on items in an app." Yes, and that is great, it really is, and I thank the NVDA developers every time I use VMWare with Linux because there always seems to be something going on with it. But with VoiceOver Recognition, you get an actual natively "accessible," app. You don't have to click on anything, and you know what VoiceOver thinks the item type of something is: a button, text field, ETC., and can interact with the item accordingly. With NVDA, you have a sort of mouse. With VO Recognition, you have an entire app experience.&lt;/p&gt;
+&lt;h3&gt;The history of these features&lt;/h3&gt;
+&lt;p&gt;Using AI to bolster the accessibility of user Interfaces is not a new idea. It has been floating around the blind community for a while now. I remember discussing it on an APH (American Printing House for the Blind) mailing list around a decade ago. Back then, however, it was just a toy idea. No one thought it could be done with current, at the time, Android 2.3 era hardware or software. It continued to be brought up by blind people who dreamed bigger than I, but never really went anyway.&lt;/p&gt;
+&lt;p&gt;Starting with the iPhone X R, Apple began shipping a machine learning Coprocessor within their iPhones. Then n iOS 13, VoiceOver gained the ability to describe images. This was not using the ML chip, however, since older phones could take advantage of it. I thought they may improve this, but I had no idea they would do as great a job as they are doing with iOS 14.&lt;/p&gt;
+&lt;h4&gt;What's Next?&lt;/h4&gt;
+&lt;p&gt;As I've said a few times now, this is only version one. I suspect Apple will continue building on their huge success this year, fleshing out Screen recognition, and perhaps having VoiceOver automatically speak what's in the camera view when preparing to take a picture, and perhaps adding even more than I cannot imagine now. I suspect, however, that this is leading to an even larger reveal for accessibility in the next few years, Augmented and Virtual reality. Apple Glasses, after all, would be very useful if they could describe what's around a blind person.&lt;/p&gt;&lt;/div&gt;</description><category>apple</category><category>blindness</category><guid>https://devinprater.github.io/posts/voiceover-recognition/</guid><pubDate>Sun, 25 Oct 2020 17:28:35 GMT</pubDate></item><item><title>A Brighter Apple</title><link>https://devinprater.github.io/posts/2020-04-21-a-brighter-apple/</link><dc:creator>Devin Prater</dc:creator><description>&lt;div&gt;&lt;p&gt;Coding has always been hard for me. I've never been able to get my mind
+around loops, if and else, for and while, and break almost breaks me
+instead of the code. However, many people make it look easy, and for
+them, it probably is. In iOS 14, Apple may loosen their chains upon
+their technology enough for developers to explore the boundaries of what
+a pocket computer can do.&lt;/p&gt;
+&lt;p&gt;Apple is very controlling. All of its operating systems can only run
+on its own hardware. Its hardware can only be used to practically run
+officially sanctioned operating systems, unless a Linux user can get
+passed the security on the Mac. And, for a long time, notwithstanding
+workarounds that have never been so easy, apps on iOS have only been
+usable if they were downloaded through Apple's own App Store. In iOS
+14, however, things may change for the better.&lt;/p&gt;
+&lt;p&gt;Earlier this year, Applevis released a blog post about iOS 14 possibly
+gaining &lt;a href="https://www.applevis.com/blog/apple-reported-be-exploring-ways-let-developers-provide-custom-text-speech-synthesizers-ios"&gt;Custom Text to Speech engine
+support&lt;/a&gt;.
+While I won't write about it here, as it seems a minor topic to me, I
+will say that this is something that the community of blind people
+have been asking for since VoiceOver revolutionized our lives.
+Furthermore, though, it is greater evidence that Apple is beginning to
+open up, just a tad. it isn't, however, the first time we've seen
+Apple open up, a bit, for accessibility reasons. Apple allows us, in
+iOS 13, to change VoiceOver commands, and it uses the &lt;a href="http://liblouis.org"&gt;Liblouis
+braille tables&lt;/a&gt; to display languages in Braille
+that weren't available before.&lt;/p&gt;
+&lt;p&gt;In this article, I will discuss and theorize about the availability of
+&lt;a href="https://www.macrumors.com/2020/04/21/rumor-mobile-version-of-xcode-for-ipad/"&gt;XCode on
+iOS&lt;/a&gt;,
+which is supposedly going to be released this year, and how it can help
+people learn to code, bring
+&lt;a href="https://en.wikipedia.org/wiki/Sideloading"&gt;sideloading&lt;/a&gt; to many more
+people, and how it can bring emulation in full force to iOS.&lt;/p&gt;
+&lt;h2&gt;Learning to code on iOS&lt;/h2&gt;
+&lt;p&gt;As I've said before, coding has never been easy for me. My skills are
+still very much at the beginner level. I can write "print" statements in
+Python, and maybe in Swift, but languages like Quorum, Java, and C++ are
+so verbose and require much more forethought than Python. Swift seems a
+bit like Python, although just as complex as Java and more verbose
+languages when one becomes more advanced.&lt;/p&gt;
+&lt;p&gt;With XCode on the Mac, accessibility isn't great. Editing text is okay,
+but even viewing output seems impossible on first look, and I'm still
+not sure if it can even be done. This means that the &lt;a href="https://books.apple.com/book/id1118575552"&gt;Intro to App
+development with Swift&lt;/a&gt;
+Playground materials are inaccessible. This has been verified today with
+the XCode 10 version. Sure, we can read the source code, but cannot
+directly activate the "next" link to move to the next page. And no,
+workarounds are not equal access. Furthermore, neither teachers nor
+students should have to look for workarounds to use a course created by
+Apple, one of the richest companies in the world, whose accessibility
+team is great, for iOS.&lt;/p&gt;
+&lt;p&gt;Because of this, I expect XCode for iOS will be a new beginning, of
+sorts, for all teams who work on it, not just the accessibility team. It
+will be a way for new, young developers to come to coding on their
+phone, or more probably, their iPad, without the history of workarounds
+that many developers on the Mac who are blind know today. It will also
+allow blind developers to create powerful, accessible apps. If it is
+true that Macs will run Apple's own "A" processor someday, then perhaps
+this XCode for iOS will move to the Mac, as Apple TV is attempting to
+do. Hopefully, by then, iOS apps on the Mac will actually be usable,
+instead of messes, accessibility-wise.&lt;/p&gt;
+&lt;p&gt;Windows users also cannot currently officially code for iOS. Most blind
+users have a Windows computer and an iPhone. Having XCode on iOS will
+allow more blind people, who are good at coding, to try their hand at
+developing iOS apps. This could also bring more powerful apps,
+as blind Windows users are used to the power of programs like
+Foobar2000, NVDA addons, and lots of choice.&lt;/p&gt;
+&lt;p&gt;Another benefit of having XCode on iOS is that, because of the number
+of users, there will be even more people working on open source
+projects, which they could easily download and import into XCode. For
+example, perhaps &lt;a href="https://github.com/hrydgard/ppsspp/issues/11696"&gt;PPSSPP User InterFace
+accessibility&lt;/a&gt; could
+be improved, or the Delta emulator could become &lt;a href="https://github.com/rileytestut/DeltaCore/issues/13"&gt;completely accessible
+and
+groundbreaking&lt;/a&gt;.
+Of course, closed source app development could be aided by this as
+well, but it is harder to join, or make, a closed source development
+team than it is to contribute to an open source one.&lt;/p&gt;
+&lt;h2&gt;Sideloading with XCode&lt;/h2&gt;
+&lt;p&gt;Sideloading is the process of running apps on iOS which are not accepted
+by the iOS App Store. These include video game console emulators,
+torrent downloaders, and apps which allow users to watch "free" movies
+and TV shows. The last set of apps, I agree, shouldn't be on the app
+store, but the first two are not illegal, but simply could facilitate
+illegal operations; pun intended.&lt;/p&gt;
+&lt;p&gt;Sideloading can be done in many ways. You can load the XCode project
+into XCode for Mac, build it, and send it to your own device. This must
+be renewed every seven days, but is the most difficult technically to
+do. You can sign up for a third-party app store, which allows you to
+download apps which are hosted elsewhere and may not be the latest
+version, but there is a good chance that the certificate which they use
+to sign the app will be revoked by Apple. Finally, there are a few apps
+which automate the signing of apps, and pushes the app to the device.&lt;/p&gt;
+&lt;p&gt;Two of these methods, however, require a Mac computer. Many people,
+especially blind people, only use a Windows computer and an iPhone. This
+usually isn't a problem, as most blind people either use their phone for
+much of what they do, or use their computer for much of what they do.
+However, this means that people who have Windows, but not a Mac, cannot
+sideload apps. So, if a blind person creates an extension to alert you
+that your screen curtain isn't on, which means that a VoiceOver user
+doesn't have a feature enabled so that the screen is blank, that app
+cannot be distributed on the App Store, and cannot be sideloaded by
+Windows users. And I highly doubt a third-party app store would host
+such a niche app.&lt;/p&gt;
+&lt;h2&gt;Emulating with XCode&lt;/h2&gt;
+&lt;p&gt;Emulators were once a legal gray area. They allow gamers to play video
+games, from game consoles like the Playstation Portable, on computers,
+tablets, or phones. They have become legal, however, due to Sony's
+&lt;a href="https://en.wikipedia.org/wiki/Sony_Computer_Entertainment,_Inc._v._Connectix_Corp."&gt;lawsuits of emulator
+developers&lt;/a&gt;.
+While emulation is legal, however, downloading games from the Internet,
+unless, some say, you own the game, is not. Steve Jobs himself, at the
+1999 MacWorld conference, &lt;a href="https://youtu.be/vN2vxYnAZf0?t=5038"&gt;showed off an
+emulator&lt;/a&gt;, one for playing
+Playstation games. Now, emulators are not allowed onto the iOS App
+Store, unless they have been made by the developers of the games which
+are being emulated.&lt;/p&gt;
+&lt;p&gt;XCode on iOS would also help in emulator use. The more people use
+emulators, the more their use will spread. iPhones are also definitely
+powerful enough to run emulators; the newer the iPhone, the faster the
+emulation. An iPhone X R, for example, is powerful enough to run a
+Playstation Portable game at full speed, even while not being
+optimized for the hardware, and being interpreted. It's like running
+nearly a PS3 game using Python. &lt;a href="https://www.youtube.com/watch?v=tVkYhCmq-dI"&gt;A video I
+made&lt;/a&gt; demonstrates this.
+The game, Dissidia DuoDecim, isn't as accessible as its predecessor.
+However, it runs, as far as I could tell, at full speed. This
+spectacularly shows that the computers in our pockets, the ones we use
+to drone over Facebook, be riled up by news sites, or play Pokemon Go,
+are much more powerful, and are capable of far more than what we use
+of them.&lt;/p&gt;
+&lt;p&gt;Also, since blind people will have access to the code ran with XCode,
+fixes to sound, the user interface, and even enhancements to both, are
+possible. PSP games could be enhanced using Apple's &lt;a href="https://developer.apple.com/audio/"&gt;3D audio
+effects&lt;/a&gt;. Games could be described
+using Apple's &lt;a href="https://developer.apple.com/documentation/vision"&gt;Machine Learning
+Vision&lt;/a&gt; technology.
+This applies to even more than accessibility, however. Since more users
+will be learning to code, or finally have the ability to code for iOS,
+bugs in iOS ports of open source software can more quickly be resolved.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;In this article, I have discussed the possibility of XCode for iOS, and
+how it could improve learning to code, sideloading apps, and emulation
+of video games. I hope that this information has been informative, and
+has enlivened the imaginations of my readers.&lt;/p&gt;
+&lt;p&gt;Now, what do you all think? Are you a blind person who wants to learn to
+code in an accessible environment? Are you a sighted person who wants to
+play Final Fantasy VII on your phone? Or are you one who wants to help
+fix accessibility issues in apps? Discussion is very welcome, anywhere
+this post is shared to. I welcome any feedback, input, or corrections.
+And, as always, thank you so much for reading this article.&lt;/p&gt;&lt;/div&gt;</description><category>apple</category><category>blindness</category><category>tech</category><guid>https://devinprater.github.io/posts/2020-04-21-a-brighter-apple/</guid><pubDate>Tue, 21 Apr 2020 12:15:06 GMT</pubDate></item><item><title>Writing Richly</title><link>https://devinprater.github.io/posts/2020-04-16-writing-richly/</link><dc:creator>Devin Prater</dc:creator><description>&lt;div&gt;&lt;p&gt;Whenever you read a text message, forum post, Tweet, or Facebook
+status, have you ever seen some one surround a word with stars, like
+&lt;code&gt;*this*&lt;/code&gt;? Have you noticed some one surround a phrase with two stars?
+This is Markdown, a form of formatting text for web usage.&lt;/p&gt;
+&lt;p&gt;I believe, however, that Markdown deserves more than just web usage. I
+can write in Markdown in this blog, I can use it on Github, and even
+in a few social networks. But wouldn’t it be even more useful
+everywhere? If we could write in Markdown throughout the whole
+operating system, couldn’t we be more expressive? And for
+accessibility issues, Markdown is great because a blind person can
+just write to format, instead of having to deal with clunky, slow
+interfaces.&lt;/p&gt;
+&lt;p&gt;So, in this article, I will discuss the importance of rich text, how
+Markdown could empower people with disabilities, and how it could work
+system-wide throughout all computers, even the ones in our pockets.&lt;/p&gt;
+&lt;h3&gt;What’s this rich text and who needs all that?&lt;/h3&gt;
+&lt;p&gt;Have you ever written in Notepad? It’s pretty plain, isn’t it? That is
+plain text. No bold, no italics, no underline, nothing. Just, if you
+like that, plain, simple text. If you don’t like plain text, you find
+yourself wanting more power, more ability to link things together,
+more ways to describe your text and make the medium, in some ways, a
+way to get the message across.&lt;/p&gt;
+&lt;p&gt;Because of this need, rich text was created. One can use this in Word
+Pad, Microsoft Word, Google Docs, LibreOffice, or any other word
+processor worth something. When I speak of rich text, to make things
+simple, I mean anything that is not plain text, including HTML, as it
+describes rich text. Rich text is in a lot of places now, yes, but it
+is not everywhere, and is not the same in the places that it is in.&lt;/p&gt;
+&lt;p&gt;So, who needs all that? Why not just stick with plain text? I mean
+come on man, you’re blind! You can’t see the rich text. In a way, this
+is true. I cannot see the richness of text, but in a moment, we’ll get
+to how that can be done. But for sighted people, which text message is
+better?&lt;/p&gt;
+&lt;p&gt;Okay, but how’s your day going?&lt;/p&gt;
+&lt;p&gt;Okay, but how’s &lt;em&gt;your&lt;/em&gt; day going?&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span class="err"&gt;Okay, but how’s *your* day going?&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;For blind people, the second message has the word “your” italicized.
+Sure, we may have gotten used to stars surrounding words meaning
+something, but that is a workaround, and not nearly the optimal
+outcome of rich text.&lt;/p&gt;
+&lt;p&gt;So what can you do with Markdown? You can do plenty of stuff. You
+could use it for simply using one blank line between blocks of text to
+show paragraphs in your journal. You could use it to create headings
+for chapters in your book. You could use it to make links to websites
+in your email. You could even simply use it to italicize an emphasized
+word in a text. Markdown can be as little or as much as you need it
+to. And if you don’t add any stars, hashes, dashes, brackets, or HTML
+markup, it’s just as it is, plain text.&lt;/p&gt;
+&lt;p&gt;Also, it doesn’t have to be hard. Even Emacs, an advanced text editor,
+gives you questions when you add a link, like “Link text,” “Link
+address,” and so on. Questions like that can be asked of you, and you
+simply fill in the information, and the Markdown is created for you.&lt;/p&gt;
+&lt;h3&gt;Okay but what about us blind people?&lt;/h3&gt;
+&lt;p&gt;To put it simply, Markdown shows us rich text. In the next section,
+I’ll talk about how, but for now, let’s focus on why. With nearly all
+screen readers, text formatting is not shown to us. Only Narrator on
+Windows 10 shows formatting with minimal configuration, and JAWS can
+be used to show formatting using much configuration of speech and
+sound schemes.&lt;/p&gt;
+&lt;p&gt;But, do we want that kind of information? I think so. Why wouldn’t we
+want to know exactly what a sighted person sees, in a way that we can
+easily, and quickly, understand? Why would we not want to know what an
+author intended us to know in a book? We accept formatting symbols in
+Braille, and even expect it. So, why not in digital form?&lt;/p&gt;
+&lt;p&gt;NVDA on Windows can be set to speak formatting information as we read,
+but it can be bold on quite arduous to hear italics on all this
+italics off as we read what we write bold off. Orca can speak
+formatting like NVDA, as well. VoiceOver on the Mac can be set to
+speak formatting, like NVDA, and also has the ability to make a small
+sound when it encounters formatting. This is better, but how would one
+distinguish bold, italics, or underline from a simple color change?&lt;/p&gt;
+&lt;p&gt;Even VoiceOver on iOS, which arguably gets much more attention than
+its Mac sibling, cannot read formatting information. The closest we
+get is the phrase separated from the rest of the paragraph into its
+own item, showing that it’s different, in Safari and other web apps.
+But how is it different? What formatting was applied to this
+“different” text? Otherwise, text is plain, so no blind people even
+know that there is a possibility of formatting, let alone that that
+formatting isn’t made known to us by the program tasked with giving us
+this information. In some apps, like notes, one can get some
+formatting information by reading line by line in the Note text field,
+but what if one simply wants to read the whole thing?&lt;/p&gt;
+&lt;p&gt;Okay but what about writing rich text? I mean, you just hit a hotkey
+and it works, so what could be better than that? First, when you press
+Control + I to italicize, there is no guarantee that “italics on” will
+be spoken. In fact, that is the case in LibreOffice for Windows: you
+do not know if the toggle key toggled the formatting on or off. You
+could write some text, select it, then format it, but again, you don’t
+know if you just italicized that text, or removed the italics. You may
+be able to check formatting with your screen reader’s command, but
+that’s slow, and you would hate to do that all throughout the
+document. Furthermore, dealing with spoken formatting as it is, it
+takes some time to read your formatted text. Hearing descriptions of
+formatting changes tires the mind, as it must interpret the fast-paced
+speech, get a sense of formatting flipped from off to on, and quickly
+return to interpreting text instead of text formatting instruction.
+Also, because all text formatting changes are spoken like the text
+surrounding it, you may have to slow down your speech just to get
+somewhat ahead of things enough to not grow tired from the relentless
+text streaming through your mind. This could be the case with star
+star bold or italics star star, and if screen readers would use more
+fine control of the pauses of a speech synthesizer, a lot of the
+exhausting sifting through of information which is rapidly fired at us
+would be lessened, but I don’t see much of that happening any time
+soon.&lt;/p&gt;
+&lt;p&gt;Even on iOS, where things are simpler, one must deal with the same
+problems as on other systems, except knowing if formatting is turned
+on or off before writing. There is also the problem of using the touch
+screen, using menus just to select to format a heading. This can be
+worked around using a Bluetooth keyboard, if the program you’re
+working in even has a keyboard command to make a heading, but not
+everyone has, or wants, one of those.&lt;/p&gt;
+&lt;p&gt;Markdown fixes, at least, most of this. We can &lt;em&gt;write&lt;/em&gt; in Markdown,
+controlling our formatting exactly, and &lt;em&gt;read&lt;/em&gt; in Markdown, getting
+much more information than we ever have before, while also getting
+less excessive textual information, hearing “star” instead of “italics
+on” and “italics off” does make a difference. “Star” is not usually
+read surrounding words, and has already become, in a sense, a
+formatting term. “Italics on” sounds like plain text, is not a symbol,
+and while it is a formatting term, has many syllables, and just takes
+time to say. Coupled with the helpfulness of Markdown for people
+without disabilities, adding it across an entire operating system
+would be useful for &lt;em&gt;everyone&lt;/em&gt;; not just the few people with
+disabilities, and not just for the majority without.&lt;/p&gt;
+&lt;h3&gt;So, how could this work?&lt;/h3&gt;
+&lt;p&gt;Operating systems, the programs which sit between you and the programs
+you run, has many layers and parts working together to make the
+experience as smooth as the programmers know how. In order for
+Markdown to be understood, there must be a part of the operating
+system that translates it into something that the thing that displays
+text understands. Furthermore, this thing must be able to display the
+resulting rich text, or Markdown interpretation, throughout the whole
+system, not just in Google Docs, not just in Pages, not just in Word,
+but in Note Pad, in Messages, in Notes, in a search box.&lt;/p&gt;
+&lt;p&gt;With that implemented, though, how should it be used? I think that
+there should be options. It’s about time some companies released their
+customers from the “one size fits all” mentality anyway. There should
+be an option to replace formatting done with Markdown with rich text
+unless the line the formatting is on has input focus, a mode for
+simply showing the Markdown only and no rich text, and an option for
+showing both.&lt;/p&gt;
+&lt;p&gt;For sighted people, I imagine seeing Markdown would be distracting.
+They want to see a heading, not the hash mark that makes the line a
+heading. So, hide Markdown unless that heading line is navigated to.&lt;/p&gt;
+&lt;p&gt;For blind people, or for people who find plain text easier to work
+with, and for whom the display of text in different sizes and font
+faces is jarring or distracting, having Markdown only would be great,
+while being translated for others to see as rich text. Blind people
+could write in Markdown, and others can see it as rich text, while the
+blind person sees simply what they wrote, in Markdown.&lt;/p&gt;
+&lt;p&gt;For some people, being able to see both would be great. Being able to
+see the Markdown they write, along with the text that it produces,
+could be a great way for users to become more comfortable with
+Markdown. It could be used for beginners to rich text editing, as
+well.&lt;/p&gt;
+&lt;h4&gt;But, which version of Markdown should be used?&lt;/h4&gt;
+&lt;p&gt;As with every open source, or heatedly debated, thing in this world,
+there are many ways of doing things. Markdown is no different. There
+is &lt;a href="https://github.com/mmark-md/mmark"&gt;strict Markdown&lt;/a&gt;, &lt;a href="https://commonmark.org"&gt;Common
+Mark&lt;/a&gt;, &lt;a href="https://github.github.com/gfm/"&gt;Github Flavored
+Markdown&lt;/a&gt;, &lt;a href="https://nshipster.com/swift-documentation/"&gt;Swift
+Markdown&lt;/a&gt;, &lt;a href="https://pandoc.org/MANUAL.html"&gt;Pandoc
+Markdown&lt;/a&gt;, and probably many others. I
+think that Pandoc’s Markdown would be the best, most extended variant
+to use, but I know that most operating system developers will stick
+with their own. Apple will stick with Swift Markdown, Microsoft may
+stick with Github Markdown, and the Linux developers may use Pandoc,
+if Pandoc is available as a package on the user’s architecture, and if
+not, then it’s some one else’s issue.&lt;/p&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;In this article, I have attempted to communicate the importance of
+rich text, why Markdown would make editing rich text easy for
+everyone, including people with disabilities, and how it could be
+implemented. So now, what do you all think? Would Markdown be helpful
+for you? Would writing blog posts, term papers, journal entries, text
+messages, notes, or Facebook posts be enhanced by Markdown rich text?
+For blind people, would reading books, articles, or other text, and
+hearing the Markdown for bold, italics, and other such formatting make
+the text stand out more, make it more beautiful to you, or just get in
+your way? For developers, what would it take to add Markdown support
+to an operating system, or even your writing app? How hard will it be?&lt;/p&gt;
+&lt;p&gt;Please, let me know your thoughts, using the contact info, or replying
+to the posts on social media made about this article. And, as always,
+thank you so much for reading this post.&lt;/p&gt;&lt;/div&gt;</description><category>apple</category><category>blindness</category><category>text</category><guid>https://devinprater.github.io/posts/2020-04-16-writing-richly/</guid><pubDate>Thu, 16 Apr 2020 01:47:34 GMT</pubDate></item><item><title>Apple’s Ecosystem and Accessibility</title><link>https://devinprater.github.io/posts/2020-03-27-apple-ecosystem/</link><dc:creator>Devin Prater</dc:creator><description>&lt;div&gt;&lt;p&gt;Earlier this year, my Airpods Pro began making a clicking sound, when
+in Noise Cancellation or transparency mode. I didn’t think much of it,
+and just used them regularly, until sound began distorting after a
+while of listening. I’ve simply stopped using them, as I shudder to
+think how much a cab ride to the nearest Apple Store, potentially an
+hour away, would cost. This is only one problem with the Apple
+ecosystem: being locked into Apple’s wireless headphones, other
+Bluetooth headphones, or other workarounds, and Apple Stores being far
+away, which is what I’ll be focusing on in this article. I will show,
+in the following paragraphs, how Apple’s handling of its ecosystem
+effects the hardware and software regarding accessibility matters.
+These matters may effect some in the general population, but people
+with disabilities are effected much more acutely.&lt;/p&gt;
+&lt;h2&gt;Hardware&lt;/h2&gt;
+&lt;p&gt;Apple’s hardware has usually been very well built. Reviewers often
+talk about nothing else. From the iPhone’s camera, iPad’s screen,
+Mac’s CPU and RAM, to the Watch’s health sensors, and the Airpod’s H1
+chip, hardware, for Apple, is a big part of their products, and
+reviewers focus on that. But how does that help or hinder accessibility?&lt;/p&gt;
+&lt;h3&gt;The TouchBar on the Mac&lt;/h3&gt;
+&lt;p&gt;In late 2016, Apple’s &lt;a href="https://en.wikipedia.org/wiki/MacBook_Pro"&gt;MacBook Pro&lt;/a&gt; gained the &lt;a href="https://support.apple.com/guide/mac-help/touch-bar-mchlbfd5b039/mac"&gt;Touch Bar&lt;/a&gt;, a touch strip
+across the top of the keyboard, replacing the function keys. The
+reason was to add variable icons which could visibly change functions
+across the operating system. Many people may have liked this change,
+as they could use hand-eye coordination to perform functions they
+otherwise would have used the trackpad and menus for. These type of
+users would not have known about keyboard shortcuts, using the
+function keys, and other easy ways of getting the same functions done
+without needing yet another touch input.&lt;/p&gt;
+&lt;p&gt;Blind people, however, are a bit different. We usually know many
+keyboard shortcuts, use the function keys without a problem, and do
+not always need a touch screen. The Touch Bar can be used, but it is
+much slower, as we have no tactile way of finding just one distinct
+item on the touch bar, like the play/pause button, or the volume
+slider. Once we have found the function we want, we must tap it twice
+to activate, like a sighted person must left click twice, once to
+focus the item, the next to activate it. In fact, VoiceOver, the
+screen reader for the Mac, had to adopt a command to raise or lower
+the volume via keyboard, since it is slower to do so on the Touch Bar.
+On the other hand, most operating system and application features can
+be accessed via keyboard commands, so I only need to use the Touch Bar
+for system functions like volume, brightness of the screen, and media
+playback when I’m not in the media player.&lt;/p&gt;
+&lt;p&gt;If a blind person wants to use their Mac as a Windows machine also,
+through Bootcamp, they must attach an external keyboard, or simply not
+use the function keys, as Windows screen readers have no such notion
+of a Touch Bar function key row, thus will not read what a user is
+selecting, and will also not let a user explore the touch bar to find
+a function before activating them, so one touch activates an item,
+even if it isn’t the one a user wants. See &lt;a href="https://www.applevis.com/forum/macbook-pro-touch-bar-windows-10"&gt;this Applevis forum post&lt;/a&gt;
+for more information on this.&lt;/p&gt;
+&lt;p&gt;I feel that Apple should have made this change on the MacBook Air, for
+regular consumers, and left the Pro machines alone. Yes, they could
+have made the power button into the Touch ID button on the pro
+machines, and I hope that, just as they revived the scissor-switch
+keyboards, they revive the Function keys as well. It would help me
+greatly in doing even simple tasks easier, like pausing, skipping, and
+rewinding audio, and handling volume and brightness more quickly.&lt;/p&gt;
+&lt;p&gt;There is still hope, however. This year, Apple released the MacBook
+Air refresh with the new keyboard. It has an Escape key, at least.
+Now, they just need to add back the other twelve keys on that row, and
+things will be back to normal.&lt;/p&gt;
+&lt;h3&gt;The headphone jack&lt;/h3&gt;
+&lt;p&gt;In 2016’s iPhone 7 and 7+, Apple removed the headphone jack, replacing
+it with their own Airpods, other Bluetooth headphones, and Lightning
+audio. They did not add another Lightning port onto the phone so that
+one could listen to wired headphones and charge the phone at the same
+time, or, as they did with the TouchBar on the MacBook, but left
+people to choose between wireless options if one wanted to be able to
+listen and charge the phone.&lt;/p&gt;
+&lt;p&gt;For most people, this isn’t an issue. They don’t usually need
+headphones, only using them when listening to music or movies, or
+playing games. Even then, some people just listen on speakers built
+into their phone, or use external speakers, like the HomePod. They
+also do not have to worry about latency. Music is not effected by it,
+and videos are usually delayed, so that the picture synchronizes with
+the audio.&lt;/p&gt;
+&lt;p&gt;For blind people, however, headphones are important. In order to use
+an iPhone, most blind people use a screen reader, which speaks
+information out loud using a voice like the one Siri uses. Using a
+screen reader without headphones means that anyone nearby can hear
+what the user’s phone is saying, which can reveal sensitive
+information like the phone numbers of people who call or text the
+person, user passwords, and even the pass code to their phone. This
+means that headphones are quite necessary. Some blind people own
+Braille displays, which gets output from a screen reader and displays
+it in braille, but these devices are expensive, starting at $600, up
+to near $6000, so are out of most blind people’s price ranges.&lt;/p&gt;
+&lt;p&gt;Wireless headphones, using Bluetooth, often have large lags when being
+used. If you play a game using them, you’ll surely notice it. A blind
+person who uses Bluetooth headphones must deal with that for all
+interactions with the phone. Imagine having to deal with a phone with
+a screen that lags behind what you’re doing on the phone, even by 300
+Milliseconds. Some Bluetooth headphones are better, but none can match
+wired ones. Apple’s Airpods 2 and Airpods Pro come closer, but have
+their own problems: they still must be charged, have lesser battery
+life, and cost much for the sound quality they come with.&lt;/p&gt;
+&lt;p&gt;To solve all of these problems, I have bought a $10 Lightning to 3.5
+Millimeter Headphone adapter, and use that with the headphones that I
+already have. Sure, I have to take my iPhone with me in my pocket
+wherever I go, but I usually do that anyways now that my Apple Watch
+is broken also. Sure, I don’t have my Lightning connector free, but I
+have a charging mat that I use to charge the phone. There is no lag
+when using VoiceOver, the sound quality is very good, and I don’t have
+to charge my headphones.&lt;/p&gt;
+&lt;p&gt;Hope is not lost, however. There is a &lt;a href="https://www.businessinsider.com/apple-iphone-13-rumor-wireless-no-lightning-charging-port-2019-12"&gt;rumor&lt;/a&gt; that iPhones could be
+completely wireless. Of course, one still must plug the iPhone into a
+computer, so it could be like the older MacBook products with a
+magnetic spot to plug dongles into. In this case, a third-party dongle
+could add the Lightning and headphone jack back to the iPhone.&lt;/p&gt;
+&lt;h3&gt;The Home button and TouchID&lt;/h3&gt;
+&lt;p&gt;In 2017, Apple shipped the iPhone X, the first iPhone without a home
+button. This was meant to extend the iPhone’s screen completely across
+the bottom of the screen, even though they had to notch the screen at
+the top. Along with the removal of the home button, they added FaceID.
+This replaced TouchID as the authentication method for unlocking the
+device in general usage of the phone.&lt;/p&gt;
+&lt;p&gt;Most users do not have a problem with FaceID. They raise the phone to
+look at it, and as they look at the camera, the phone unlocks. They
+can then swipe the lock screen away from the bottom, revealing the
+home screen. For sighted users, this is a quick, easy, and intuitive
+motion.&lt;/p&gt;
+&lt;p&gt;For blind people, it isn’t so simple. We do not have to look at our
+phones in order to use them. In fact, users with braille displays or
+hardware, Bluetooth keyboards, do not have to touch their phone. These
+users can easily and quickly enter their pass codes, however, so they
+usually are not effected by this. Most users must pick up the phone,
+wait for the unlock sound from the screen reader, then put it back
+down on the surface they were using it on before. If FaceID doesn’t
+work, they must angle the phone away and back again for another try.
+if it fails a few more times, they must enter their pass code,
+with headphones in, if they seek to preserve their privacy around
+others.&lt;/p&gt;
+&lt;p&gt;Hope is not lost, however. There is a &lt;a href="https://www.imore.com/iphone-9"&gt;rumor&lt;/a&gt; that a new iPhone SE type
+device, the iPhone 9, could be released this year with a home button,
+TouchID, and still sport the A13 CPU. This would be something that I
+myself may purchase, as I doubt there will be much greater features in
+the iPhone 12, released later this year.&lt;/p&gt;
+&lt;h2&gt;Software&lt;/h2&gt;
+&lt;p&gt;Apple’s software usually comes last in reviews. Reviewers may talk
+about the smooth animations, camera machine learning effects, or
+updates to apps. For users of Apple’s accessibility services, however,
+software is the core experience of a device, and what sets MacOS apart
+from Windows and Linux, and iOS apart from Android. I have covered
+Apple’s accessibility options extensively &lt;a href="https://geeksmodo.com/apples-accessibility-consistency/"&gt;elsewhere&lt;/a&gt;, so I will use
+this section to highlight parts of software which effect accessibility
+indirectly.&lt;/p&gt;
+&lt;h3&gt;Gatekeeper on MacOS&lt;/h3&gt;
+&lt;p&gt;For a pro machine, the Mac lately has become a mess of confirmation
+dialog boxes and hindrances to opening software not blessed by Apple or
+its notarization process. For most users, even most blind users, this
+won’t be much of an issue. If you use Apple’s apps, or apps from the
+App Store, you’ll be fine. But what happens when you want to use, say,
+Emacs for editing text, or Retroarch for playing video games?&lt;/p&gt;
+&lt;p&gt;Blind people sometimes use specialized software to complete tasks. We
+use apps on our phones for recognizing pictures, money, and images of
+text, since these are not usually accessible to us. On the Mac, I use
+&lt;a href="https://www.gnu.org/software/emacs/"&gt;Emacs&lt;/a&gt; for editing text, using the &lt;a href="https://github.com/tvraman/emacspeak"&gt;Emacspeak&lt;/a&gt; extension, because I find
+it much easier and more enjoyable than Text Edit, Pages, and other
+alternatives. In fact, I am using Emacs right now, to write, and
+publish, this blog post. However, this program is not notarized by
+Apple’s processes, so instead of just being able to open it, I must
+open it from the contextual menu, press “Cancel,” then open it again,
+and press “Open.” My laptop is a pro machine; I should be treated as a
+professional. These features, as with the Touch Bar, should be left to
+MacBook Air users, or left for iPad users, when, or if, the iPad
+becomes a general-purpose computer.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;In this article, I’ve explored how some of Apple’s decisions across
+its ecosystem have effected accessibility. Hardware has changed much,
+with software mainly being usable besides accessibility bugs and
+overbearing security. More about direct accessibility in software and
+services can be found in other articles. Other, smaller issues include
+the lack of Apple Stores is smaller cities, turning on iPhone not
+producing a vibration, sound, or other way for a blind person to
+immediately know when it has turned on, and the Mac’s startup chime
+disabled by default.&lt;/p&gt;
+&lt;p&gt;Now, what do you think, readers? I’d love to have your feedback, and
+thank you for reading.&lt;/p&gt;&lt;/div&gt;</description><category>apple</category><category>blindness</category><category>tech</category><guid>https://devinprater.github.io/posts/2020-03-27-apple-ecosystem/</guid><pubDate>Fri, 27 Mar 2020 16:40:55 GMT</pubDate></item><item><title>quick apple update</title><link>https://devinprater.github.io/posts/2020-03-03-quick-apple-update/</link><dc:creator>Devin Prater</dc:creator><description>&lt;div&gt;&lt;p&gt;In a &lt;a href="https://devinprater.github.io/posts/2020-03-03-quick-apple-update/%7B%%20link%0A_posts/2020-02-13-accessibility-consistency.md%20%%7D"&gt;previous blog post&lt;/a&gt;, I
+talked about Apple having a few problems to fix. Last month, they
+fixed one of them, being Apple Research. The hearing study now will
+have accessible hearing tests and questions. Focus is still a little
+jumpy in the Heart and Movement study questions, and my watch screen
+has become a moving part so I can’t participate in that study
+completely, or track my sleep accurately, but getting transportation
+to the Apple Store is something I’ve covered well on Twitter already.&lt;/p&gt;
+&lt;p&gt;So, thanks so much to the people at Apple who handled the Research
+accessibility to this point, and may it become even better, reversing
+the trend started with the inaccessibility of Apple Arcade.&lt;/p&gt;&lt;/div&gt;</description><category>apple</category><category>blindness</category><category>tech</category><guid>https://devinprater.github.io/posts/2020-03-03-quick-apple-update/</guid><pubDate>Tue, 03 Mar 2020 03:43:32 GMT</pubDate></item></channel></rss>

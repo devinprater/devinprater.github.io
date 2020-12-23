@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Devin's Site (Posts about text)</title><link>https://devinprater.github.io/</link><description></description><atom:link href="https://devinprater.github.io/categories/text.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:r.d.t.prater@gmail.com"&gt;Devin Prater&lt;/a&gt; 
+&lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
+&lt;img alt="Creative Commons License BY-NC-SA"
+style="border-width:0; margin-bottom:12px;"
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;</copyright><lastBuildDate>Wed, 23 Dec 2020 04:12:38 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Writing Richly</title><link>https://devinprater.github.io/posts/2020-04-16-writing-richly/</link><dc:creator>Devin Prater</dc:creator><description>&lt;div&gt;&lt;p&gt;Whenever you read a text message, forum post, Tweet, or Facebook
+status, have you ever seen some one surround a word with stars, like
+&lt;code&gt;*this*&lt;/code&gt;? Have you noticed some one surround a phrase with two stars?
+This is Markdown, a form of formatting text for web usage.&lt;/p&gt;
+&lt;p&gt;I believe, however, that Markdown deserves more than just web usage. I
+can write in Markdown in this blog, I can use it on Github, and even
+in a few social networks. But wouldn’t it be even more useful
+everywhere? If we could write in Markdown throughout the whole
+operating system, couldn’t we be more expressive? And for
+accessibility issues, Markdown is great because a blind person can
+just write to format, instead of having to deal with clunky, slow
+interfaces.&lt;/p&gt;
+&lt;p&gt;So, in this article, I will discuss the importance of rich text, how
+Markdown could empower people with disabilities, and how it could work
+system-wide throughout all computers, even the ones in our pockets.&lt;/p&gt;
+&lt;h3&gt;What’s this rich text and who needs all that?&lt;/h3&gt;
+&lt;p&gt;Have you ever written in Notepad? It’s pretty plain, isn’t it? That is
+plain text. No bold, no italics, no underline, nothing. Just, if you
+like that, plain, simple text. If you don’t like plain text, you find
+yourself wanting more power, more ability to link things together,
+more ways to describe your text and make the medium, in some ways, a
+way to get the message across.&lt;/p&gt;
+&lt;p&gt;Because of this need, rich text was created. One can use this in Word
+Pad, Microsoft Word, Google Docs, LibreOffice, or any other word
+processor worth something. When I speak of rich text, to make things
+simple, I mean anything that is not plain text, including HTML, as it
+describes rich text. Rich text is in a lot of places now, yes, but it
+is not everywhere, and is not the same in the places that it is in.&lt;/p&gt;
+&lt;p&gt;So, who needs all that? Why not just stick with plain text? I mean
+come on man, you’re blind! You can’t see the rich text. In a way, this
+is true. I cannot see the richness of text, but in a moment, we’ll get
+to how that can be done. But for sighted people, which text message is
+better?&lt;/p&gt;
+&lt;p&gt;Okay, but how’s your day going?&lt;/p&gt;
+&lt;p&gt;Okay, but how’s &lt;em&gt;your&lt;/em&gt; day going?&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span class="err"&gt;Okay, but how’s *your* day going?&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;For blind people, the second message has the word “your” italicized.
+Sure, we may have gotten used to stars surrounding words meaning
+something, but that is a workaround, and not nearly the optimal
+outcome of rich text.&lt;/p&gt;
+&lt;p&gt;So what can you do with Markdown? You can do plenty of stuff. You
+could use it for simply using one blank line between blocks of text to
+show paragraphs in your journal. You could use it to create headings
+for chapters in your book. You could use it to make links to websites
+in your email. You could even simply use it to italicize an emphasized
+word in a text. Markdown can be as little or as much as you need it
+to. And if you don’t add any stars, hashes, dashes, brackets, or HTML
+markup, it’s just as it is, plain text.&lt;/p&gt;
+&lt;p&gt;Also, it doesn’t have to be hard. Even Emacs, an advanced text editor,
+gives you questions when you add a link, like “Link text,” “Link
+address,” and so on. Questions like that can be asked of you, and you
+simply fill in the information, and the Markdown is created for you.&lt;/p&gt;
+&lt;h3&gt;Okay but what about us blind people?&lt;/h3&gt;
+&lt;p&gt;To put it simply, Markdown shows us rich text. In the next section,
+I’ll talk about how, but for now, let’s focus on why. With nearly all
+screen readers, text formatting is not shown to us. Only Narrator on
+Windows 10 shows formatting with minimal configuration, and JAWS can
+be used to show formatting using much configuration of speech and
+sound schemes.&lt;/p&gt;
+&lt;p&gt;But, do we want that kind of information? I think so. Why wouldn’t we
+want to know exactly what a sighted person sees, in a way that we can
+easily, and quickly, understand? Why would we not want to know what an
+author intended us to know in a book? We accept formatting symbols in
+Braille, and even expect it. So, why not in digital form?&lt;/p&gt;
+&lt;p&gt;NVDA on Windows can be set to speak formatting information as we read,
+but it can be bold on quite arduous to hear italics on all this
+italics off as we read what we write bold off. Orca can speak
+formatting like NVDA, as well. VoiceOver on the Mac can be set to
+speak formatting, like NVDA, and also has the ability to make a small
+sound when it encounters formatting. This is better, but how would one
+distinguish bold, italics, or underline from a simple color change?&lt;/p&gt;
+&lt;p&gt;Even VoiceOver on iOS, which arguably gets much more attention than
+its Mac sibling, cannot read formatting information. The closest we
+get is the phrase separated from the rest of the paragraph into its
+own item, showing that it’s different, in Safari and other web apps.
+But how is it different? What formatting was applied to this
+“different” text? Otherwise, text is plain, so no blind people even
+know that there is a possibility of formatting, let alone that that
+formatting isn’t made known to us by the program tasked with giving us
+this information. In some apps, like notes, one can get some
+formatting information by reading line by line in the Note text field,
+but what if one simply wants to read the whole thing?&lt;/p&gt;
+&lt;p&gt;Okay but what about writing rich text? I mean, you just hit a hotkey
+and it works, so what could be better than that? First, when you press
+Control + I to italicize, there is no guarantee that “italics on” will
+be spoken. In fact, that is the case in LibreOffice for Windows: you
+do not know if the toggle key toggled the formatting on or off. You
+could write some text, select it, then format it, but again, you don’t
+know if you just italicized that text, or removed the italics. You may
+be able to check formatting with your screen reader’s command, but
+that’s slow, and you would hate to do that all throughout the
+document. Furthermore, dealing with spoken formatting as it is, it
+takes some time to read your formatted text. Hearing descriptions of
+formatting changes tires the mind, as it must interpret the fast-paced
+speech, get a sense of formatting flipped from off to on, and quickly
+return to interpreting text instead of text formatting instruction.
+Also, because all text formatting changes are spoken like the text
+surrounding it, you may have to slow down your speech just to get
+somewhat ahead of things enough to not grow tired from the relentless
+text streaming through your mind. This could be the case with star
+star bold or italics star star, and if screen readers would use more
+fine control of the pauses of a speech synthesizer, a lot of the
+exhausting sifting through of information which is rapidly fired at us
+would be lessened, but I don’t see much of that happening any time
+soon.&lt;/p&gt;
+&lt;p&gt;Even on iOS, where things are simpler, one must deal with the same
+problems as on other systems, except knowing if formatting is turned
+on or off before writing. There is also the problem of using the touch
+screen, using menus just to select to format a heading. This can be
+worked around using a Bluetooth keyboard, if the program you’re
+working in even has a keyboard command to make a heading, but not
+everyone has, or wants, one of those.&lt;/p&gt;
+&lt;p&gt;Markdown fixes, at least, most of this. We can &lt;em&gt;write&lt;/em&gt; in Markdown,
+controlling our formatting exactly, and &lt;em&gt;read&lt;/em&gt; in Markdown, getting
+much more information than we ever have before, while also getting
+less excessive textual information, hearing “star” instead of “italics
+on” and “italics off” does make a difference. “Star” is not usually
+read surrounding words, and has already become, in a sense, a
+formatting term. “Italics on” sounds like plain text, is not a symbol,
+and while it is a formatting term, has many syllables, and just takes
+time to say. Coupled with the helpfulness of Markdown for people
+without disabilities, adding it across an entire operating system
+would be useful for &lt;em&gt;everyone&lt;/em&gt;; not just the few people with
+disabilities, and not just for the majority without.&lt;/p&gt;
+&lt;h3&gt;So, how could this work?&lt;/h3&gt;
+&lt;p&gt;Operating systems, the programs which sit between you and the programs
+you run, has many layers and parts working together to make the
+experience as smooth as the programmers know how. In order for
+Markdown to be understood, there must be a part of the operating
+system that translates it into something that the thing that displays
+text understands. Furthermore, this thing must be able to display the
+resulting rich text, or Markdown interpretation, throughout the whole
+system, not just in Google Docs, not just in Pages, not just in Word,
+but in Note Pad, in Messages, in Notes, in a search box.&lt;/p&gt;
+&lt;p&gt;With that implemented, though, how should it be used? I think that
+there should be options. It’s about time some companies released their
+customers from the “one size fits all” mentality anyway. There should
+be an option to replace formatting done with Markdown with rich text
+unless the line the formatting is on has input focus, a mode for
+simply showing the Markdown only and no rich text, and an option for
+showing both.&lt;/p&gt;
+&lt;p&gt;For sighted people, I imagine seeing Markdown would be distracting.
+They want to see a heading, not the hash mark that makes the line a
+heading. So, hide Markdown unless that heading line is navigated to.&lt;/p&gt;
+&lt;p&gt;For blind people, or for people who find plain text easier to work
+with, and for whom the display of text in different sizes and font
+faces is jarring or distracting, having Markdown only would be great,
+while being translated for others to see as rich text. Blind people
+could write in Markdown, and others can see it as rich text, while the
+blind person sees simply what they wrote, in Markdown.&lt;/p&gt;
+&lt;p&gt;For some people, being able to see both would be great. Being able to
+see the Markdown they write, along with the text that it produces,
+could be a great way for users to become more comfortable with
+Markdown. It could be used for beginners to rich text editing, as
+well.&lt;/p&gt;
+&lt;h4&gt;But, which version of Markdown should be used?&lt;/h4&gt;
+&lt;p&gt;As with every open source, or heatedly debated, thing in this world,
+there are many ways of doing things. Markdown is no different. There
+is &lt;a href="https://github.com/mmark-md/mmark"&gt;strict Markdown&lt;/a&gt;, &lt;a href="https://commonmark.org"&gt;Common
+Mark&lt;/a&gt;, &lt;a href="https://github.github.com/gfm/"&gt;Github Flavored
+Markdown&lt;/a&gt;, &lt;a href="https://nshipster.com/swift-documentation/"&gt;Swift
+Markdown&lt;/a&gt;, &lt;a href="https://pandoc.org/MANUAL.html"&gt;Pandoc
+Markdown&lt;/a&gt;, and probably many others. I
+think that Pandoc’s Markdown would be the best, most extended variant
+to use, but I know that most operating system developers will stick
+with their own. Apple will stick with Swift Markdown, Microsoft may
+stick with Github Markdown, and the Linux developers may use Pandoc,
+if Pandoc is available as a package on the user’s architecture, and if
+not, then it’s some one else’s issue.&lt;/p&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;In this article, I have attempted to communicate the importance of
+rich text, why Markdown would make editing rich text easy for
+everyone, including people with disabilities, and how it could be
+implemented. So now, what do you all think? Would Markdown be helpful
+for you? Would writing blog posts, term papers, journal entries, text
+messages, notes, or Facebook posts be enhanced by Markdown rich text?
+For blind people, would reading books, articles, or other text, and
+hearing the Markdown for bold, italics, and other such formatting make
+the text stand out more, make it more beautiful to you, or just get in
+your way? For developers, what would it take to add Markdown support
+to an operating system, or even your writing app? How hard will it be?&lt;/p&gt;
+&lt;p&gt;Please, let me know your thoughts, using the contact info, or replying
+to the posts on social media made about this article. And, as always,
+thank you so much for reading this post.&lt;/p&gt;&lt;/div&gt;</description><category>apple</category><category>blindness</category><category>text</category><guid>https://devinprater.github.io/posts/2020-04-16-writing-richly/</guid><pubDate>Thu, 16 Apr 2020 01:47:34 GMT</pubDate></item><item><title>text formatting for the blind</title><link>https://devinprater.github.io/posts/2020-02-23-text-formatting-for-the-blind/</link><dc:creator>Devin Prater</dc:creator><description>&lt;div&gt;&lt;p&gt;Text formatting is used in many areas, from books, newspapers,
+articles, websites, and documents. Paragraphs, headings, lists,
+italics, bold, and many other characteristics are used to emphasize,
+denote chapters, and mark changes in scenes or actions. Sighted users
+can use formatting to find points of interest in text. What about
+people who are blind? Is formatting effective for us? Can it be
+useful?&lt;/p&gt;
+&lt;p&gt;In this article, I will explore text formatting, and how blind people
+use it or dismiss it. Like all of my other articles, this one will
+contain opinions. This area is one that I feel should be discussed,
+however, because it is an area of inclusion that I feel blind people
+have ignored, and sighted people haven’t generally approached.&lt;/p&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Text formatting is pretty much just information about text to a
+computer. A bolded word, an italicized title, a heading line, or a
+list of items are all ways of formatting. Sighted people see all this
+in the context of their chosen font, but screen readers only read, by
+default, a small set of textual attributes, and only by describing
+what the attribute is.&lt;/p&gt;
+&lt;p&gt;If a screen reader user turns on the reading of styles or formatting,
+the screen reader will, italics on describe italics off, the
+formatting, which can become verbose, and sometimes doesn’t help
+because the screen reader doesn’t pause after speaking formatting
+characteristics, meaning that the user has to quickly parse what the
+screen reader is saying.&lt;/p&gt;
+&lt;p&gt;So, is that it? Is the only choice for a user to hear little to no
+formatting information, or hear it all in a quick procession of words?
+There are other options, better in fact than anything done by most
+visual interfaces so far.&lt;/p&gt;
+&lt;h2&gt;How blind people format text&lt;/h2&gt;
+&lt;p&gt;Blind people have a few ways of formatting text. The visual method
+requires users to press a command, write their text, press the command
+again, and review formatting with the screen reader. Braille allows
+blind people to feel formatting, if supported by the screen reader.
+Markup languages allow blind people to type formatting symbols around
+text, which they can review with normal text navigation functions.&lt;/p&gt;
+&lt;h3&gt;Visual&lt;/h3&gt;
+&lt;p&gt;The most popular way of formatting for sighted users, choosing a
+formatting attribute from a tool bar, is also how blind people format,
+most of the time, using keyboard commands. It is easy because it is
+familiar. All word processors support this, using similar keyboard
+commands for bold, italics, underline, and indentation. Some word
+processors, like LibreOffice on Windows, do not speak when these
+keyboard commands are pressed, so users have to trust in their
+keyboarding.&lt;/p&gt;
+&lt;p&gt;The problem with this approach is that one has to turn on the reading
+of font information, like styles, for a screen reader user to be sure
+when a particular formatting style begins and ends, and that a program
+may not speak when formatting commands are pressed. Screen readers do,
+usually, read headings and lists without needing settings changes, but
+that’s about all. JAWS for Windows can be configured to &lt;a href="https://doccenter.freedomscientific.com/doccenter/doccenter/rs25c51746a0cc/2012-06-20_TextFormatting/02_TextFormatting.htm"&gt;speak or play
+sounds&lt;/a&gt;
+for formatting, but most users do not realize that this feature is
+available, and so it is not used.&lt;/p&gt;
+&lt;p&gt;Not all is lost, however. Narrator now has the ability to read
+formatting using different speech settings, like a change in pitch,
+volume, or rate. VoiceOver on the Mac can "beep" for formatting
+changes, although that doesn’t tell us &lt;em&gt;which&lt;/em&gt; formatting information
+was used. NVDA has begun working on refactoring its speech system, so
+in the future, NVDA may be able to do what Narrator does, and more.
+Imagine hearing sounds for each text attribute, instead of even having
+vocal indications.&lt;/p&gt;
+&lt;h3&gt;Braille&lt;/h3&gt;
+&lt;p&gt;Braille is a tactile way of reading, and has plenty of standards for
+showing formatting. If you get a book from a library in braille, it is
+likely to have been formatted very well. Reading braille via screen
+reader, however, is often a bland experience, with little to no
+formatting information. Screen readers do show abbreviated symbols for
+item types like headings, lists, and links, but not italics, bold,
+underline, or anything else. One can use Status Cells, dots at the end
+of a display used in a few screen readers to show text attributes, but
+these are imprecise, as a formatted word would show, on that status
+cell, as if the whole line were formatted. iOS uses this technique.
+The largest problem with this is that there are standard braille
+symbols for formatting, supported by the
+&lt;a href="http://liblouis.org"&gt;Liblouis&lt;/a&gt; translator at least; they simply
+aren’t used. In Safari, formatted text is often placed in its own
+item, but that still doesn’t tell us &lt;em&gt;which&lt;/em&gt; text attribute was used.&lt;/p&gt;
+&lt;p&gt;The only screen reader that currently shows any text formatting is
+NVDA. It can show emphasized text, but that’s all I’ve found. It used
+to show more, and why it doesn’t now I don’t know. The Braille
+Extender addon adds the ability for NVDA to show paragraph
+indentation. All other screen readers just show words, just like
+speech, without any trace of formatting.&lt;/p&gt;
+&lt;h3&gt;Text Markup&lt;/h3&gt;
+&lt;p&gt;Text markup languages, like &lt;a href="https://commonmark.org"&gt;Markdown&lt;/a&gt;,
+&lt;a href="https://orgmode.org"&gt;Org-mode&lt;/a&gt;, and
+&lt;a href="https://en.wikipedia.org/wiki/HTML"&gt;HTML&lt;/a&gt; allow the user to write a
+document, web page, blog post, or book using formatting that anyone
+can read. Screen readers may need to be set to speak most punctuation,
+and in the case of Markdown and Org-mode, set to repeat more than
+three characters. This is even used in contexts where it is not
+supported, like Email, forum posts, and texts.&lt;/p&gt;
+&lt;p&gt;This type of formatting, for now, is the most accessible. It can be
+read using speech or braille, and can often be previewed in a browser
+or other format if a user isn’t confident in using the markup style.
+Because of this level of accessibility, I believe that Markdown, or
+even better, Org-mode, should be a part of text editing, everywhere,
+in all operating systems. A user could write in Markdown, and the text
+would visually be formatted, allowing all those *italics* to not go
+to waste. If you use Emacs with
+&lt;a href="http://github.com/tvraman/emacspeak/"&gt;Emacspeak&lt;/a&gt;, you hear formatting
+when reading websites, Markdown and Org-mode files, and syntax
+highlighting with source code.&lt;/p&gt;
+&lt;h2&gt;Why blind people dismiss formatting&lt;/h2&gt;
+&lt;p&gt;If you are sighted, imagine a world with no formatting. No italics, no
+bold, no underline, just some headings, lists, and block quotes, all
+practically the same, and absolutely no color. This is, even using
+braille display, what blind people get. There aren’t even any separate
+paragraphs, just chunks of text on mobile and Mac, and one long page
+with some headings for division on Windows. Would you enjoy this?&lt;/p&gt;
+&lt;p&gt;If you are blind, you already know this world, and probably don’t
+consider the possibility that at least one word on this page is
+italicized, because for you, there is no formatting; it simply doesn’t
+exist. Blind people don’t particularly like formatting because we
+can’t really use it on the most popular system, Windows, with the most
+popular screen readers, NVDA and JAWS, without much frustration. We
+don’t dismiss it because we  don’t like the idea, we dismiss it
+because we don’t have access to that information, and don’t see the
+uses for it.&lt;/p&gt;
+&lt;h2&gt;How formatting can be useful&lt;/h2&gt;
+&lt;p&gt;Let’s start with the obvious. Headings can mark chapters of a book,
+sections of an article, and allow quick navigation through a page for
+blind people. Lists are useful for itemizing content. Block quotes
+are useful for long quotations.&lt;/p&gt;
+&lt;p&gt;What about the more invisible formatting, at least for blind people?
+Italics is great for &lt;em&gt;emphasizing&lt;/em&gt; things, bold makes things stand
+out, and underlining is good for making something notable. If screen
+readers spoke these things using differing speech parameters, or even
+sounds, I’m sure that most blind people would find that they add some
+color to our Grey, lifeless text, and make things we write look much
+better to sighted readers.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;What do you think, reader? Do you care about formatting enough to use
+&lt;a href="https://pandoc.org"&gt;Pandoc&lt;/a&gt; on just about every Word document, like
+me, in order to see formatting? Would you rather not know about
+formatting on your favorite websites? If you can see, do you not
+really notice formatting, or do you find it essential and beautiful?
+Please, let me know. I’d love to hear your feedback, whether it come
+through Email, Twitter, or even a contribution to my blog’s &lt;a href="https://github.com/devinprater/devinprater.github.io"&gt;Github
+repository&lt;/a&gt;.
+Again, thanks for reading!&lt;/p&gt;&lt;/div&gt;</description><category>blindness</category><category>tech</category><category>text</category><guid>https://devinprater.github.io/posts/2020-02-23-text-formatting-for-the-blind/</guid><pubDate>Sun, 23 Feb 2020 13:46:56 GMT</pubDate></item></channel></rss>

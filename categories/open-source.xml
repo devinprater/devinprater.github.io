@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Devin's Site (Posts about open-source)</title><link>https://devinprater.github.io/</link><description></description><atom:link href="https://devinprater.github.io/categories/open-source.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:r.d.t.prater@gmail.com"&gt;Devin Prater&lt;/a&gt; 
+&lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
+&lt;img alt="Creative Commons License BY-NC-SA"
+style="border-width:0; margin-bottom:12px;"
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;</copyright><lastBuildDate>Wed, 23 Dec 2020 04:12:38 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>open source blindness</title><link>https://devinprater.github.io/posts/2020-02-16-open-source-blindness/</link><dc:creator>Devin Prater</dc:creator><description>&lt;div&gt;&lt;p&gt;What if all of your software were free, like NVDA? What if the only
+thing asked of you by software makers was to donate or contribute? How
+would this effect your life, and the lives of developers? In this
+article, I will explain what open source is, what it is currently used
+for, my experiences with it, and how you can make it better.&lt;/p&gt;
+&lt;h2&gt;What is Open Source?&lt;/h2&gt;
+&lt;p&gt;Open source is a splinter of the &lt;a href="https://en.wikipedia.org/wiki/Free_software_movement"&gt;Free Software
+movement&lt;/a&gt;. The
+Free Software movement believes that everyone should be able to view a
+program's code, and modify it if needed. The thing which sets open
+source apart is that it doesn't mind working with companies which create
+closed source, or proprietary, software which cannot be modified or have
+its source code seen by the user.&lt;/p&gt;
+&lt;p&gt;When free and open source spokespeople talk about freedom, they mean
+free as in free speech, not as in free things. This talk of freedom
+upsets business, so the term "open source" is used instead. Much open
+source software is free of cost, with the developers asking for donation
+instead of demanding payment.&lt;/p&gt;
+&lt;h2&gt;What is Open Source used for?&lt;/h2&gt;
+&lt;p&gt;Open source software is just about everywhere, and often comes with a
+tightly knit community of users. Examples of open source in the blind
+community include &lt;a href="https://www.nvaccess.org/about-nvda/"&gt;NVDA&lt;/a&gt;,
+&lt;a href="https://www.libreoffice.org"&gt;LibreOffice&lt;/a&gt;, &lt;a href="https://wiki.gnome.org/Projects/Orca"&gt;Orca Screen
+Reader&lt;/a&gt;, &lt;a href="https://brailleblaster.org"&gt;Braille
+Blaster&lt;/a&gt;, &lt;a href="http://liblouis.org"&gt;Liblouis&lt;/a&gt;,
+and &lt;a href="https://github.com/tvraman/emacspeak"&gt;Emacspeak&lt;/a&gt;. Examples of
+closed source include &lt;a href="https://www.freedomscientific.com/products/software/jaws/"&gt;JAWS for Windows&lt;/a&gt;, &lt;a href="https://support.microsoft.com/en-us/help/17173/windows-10-hear-text-read-aloud"&gt;Narrator&lt;/a&gt;, &lt;a href="https://www.apple.com/accessibility/iphone/vision/"&gt;VoiceOver&lt;/a&gt;, the latest
+version of
+&lt;a href="https://support.google.com/accessibility/android/answer/6283677?hl=en"&gt;TalkBack&lt;/a&gt;,
+&lt;a href="https://duxburysystems.com"&gt;Duxberry Braille translator&lt;/a&gt;, iOS, Windows, and plenty of apps you may have on
+your iPhone or Android phone.&lt;/p&gt;
+&lt;p&gt;Interestingly, some projects are a mixture of both. JAWS incorporates
+Liblouis for braille translation, and so do Narrator and VoiceOver.
+Apple uses plenty of open source tools: Python, command line shells, and
+many command line tools on MacOS. Microsoft makes BRLTTY and Liblouis
+available for download to interface with Narrator.&lt;/p&gt;
+&lt;p&gt;Linux, which founded many offshoots, is an entire operating system built
+on open source ideals. Blind people began customizing Linux for use with
+speech, and work is ongoing to make Linux an accessible operating
+system. This began with &lt;a href="https://wiki.vinuxproject.org"&gt;Vinux&lt;/a&gt;. It
+started up talking, something no other system had done before. One could
+use it with speech or braille, and used the eSpeak voices.&lt;/p&gt;
+&lt;p&gt;That operating system, or distribution of Linux as they are called, is
+now abandoned, not having been updated in years. Another project, &lt;a href="https://distrowatch.com/table.php?distribution=sonar"&gt;Sonar
+Gnu Linux&lt;/a&gt;, also
+came and went. It was based on Arch Linux, and was my favorite
+distribution. People now use &lt;a href="https://talkingarch.info/download.html"&gt;Talking
+Arch&lt;/a&gt;, or
+&lt;a href="https://tarch.org"&gt;Tarch&lt;/a&gt;, if they are adventurous and &lt;a href="https://slint.fr/wiki/doku.php?id=en:installation"&gt;Slint
+Linux&lt;/a&gt; if they
+aren't. These are the most popular Linux distributions for those who are
+blind. If I've missed anything, let me know. Some distributions which
+were not made for the blind are also accessible.
+&lt;a href="https://getfedora.org"&gt;Fedora&lt;/a&gt;, &lt;a href="https://trisquel.info"&gt;Trisquel&lt;/a&gt;,
+&lt;a href="https://www.debian.org"&gt;Debian&lt;/a&gt;, and &lt;a href="https://ubuntu.com"&gt;Ubuntu&lt;/a&gt; are
+also able to be installed, but the user must know the correct keyboard
+command to turn on the screen reader.&lt;/p&gt;
+&lt;p&gt;Most open source software can be found on &lt;a href="https://github.com"&gt;Github&lt;/a&gt;.
+That's where NVDA, Orca, and many other tools, even for the blind, are.
+But how reliable are these tools? What about the operating system? Could
+one get rid of Windows with this software founded on ideals?&lt;/p&gt;
+&lt;h2&gt;My experiences with Open Source&lt;/h2&gt;
+&lt;h3&gt;Linux&lt;/h3&gt;
+&lt;p&gt;Accessibility is a software issue, so the root of software, the
+operating system, will make or break any accessibility. My experiences
+with Linux began, mainly, with an old operating system called
+&lt;a href="https://wiki.vinuxproject.org"&gt;Vinux&lt;/a&gt;. I didn't stick with it for long,
+and soon forgot about it, and it is now abandoned. Linux can run many
+different desktops, which give users the major system functions of
+accessing apps and system utilities. Gnome and Mate are accessible, just
+about everything else, for now, including KDE, isn't. Vinux used Gnome
+2, which is basically what Mate is now.&lt;/p&gt;
+&lt;p&gt;I came back to Linux for a short while with Sonar. I really liked it,
+but missed the games and speech options Windows had. I liked all the
+software that we have access to on Windows, and browsing the Internet
+with Linux wasn't that good back then. I soon got into the Apple
+ecosystem with an iPhone and such, and already had a Mac for quite a
+while. Still, Linux called to me.&lt;/p&gt;
+&lt;p&gt;I'm never satisfied with the workflow I have. I always want to be more
+efficient, more quick, more capable in what I do. I always want better
+sound, even if 3D effects and virtual surround sound aren't actually
+necessary or real. Like a sighted person wants great graphics, I want
+great sound. On Linux, there is a way to enable virtual surround sound,
+but it offers little reward, and much configuration, crackling in audio,
+and doesn't augment stereo audio as options on other systems does. The
+Mac has a third-party option, &lt;a href="https://www.globaldelight.com/boom/"&gt;Boom
+3D&lt;/a&gt;, and Windows has &lt;a href="https://www.windowscentral.com/how-use-windows-sonic-windows-10-creators-update"&gt;Windows Sonic
+for
+Headphones&lt;/a&gt;.
+Both of these require nearly no configuration, augments much more audio,
+and only Boom 3D causes a bit of sluggishness.&lt;/p&gt;
+&lt;p&gt;I also want a faster way of doing things. Many keyboard shortcuts,
+letter navigation of items in lists and menus, and ways of only getting
+the information I want. I have much of this on the Mac, with the Mail
+app allowing me, through table navigation, to speed through subjects
+instead of having to hear the row titles and contents and all before
+what I really want to hear, and being able to go to the previous or next
+message in a thread without needing to close the window. Linux has some
+of this, but many times things are unclear, with Orca, the Linux screen
+reader, just speaking the items, and not what type of item it is. This
+is clear in the area of Audacious settings where you choose sound
+effects.&lt;/p&gt;
+&lt;p&gt;Even so, Linux has such an appeal to me. I have tried Fedora Linux,
+&lt;a href="https://slint.fr/wiki/doku.php?id=:en:start"&gt;Slint&lt;/a&gt;, Ubuntu, Debian, Arch, and found that there is always something
+missing. Accessibility isn't that good in the graphical interface, and
+much still takes a lot of configuring and asking the community. And I
+really hate asking for help.&lt;/p&gt;
+&lt;p&gt;Recently, the &lt;a href="https://mate-desktop.org"&gt;Mate desktop&lt;/a&gt; team has
+released a version with accessibility fixes. This is important, as
+many companies, like app developers, Apple, and Google, rarely share
+that there are accessibility fixes in minor updates, and don't even
+share all the new features in major releases. This gives me some hope
+that the open source community at large just needs more blind people
+telling them about our needs. Then again, this is probably just
+another of my excuses to bash my head against the hardened wall of
+Linux, yet again. Plus, everything in the open source moves slowly,
+and this is doubly true for open source assistive technology.&lt;/p&gt;
+&lt;p&gt;There are, however, blind people who use Linux, just as there are some
+in the blind community who use Android. In fact, there is an entire
+&lt;a href="https://linux-a11y.org"&gt;Linux Accessibility Site&lt;/a&gt;. However, the site
+does have links to abandoned software, and doesn't link to all
+accessibility initiatives, like &lt;a href="https://stormux.org"&gt;Stormux&lt;/a&gt;. Both
+Linux-a11y and Stormux ask for donations, so there is also duplicated
+effort and decentralization even in the blind Linux user community.&lt;/p&gt;
+&lt;p&gt;Now, I use a Mac. It contains enough open source technology to support
+&lt;a href="https://brew.sh"&gt;Homebrew&lt;/a&gt;, a &lt;a href="https://en.wikipedia.org/wiki/Package_manager"&gt;package
+manager&lt;/a&gt;. I can run
+Emacs, with Emacspeak on it, along with just about any command line
+program I'd use on Linux. The Mac's graphical interface is good enough
+for mail and some web browsing, just not so good with Google Docs, and I
+can probably do anything on it that a Linux user can do.&lt;/p&gt;
+&lt;p&gt;And yet, sometimes, Linux calls to me still. VoiceOver isn't the best
+screen reader out there, and Linux has the appeal of being run by
+people, not corporations. And yet, looking at the &lt;a href="https://www.gnu.org/accessibility/accessibility.en.html"&gt;GNU accessibility
+statement&lt;/a&gt;,
+you'd think it was updated in 2006 or so. It may have been, which is a
+slap in the face for any accessibility advocate. The GNU project, with
+this statement, says to us that we're only worth putting up a quick
+page, detailing the inaccessibility of old technologies and not
+maintaining it. It tells us that we're a good poster to hang up in their
+trophy room of "people aided by our courageous stand for the minorities
+who desperately need our help," but then discarded for the "community"
+to handle. After all, the GNU don't know anything about helping the
+blind, do they? Can the GNU be expected to enforce accessibility among
+their projects? Doesn't the government take care of the poor blind
+people? Blind people have their Vinux and Sonar, why not just use those?
+No, that is definitely not segregation, not at all!&lt;/p&gt;
+&lt;h3&gt;Open Source Programs&lt;/h3&gt;
+&lt;p&gt;I began using NVDA around high school. No one had ever heard of it at
+that point, in a day when people called all screen readers either "JAWS"
+or "Microsoft." I've not stopped using it ever sense. Its features have
+grown, its users growing even faster. It now has a community of
+programmers, translators, and writers. It is, in my opinion, the most
+versatile Windows screen reader. JAWS still works okay for some things,
+like malformed spreadsheets, but for everything else on Windows, I use
+NVDA.&lt;/p&gt;
+&lt;p&gt;Braille Blaster is also a great project, making braille translation,
+embossing, and transcription free. I use it for translating EBooks into
+good, formatted braille files for reading on my iPhone using the BARD
+Mobile app. Now, I don't even use Duxberry, even though it is provided
+on my work computer.&lt;/p&gt;
+&lt;p&gt;I've found that open source programs, built upon closed source operating
+systems, are the best compromise. NVDA, BrailleBlaster, TDSR, and many
+other tools built for the blind community run on Windows or Mac. Having
+a great foundation in accessibility makes all the difference for users.&lt;/p&gt;
+&lt;h2&gt;How can You help?&lt;/h2&gt;
+&lt;p&gt;Github, as stated earlier, is a hub of open source projects. One great
+thing about the service is that anyone can contribute. Just make an
+account, and you're ready to help.&lt;/p&gt;
+&lt;p&gt;If you can program, you can &lt;a href="https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request"&gt;collaborate by modifying
+code&lt;/a&gt;.
+If you try the software and find accessibility problems, you can tell
+developers about &lt;a href="https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue"&gt;bugs or
+features&lt;/a&gt;
+that need fixing or adding. If you find a project you like, they may
+have a Patreon to which you can donate, or you can simply spread the
+word.&lt;/p&gt;
+&lt;p&gt;One large project which has become accessible through efforts of the
+blind reaching out is Retroarch. An issue was created asking for
+accessibility, and it was released in the very next version, and even
+more work is being done to make even more games accessible. Open source
+collaboration is great for even more than just programming. See projects
+I'm working on, all text, on &lt;a href="https://devinprater.github.io/about/"&gt;the About page of my original
+blog&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Another bit of news is that GTK, a way for programs to be displayed
+and written, has had a
+&lt;a href="https://blog.gtk.org/2020/02/17/gtk-hackfest-2020-roadmap-and-accessibility/"&gt;Hackfest&lt;/a&gt;,
+where accessibility was extensively discussed. It is hoped that this means
+that accessibility will become a larger issue in Linux, and that blind
+people will one day be able to use Linux as confidently as they use
+Windows and Mac now.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;As time goes by, I find myself drawn to open source. its promise of a
+better way of making software, the community of helpful people, and the
+freedom give me hope. While the Linux operating system does not come
+close to satisfying the hope I have for accessibility, programs and
+initiatives on top of Windows and Mac have thrived. While the poor
+accessibility statement of the GNU project shows that the community at
+large does not yet care much about accessibility, the community of blind
+people working for our own future, rather than that of a corporation,
+gives me hope of a bright future of digital accessibility for blind
+people.&lt;/p&gt;
+&lt;p&gt;What do you think, reader? Does open source call to you as well? Do you
+just use whatever system you're given? Have you made peace with Linux's
+shortcomings around accessibility? Please, let me know. I am glad to
+receive feedback. If you'd like, you may even suggest, via email or
+Twitter, articles for which you feel passionate about that need
+coverage. I will consider all that you send me, and thank you for
+reading.&lt;/p&gt;&lt;/div&gt;</description><category>advocacy</category><category>blindness</category><category>open-source</category><guid>https://devinprater.github.io/posts/2020-02-16-open-source-blindness/</guid><pubDate>Sun, 16 Feb 2020 20:11:04 GMT</pubDate></item><item><title>Advocacy of open source software</title><link>https://devinprater.github.io/posts/2020-01-20-advocacy-of-open-source-software/</link><dc:creator>Devin Prater</dc:creator><description>&lt;div&gt;&lt;p&gt;In this post, I’ll detail my experiences of advocating for
+accessibility in open source software, why it is important, and how
+others can help. I’ve not been doing it for long, but at least now,
+I’ve done a bit. I’ll also touch upon why I think open source
+software, on all operating systems, is important, and what closed
+source and closed feedback systems cannot offer, which open source
+grants. On the other hand, there are things which closed source
+somewhat grants, but which has faltered slightly in recent days. I
+will attempt to denote what is fact and what is opinion, this goes for
+any post of a commentary of informative nature.&lt;/p&gt;
+&lt;h3&gt;The Appeal of Open Source&lt;/h3&gt;
+&lt;p&gt;Open source, or free software, basically means that a person can view
+and change the source code of software that they download or own.
+While this doesn’t mean much to users, it does mean that many
+different people can work on a project to make it better. This has no
+value on its own, see the "heartbleed" &lt;a href="http://heartbleed.com"&gt;SSL
+bug&lt;/a&gt; and its
+&lt;a href="https://www.securityweek.com/evolution-openssl-security-after-heartbleed"&gt;Aftermath&lt;/a&gt;,
+but as with SSL, things can obviously improve when given an incentive.&lt;/p&gt;
+&lt;p&gt;For now, open source technology is used in many closed source
+operating systems. For example, the
+&lt;a href="https://github.com/liblouis/liblouis"&gt;Liblouis&lt;/a&gt; braille tables are
+used in
+&lt;a href="https://www.applevis.com/blog/whats-new-ios-13-accessibility-individuals-who-are-blind-or-deaf-blind"&gt;iOS&lt;/a&gt;,
+&lt;a href="https://www.applevis.com/blog/new-features-changes-improvements-and-bugs-macos-catalina-blind-and-low-vision-users"&gt;macOS&lt;/a&gt;,
+and most Linux distributions through &lt;a href="https://brltty.app"&gt;BRLTTY&lt;/a&gt;.
+While the software is not perfect, it is often made for more than one
+operating system, has a helpful community of users, and, greatest for
+accessibility, developers who are more likely to consider
+accessibility. This is greatly improved with platforms for open source
+development, like Github and Gitlab, which allow users to post
+"issues" on projects, including accessibility ones.&lt;/p&gt;
+&lt;h3&gt;The Appeal of Closed Source&lt;/h3&gt;
+&lt;p&gt;People like getting paid. I should know, as a working blind person who
+does love getting paid for time and effort well spent. People love
+keeping things hidden while being worked on. I wouldn’t want a reader
+reading an incomplete blog post, after all, and spreading the word
+that "Devin just kind of wrote a few words and that’s all I got. from
+the blog." People love being able to claim their work as theirs,
+instead of having to share the credits with other people or companies.
+I don’t have direct experience with this, because I need all the help
+I can get, but in my opinion, it is a factor in choosing to create on
+your own, as a user or a company. Another great thing about closed
+source is that your competitors can’t copy what you’re doing, as you
+do it, and when you’re an important company, with allegiance to your
+shareholders, you must do anything to keep making money. But, what
+about accessibility?&lt;/p&gt;
+&lt;h3&gt;Open Source Accessibility&lt;/h3&gt;
+&lt;p&gt;Accessibility of open source projects vary a lot. For example, before
+Retroarch was &lt;a href="https://www.libretro.com/index.php/retroarch-1-8-2-coming-soon-accessibility-features-for-blind-people/"&gt;made
+accessible&lt;/a&gt;,
+its interface was not usable by blind people. Now, though, I can use
+it easily. However, current versions of the &lt;a href="https://kde.org/plasma-desktop"&gt;KDE Plasma
+desktop&lt;/a&gt; do not work well with &lt;a href="https://help.gnome.org/users/orca/stable/"&gt;the
+Orca screen reader&lt;/a&gt;. The
+following quote is from the release notes for KDE’s latest desktop
+version:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;KDE is an international technology team that creates free and open
+source software for desktop and portable computing. Among KDE's
+products are a modern desktop system for Linux and UNIX platforms,
+comprehensive office productivity and groupware suites and hundreds
+of software titles in many categories including Internet and web
+applications, multimedia, entertainment, educational, graphics and
+software development. KDE software is translated into more than 60
+languages and is built with ease of use and modern accessibility
+principles in mind. KDE's full-featured applications run natively on
+Linux, BSD, Solaris, Windows and Mac OS X.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;-- &lt;a href="https://kde.org/announcements/plasma-5.17.0.php"&gt;Source&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;"Modern accessibility principals," you say? In my opinion, we seem to
+be talking about different definitions of "accessibility." Yes, there
+are multiple definitions. One is accessibility in the sense of being
+able to be accessed, another is the ability to be found, and the
+ability of being easy to deal with. As stated in the About section of
+the site, I use accessibility to mean being able to be used
+&lt;em&gt;completely&lt;/em&gt; by blind people. This carries with it the implication
+that every single function, and all needed visual information, can be
+conveyed to a blind person in order for it to be accessible. This
+rules out the "good enough" approach that so many blind people accept
+as the status quo. Luckily for blind people who would love to use KDE,
+there is &lt;a href="https://blogs.fsfe.org/gladhorn/2018/10/14/screen-reader-accessibility-for-the-plasma-desktop/"&gt;work being
+done&lt;/a&gt;
+on this issue. Gnu, the project behind much of Linux, also has an
+&lt;a href="https://www.gnu.org/accessibility/"&gt;accessibility statement&lt;/a&gt;, which
+does seem to be very out of date, as it references flash player and
+Silverlight, which are no longer in common use, and does not reference
+Apple’s iOS, Google’s Android, and other modern technologies which are
+not open source, but which include assistive technologies. I encourage every adventurous blind person to make
+themselves available for testing open source software and operating
+systems; user testing was mentioned by the KDE team as something blind
+people could do to help.
+Believe me, having an operating system which is a "joy to use" is a
+&lt;em&gt;dream&lt;/em&gt; of mine.&lt;/p&gt;
+&lt;p&gt;Gnome, and Mate, accessibility are okay, but they do not come close to
+the accessibility of Windows and Mac systems. For a good example, if
+you press Alt + F1 in Gnome, and probably Mate too, you may only hear
+"window." Advanced users will know to type something in Gnome, or use
+the Arrow Keys in Mate, but regular users should not have to learn to
+hunt around due to bad accessibility, and the fact that less
+technically inclined users use Linux is a testament to blind people’s
+ingenuity and ability to adapt, rather than the accessibility of the
+platform.&lt;/p&gt;
+&lt;p&gt;Open source accessibility is so hit and miss because there are so many
+standards. There is the GTK framework for building graphical apps,
+which does have some accessibility support, but developers must label
+the items in their programs with text. There is the QT framework,
+which seems to have more poor accessibility support. Basically,
+developers can do anything they want, which is good for freedom, but
+often is not great for accessibility. Also, much of the community has
+not heard of accessibility practices, do not know that blind people
+use computers, or think that we must use braille interfaces to
+interact with computers and digital devices. This is a failure on our
+part, as we do not "get out there" on the Internet enough. With the
+advent of an &lt;a href="https://www.reddit.com/r/DystopiaForReddit/"&gt;accessible Reddit
+client&lt;/a&gt;, this may begin
+to change. Further work must be done to give blind users an accessible
+Reddit interface on the web for users to use on computers, not
+iPhones. However, Github is very accessible, and there is nothing
+stopping one from submitting issues.&lt;/p&gt;
+&lt;h3&gt;Closed Source Accessibility&lt;/h3&gt;
+&lt;p&gt;"Okay but what about Windows? And Apple? You like Apple, right?"
+Basically, it’s hard to tell. Software doesn’t write itself, it is
+written, for now, by people. People can make mistakes, ignore
+guidelines, or simply not care about accessibility. However, those
+guidelines do exist, and are usually one standard, like the iOS
+accessibility standard. This means that companies can develop
+accessible software easily, and are held accountable by managers to
+uphold accessibility. But, even the best of accessible companies do
+not always do the right thing. Apple, for example, has created two
+services, Apple Arcade and Apple Research. Apple Arcade contains &lt;em&gt;no&lt;/em&gt;
+games which a blind gamer can play without expending much more effort
+than a sighted gamer. Apple Research contains some questions with
+answer buttons which are not labeled, or cannot be activated. Does
+Apple think that blind people do not want to game, or that we don’t
+care about our hearing, heart, or for women, their reproductive
+health? Apple has also created Swift Playgrounds, an app for children
+to learn to code. This is accessible. But what about adults? Shouldn’t
+blind adults, who are usually technically inclined enough, be given a
+chance to learn to code? I’ll probably rant about this in a future
+article.&lt;/p&gt;
+&lt;p&gt;Microsoft has been on an accessibility journey for a few years now,
+but even they have a few problems. First, the voices in Windows 10 are
+poor for screen reading tasks. They pause way too long at the end of
+clauses and sentences, leading me, at least, to press Down Arrow to
+move to the next line before the last line was actually done being
+spoken, all because it paused just long enough to make me think that
+there was no more text to speak. Microsoft’s XBox Game Pass is great,
+but I could not find any accessible games in the free rotations. Sure,
+there’s Killer Instinct that many blind people can enjoy playing, but
+I found it not only inaccessible, as the menus do not speak, but
+boring, as the characters all seemed to simply do the same thing. I
+know that games do not have to be accessible to be fun, but I expect
+companies who showcase games, like Apple with Arcade, to have at least
+one accessible game for blind people to enjoy. And I also know that
+neither Apple nor Microsoft makes these games, but they do choose to
+advertise them, endorse them even, and it shows that, for Apple Arcade
+at least, video games are not something which they expect blind people
+to play. Microsoft is proving them wrong, with the
+release of Halo with screen reader usability in menus, and the
+possibility that the new Halo game will be accessible.&lt;/p&gt;
+&lt;p&gt;Another problem with Microsoft is that not all of their teams are
+onboard. Like Apple with Arcade and Research, Microsoft has the
+Rewards team. Their quizzes require one to move items around to
+reorder answers to get the quiz correct. This may be easy, and perhaps
+fun, for sighted people, but are simply frustrating for blind people.
+Other problems include the release of the new Microsoft Edge, which,
+for most users of screen readers, require that the user turn off UI
+Automation in order to read some items on the web. Otherwise, if
+Microsoft’s upcoming foldable phone comes with greatly enhanced
+accessibility relative to pure Android, and the Narrator screen
+reader, optimized and made great and enjoyable for a mobile
+experience, I think that Microsoft could take plenty of market share back
+from Apple of mobile phone users. They already have most general
+purpose computer users who are blind, so taking from Apple would be a
+huge win for them regarding accessibility. But, on that, we’ll have to
+wait and see how far Microsoft takes their commitment to
+accessibility. The more cynical side of me says that Microsoft will
+simply slap Android on a folding phone and release it, because why
+fight Apple.&lt;/p&gt;
+&lt;h3&gt;Reporting Bugs&lt;/h3&gt;
+&lt;p&gt;So, what can we do to make accessibility better? Just about all open
+source software, including the stuff making up this blog, is hosted on
+Github. Just about all companies, of closed source software, claim to
+want your feedback. So, I recommend giving them any feedback you have.
+I know that giving feedback to Apple is like throwing $100 bills into
+the ocean, giving your valuable time to something which may offer no
+results, and just gives you the robotic "thanks" message. I know that
+sometimes talking to Microsoft’s accessibility team may seem
+unproductive, because they lead you from Twitter to one of a number of
+feedback locations. I know that feedback to open source software
+projects may take a lot of time and explaining and promoting
+accessibility to a community which has never considered it before, but
+it all may help.&lt;/p&gt;
+&lt;p&gt;For a great, and successful, Github issue regarding accessibility, see
+&lt;a href="https://github.com/libretro/RetroArch/issues/9661"&gt;this issue on accessibility of
+Retroarch&lt;/a&gt;. You can
+see that I approached the Retroarch team respectfully, with knowledge
+of basic accessibility and computer terminology. Note that I gave what
+should happen, what is happening, and what can be done to fix the
+problem. As the saying goes, if you do not contribute to a solution to
+a problem, you are a part of the problem. Blind people will need to
+remember to give solutions, not just whine about something not working
+and can’t play Poke A Man like everyone else.&lt;/p&gt;
+&lt;p&gt;Also, share links to your feedback with other blind people who can
+vote, thumb up, or comment on it. Remember, if you do comment, please
+remember that feedback does not net instant results. I’m still waiting
+on &lt;a href="https://github.com/webcamoid/webcamoid/issues/211"&gt;Webcamoid to have an accessible
+interface&lt;/a&gt;, and
+&lt;a href="https://github.com/libretro/RetroArch/issues/9920"&gt;Adding Active Accessibility into Games for
+Retroarch&lt;/a&gt;, and
+&lt;a href="https://github.com/rileytestut/DeltaCore/issues/13"&gt;This Delta
+issue&lt;/a&gt;. But, at
+least I’ll know when something changes, and I could even &lt;a href="https://www.bountysource.com"&gt;Pay for
+features to be implemented&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is opposed to the closed source model, where feedback is "passed
+on to the team," or you are thanked, by your iPhone, for your
+feedback, but do not hear anything back from developers, and you most
+definitely can not pay for specific features to be worked on, or
+donate to projects that you feel deserve it. You must hope and have
+faith that large companies with more than one billion users cares
+enough to hear you. For perspective, if every blind person stopped
+using an iPhone, Apple would not miss many lost sales, compared to the
+billions of sighted users. However, the engineers who work on iOS
+accessibility are people too, with deadlines, lives, and feelings, and
+we should also respect that they are probably tightly restricted in
+answering feedback, fixing bugs, and creating new, exciting features.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;As for me, I will continue to support open source software. I’ll keep
+using this mac and iPhone because they work the best for me and what I
+do for work and writing. But, believe me, when something better comes
+along, I’ll jump ship quickly. As blind people, I feel, we cannot
+afford to develop brand loyalty. Apple, Microsoft, or Google, I think,
+could
+drop accessibility tomorrow, and there we’d be, left in the cold. I
+highly doubt they will. They may let it lie stagnant, but they
+probably won’t remove it. I do not write this to scare you in the
+least, but to make you think about how much control you actually have
+over what you use, how companies and developers view us, and how we
+can improve the situation for ourselves. if sighted people notice a
+bug or want a feature in iOS or Windows, they can gather their tech
+press and pressure Apple or Microsoft. If we find an accessibility
+bug, do we have enough clout, or unity, to pressure these companies?
+Writing feedback, testing software, trying new things, writing guides
+and fixing documentation, or, if able, translating software into other
+languages are all things that &lt;em&gt;any&lt;/em&gt; blind person can do. I’m not
+saying that I’m perfect at any of this. I just think that we as a
+community can grow tremendously if we strike out from our comfortable
+Windows PC’s, Microsoft Word, audio games, TeamTalk, and old speech
+synthesizers.&lt;/p&gt;
+&lt;p&gt;I’ll give some projects you could try out and give feedback on:&lt;/p&gt;
+&lt;h3&gt;- &lt;a href="https://marcozehe.de/2019/12/20/how-to-get-around-matrix-and-riot-with-a-screen-reader/"&gt;Riot IM, for text and voice chatting in groups, like TeamTalk&lt;/a&gt;&lt;/h3&gt;&lt;/div&gt;</description><category>blindness</category><category>open-source</category><guid>https://devinprater.github.io/posts/2020-01-20-advocacy-of-open-source-software/</guid><pubDate>Mon, 20 Jan 2020 00:00:00 GMT</pubDate></item></channel></rss>
